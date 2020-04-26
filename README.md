@@ -137,7 +137,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         IsDormant()
         bool IsDormant(void)
 
-**[CUserCmd](CUserCmd.cmd):**
+**[CUserCmd](CUserCmd.cm):**
 
         int     command_number;
         int     tick_count;
