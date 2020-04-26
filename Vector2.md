@@ -17,6 +17,5 @@
 			
 ## float Length()
 
-			Returns Length 
+			Returns Length ( sqrt(x*x + y*y) )
 			
-$$(\sqrt(x^2 +y^2))$$ 
