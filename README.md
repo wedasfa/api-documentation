@@ -1,5 +1,5 @@
 
-# api-documentation
+# List of all methods
 
 **Color:**
 
@@ -214,3 +214,121 @@
                     float GetAvgData(int flow);
 		    float GetAvgPackets(int flow);
 		    int   GetTotalData(int flow);
+
+**IGameEvent:**
+
+		    string GetName();
+		    bool GetBool();
+                    int GetInt();
+                    float GetFloat();
+                    string GetString();
+                    
+**IMaterial:**
+
+                    ColorModulate(float r, float g, float b);
+                    AlphaModulate(float alpha);
+                    string GetName();
+                    bool IsErrorMaterial();
+                    
+**IMaterialSystem:**
+
+                    IMaterial* FindMaterial(string name);
+                    unsigned short FirstMaterial();
+                    unsigned short NextMaterial(unsigned short);
+                    
+**IEntityList:**
+
+                    C_BaseEntity* GetClientEntity(int);
+                    C_BaseEntity* GetClientEntityFromHandle(HANDLE);
+                    int GetHighestEntityIndex();
+                    int NumberOfEntities(bool bIncludeNonNetworkable);
+
+**IVEngineClient:**
+
+                        void ClientCmd(string)
+                        void ClientCmdUnrestricted(string)
+                        void ExecuteClientCmd(string)
+                        int GetAppId()
+                        int GetEngineBuildNumber()
+                        string GetGameDirectory()
+                        float GetLastTimestamp()
+                        string GetLevelName()
+                        string GetLevelNameShort()
+                        int GetLocalPlayer()
+                        string GetMapGroupName()
+                        int GetMaxClients()
+                        GetMouseDelta
+                        INetChannelInfo* GetNetChannelInfo()
+                        int GetPlayerForUserId(int userid)
+                        player_info_t GetPlayerInfo()
+                        string GetProductVersionString()
+                        GetScreenSize
+                        GetTimescale
+                        GetViewAngles
+                        IsConnected
+                        IsHammerRunning
+                        IsHltv
+                        IsInGame
+                        IsLowViolence
+                        IsOccluded
+                        IsPaused
+                        IsPlayingDemo
+                        IsRecordingDemo
+                        IsTakingScreenshot
+                        LevelLeafCount
+                        MapHasHdrLighting
+                        RemoveAllPaint
+                        SetBlurFade
+                        SetRestrictClientCommands
+                        SetTimescale
+                        SetViewAngles
+                        SupportsHdr
+                        WriteScreenshot
+                        
+**IRender:**
+
+                        void Box(Vector2D start, Vector2D end, Color clr);
+                        void BoxFilled(Vector2D start, Vector2D end, Color clr);
+                        void Circle(Vector2D pos, float rad, int points, Color clr);
+                        void CircleFilled(Vector2D pos, float rad, int points, Color clr);
+                        void Text(string text, Vector2D pos, Color clr, int size);
+                        Vector2D ScreenPosition(Vector pos);
+
+                        void Circle3D(Vector pos, int points, float rad, Color clr);
+                        void CircleFilled3D(Vector pos, int points, float rad, Color clr);
+                        void CylinderFilled3D(Vector pos, int points, float rad, float height, Color clr)
+                        
+**Utils:**
+
+                        void* CreateInterface(string module_name, string interface_name);
+                        void* PatternScan(string module_name, string pattern);
+                        float RandomFloat(float min, float max);
+**Config:**
+
+                        CheatVar FindGlobalVar(string group_name, string name);
+                        CheatVar FindTeamVar(string group_name, string name, int team);
+                        CheatVar FindWeaponVar(string group_name, string name);
+                        
+**Panorama:**
+
+                        void Exec(string code);
+
+**Cheat:**
+
+                        RegisterCallback;
+                        EspText;
+                        Checkbox
+                        SliderFloat
+
+**Global variables available:**
+
+                        g_Panorama - Panorama
+                        g_Config - Config
+                        Utils - Utils
+                        g_Render - IRender instance
+                        g_EngineClient - IVEngineClient
+                        g_EntityList - IEntityList
+                        g_CVar - ICvar
+                        g_GlobalVars - CGlobalVarsBase
+                        g_MatSystem - IMaterialSystem
+                        cheat - Cheat
