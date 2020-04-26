@@ -185,9 +185,9 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
 
 **[ConVar](ConVar.md):**
 
-        string GetString(void);
-        int GetInt(void);
-        float GetFloat(void);
+        string GetString();
+        int GetInt();
+        float GetFloat();
         void  SetInt(int nValue);
         void  SetString(string value);
         void  SetFloat(float fNewValue);
