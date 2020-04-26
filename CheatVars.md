@@ -1,7 +1,8 @@
-Global config: 
-main
+
+# Global config: 
+# main
 	autosave
-esp
+# esp
 	weapon_enabled
 	weapon_boxes
 	weapon_outline
@@ -146,7 +147,7 @@ esp
 	world_fog_color
 	world_fog_distance
 	world_fog_density
-windows
+## windows
 	positions
 	radar_enabled
 	radar_grenades
@@ -161,7 +162,7 @@ windows
 	statusbar_enabled
 	statusbar_transparent
 	binds_enabled
-glow
+## glow
 	weapon_enabled
 	weapon_style
 	weapon_color
@@ -182,7 +183,7 @@ glow
 	loot_color
 	width
 	bloom
-chams
+## chams
 	weapon_enabled
 	weapon_style
 	weapon_visible_only
@@ -205,7 +206,7 @@ chams
 	loot_style
 	loot_visible_only
 	loot_color
-misc
+## misc
 	bhop
 	thirdperson
 	filter_console
@@ -244,7 +245,7 @@ misc
 	chatspam
 	unlock_cvars
 	disable_back
-inventory
+## inventory
 	skins
 	profile_enable
 	gc_vacbanned
@@ -255,7 +256,7 @@ inventory
 	gc_friendly
 	gc_leader
 	gc_teaching
-ragebot
+## ragebot
 	enabled
 	silent_aim
 	hide_shots
@@ -263,11 +264,11 @@ ragebot
 	doubletap_mode
 	multithreading
 	aim_lock
-legitbot
+## legitbot
 	enabled
 	showfov
 	showfov_clr
-antiaim
+## antiaim
 	enabled
 	yaw_base
 	yaw_mod
@@ -293,8 +294,8 @@ antiaim
 	showdir
 	showdir_clr
 
-Weapon config: 
-ragebot
+# Weapon config: 
+## ragebot
 	aim_enabled
 	min_damage_override
 	min_damage
@@ -317,7 +318,7 @@ ragebot
 	auto_stop
 	autostop_conditions
 	auto_scope
-legitbot
+## legitbot
 	enabled
 	mode
 	key
@@ -350,8 +351,8 @@ legitbot
 	autofire
 	autofire_hitchance
 
-Team player config: 
-esp
+# Team player config: 
+## esp
 	player_enabled
 	player_visible_only
 	player_boxes
@@ -387,12 +388,12 @@ esp
 	color_offscreen
 	color_snaplines
 	color_bullettrace
-glow
+## glow
 	player_enabled
 	player_visible_only
 	color_visible
 	color_invisible
-chams
+## chams
 	player_enabled
 	player_cfg
 	player_fake_enabled
@@ -416,5 +417,3 @@ chams
 	player_dead_style
 	player_dead_clr
 	player_dead_visible_only
-
-
