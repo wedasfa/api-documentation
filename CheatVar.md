@@ -4,7 +4,7 @@
 
  **CheatVar** -- Cheat variable. Basically, allows you to get variables used in neverlose.cc menu. Designed to use the same API as Valve's ConVar.
 
-List of all cheat variables [here](CheatVars.md)
+List of all cheat variables [here](CheatVars.md). Can be found by [Config](Config.md) API.
 
 
 ## bool GetBool();
