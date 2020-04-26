@@ -323,7 +323,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         CheatVar Checkbox(string name);
         CheatVar SliderFloat(string name, float min, float max);
 
-**Global variables available:**
+**[Global variables available](Globals.md):**
 
         g_Panorama - Panorama
         g_Config - Config
