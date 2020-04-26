@@ -1,7 +1,10 @@
+# Intro
+
+neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) engine with [FFI](https://luajit.org/ext_ffi.html) and [bit](https://bitop.luajit.org/api.html) libraries included.
 
 # List of all methods
 
-**Color:**
+**[Color](Color.md):**
 
         Color()
         Color(float, float, float)
@@ -11,7 +14,7 @@
         float b()
         float a()
 
-**Vector2:**
+**[Vector2](Vector2.md):**
 
         Vector2D(float, float)
         operator+
@@ -20,7 +23,7 @@
         float y
         float Length()
 
-**Vector:**
+**[Vector](Vector.md):**
 
         Vector(), Vector(float, float, float)
         float x
@@ -28,13 +31,13 @@
         float z
         float Length()
 
-**QAngle:**
+**[QAngle](QAngle.md):**
 
         float pitch;
         float yaw;
         float roll;
 
-**C_BaseEntity:**
+**[C_BaseEntity](C_BaseEntity.md):**
 
         int/float/Vector/string GetProp(string table, string name)
         void SetProp(string table, string name, int/float/Vector/string value)
@@ -62,7 +65,7 @@
         int m_nAnimationParity()
         void SetModelIndex(int index)
     
-**C_BasePlayer: C_BaseEntity**
+**[C_BasePlayer](C_BasePlayer.md) : [C_BaseEntity](C_BaseEntity.md):**
 
         m_bStrafing()
         m_bHasDefuser()
@@ -134,7 +137,7 @@
         IsDormant()
         bool IsDormant(void)
 
-**CUserCmd:**
+**[CUserCmd](CUserCmd.cmd):**
 
         int     command_number;
         int     tick_count;
@@ -152,7 +155,7 @@
         short   mousedy; 
         bool    hasbeenpredicted;
 
-**CGlobalVarsBase:**
+**[CGlobalVarsBase](CGlobalVarsBase.md):**
 
         float     realtime;
         int       framecount;
@@ -180,7 +183,7 @@
         bool      serverCount;
         bool      pEdicts;
 
-**ConVar:**
+**[ConVar](ConVar.md):**
 
         string GetString(void);
         int GetInt(void);
@@ -189,11 +192,11 @@
         void  InternalSetValue(string value);
         void  InternalSetFloatValue(float fNewValue);
 
-**ICvar:**
+**[ICvar](ICvar.md):**
 
         ConVar*  FindVar(string var_name);
 
-**CheatVar:**
+**[CheatVar](CheatVar.md):**
 
         bool GetBool(string keyName = nullptr, bool defaultValue = false);
         float GetFloat(string keyName = nullptr, float defaultValue = 0.0f)
@@ -202,7 +205,7 @@
         void SetInt(string keyName, int value) = 0;
         void SetFloat(string keyName, float value);
 
-**INetChannelInfo:**
+**[INetChannelInfo](INetChannelInfo.md):**
 
         string GetName(void);
         string GetAddress(void);
@@ -215,7 +218,7 @@
         float GetAvgPackets(int flow);
         int   GetTotalData(int flow);
 
-**IGameEvent:**
+**[IGameEvent](IGameEvent.md):**
 
         string GetName();
         bool GetBool();
@@ -223,27 +226,27 @@
         float GetFloat();
         string GetString();
         
-**IMaterial:**
+**[IMaterial](IMaterial.md):**
 
         ColorModulate(float r, float g, float b);
         AlphaModulate(float alpha);
         string GetName();
         bool IsErrorMaterial();
         
-**IMaterialSystem:**
+**[IMaterialSystem](IMaterialSystem.md):**
 
         IMaterial* FindMaterial(string name);
         unsigned short FirstMaterial();
         unsigned short NextMaterial(unsigned short);
         
-**IEntityList:**
+**[IEntityList](IEntityList.md):**
 
         C_BaseEntity* GetClientEntity(int);
         C_BaseEntity* GetClientEntityFromHandle(HANDLE);
         int GetHighestEntityIndex();
         int NumberOfEntities(bool bIncludeNonNetworkable);
 
-**IVEngineClient:**
+**[IVEngineClient](IVEngineClient.md):**
 
         void ClientCmd(string)
         void ClientCmdUnrestricted(string)
@@ -285,7 +288,7 @@
         SupportsHdr
         WriteScreenshot
         
-**IRender:**
+**[IRender](IRender.md):**
 
         void Box(Vector2D start, Vector2D end, Color clr);
         void BoxFilled(Vector2D start, Vector2D end, Color clr);
@@ -298,22 +301,22 @@
         void CircleFilled3D(Vector pos, int points, float rad, Color clr);
         void CylinderFilled3D(Vector pos, int points, float rad, float height, Color clr)
         
-**Utils:**
+**[Utils](Utils.md):**
 
         void* CreateInterface(string module_name, string interface_name);
         void* PatternScan(string module_name, string pattern);
         float RandomFloat(float min, float max);
-**Config:**
+**[Config](Config.md):**
 
         CheatVar FindGlobalVar(string group_name, string name);
         CheatVar FindTeamVar(string group_name, string name, int team);
         CheatVar FindWeaponVar(string group_name, string name);
         
-**Panorama:**
+**[Panorama](Panorama.md):**
 
         void Exec(string code);
 
-**Cheat:**
+**[Cheat](Cheat.md):**
 
         RegisterCallback;
         EspText;
