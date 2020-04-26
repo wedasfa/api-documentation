@@ -296,7 +296,6 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         void CircleFilled(Vector2 pos, float rad, int points, Color clr);
         void Text(string text, Vector2 pos, Color clr, int size);
         Vector2 ScreenPosition(Vector pos);
-
         void Circle3D(Vector pos, int points, float rad, Color clr);
         void CircleFilled3D(Vector pos, int points, float rad, Color clr);
         void CylinderFilled3D(Vector pos, int points, float rad, float height, Color clr)
@@ -306,6 +305,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         void* CreateInterface(string module_name, string interface_name);
         void* PatternScan(string module_name, string pattern);
         float RandomFloat(float min, float max);
+        
 **[Config](Config.md):**
 
         CheatVar FindGlobalVar(string group_name, string name);
@@ -318,10 +318,10 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
 
 **[Cheat](Cheat.md):**
 
-        RegisterCallback;
-        EspText;
-        Checkbox
-        SliderFloat
+        void RegisterCallback(string event_name, function callback);
+        void EspText(string classname, function callback);
+        CheatVar Checkbox(string name);
+        CheatVar SliderFloat(string name, float min, float max);
 
 **Global variables available:**
 
