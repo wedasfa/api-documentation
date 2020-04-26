@@ -3,13 +3,13 @@
 
 **Color:**
 
-	    Color()
-	    Color(float, float, float)
-	    Color(float, float, float, float)
-	    float r()
-	    float g()
-	    float b()
-	    float a()
+		    Color()
+		    Color(float, float, float)
+		    Color(float, float, float, float)
+		    float r()
+		    float g()
+		    float b()
+		    float a()
 
 **Vector2D:**
 
@@ -186,31 +186,31 @@
 		    int GetInt(void);
 		    float GetFloat(void);
 		    void  InternalSetIntValue(int nValue);
-		    void  InternalSetValue(const char *value);
+		    void  InternalSetValue(string value);
 		    void  InternalSetFloatValue(float fNewValue);
 
 **ICvar:**
 
-	    ConVar*  FindVar(const char *var_name);
+                    ConVar*  FindVar(string var_name);
 
 **CheatVar:**
 
-	    bool GetBool(const char *keyName = nullptr, bool defaultValue = false);
-	    float GetFloat(const char *keyName = nullptr, float defaultValue = 0.0f)
-	    int GetInt(const char *keyName = nullptr, int defaultValue = 0)
-	    void SetBool(const char *keyName, bool value) = 0;
-	    void SetInt(const char *keyName, int value) = 0;
-	    void SetFloat(const char *keyName, float value);
+	            bool GetBool(string keyName = nullptr, bool defaultValue = false);
+	            float GetFloat(string keyName = nullptr, float defaultValue = 0.0f)
+	            int GetInt(string keyName = nullptr, int defaultValue = 0)
+	            void SetBool(string keyName, bool value) = 0;
+	            void SetInt(string keyName, int value) = 0;
+	            void SetFloat(string keyName, float value);
 
 **INetChannelInfo:**
 
-	    const char  *GetName(void);
-	    const char  *GetAddress(void);
-	    bool IsPlayback(void);
-	    float GetLatency(int flow);
-	    float GetAvgLatency(int flow);
-	    float GetAvgLoss(int flow);
-	    float GetAvgChoke(int flow);
-	    float GetAvgData(int flow);
-	    float GetAvgPackets(int flow);
-	    int   GetTotalData(int flow);
+	            string GetName(void);
+        	    string GetAddress(void);
+	            bool IsPlayback(void);
+	            float GetLatency(int flow);
+                    float GetAvgLatency(int flow);
+                    float GetAvgLoss(int flow);
+                    float GetAvgChoke(int flow);
+                    float GetAvgData(int flow);
+		    float GetAvgPackets(int flow);
+		    int   GetTotalData(int flow);
