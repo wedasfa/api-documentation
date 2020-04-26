@@ -11,7 +11,7 @@
 		    float b()
 		    float a()
 
-**Vector2D:**
+**Vector2:**
 
 		   Vector2D(float, float)
 		   operator+
