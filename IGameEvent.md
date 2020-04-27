@@ -17,12 +17,12 @@
     data field should not be broadcasted to clients, use the type "local".
 
 ## string GetName();
-`Get event name`
+Get event name
 ## bool GetBool(string name);
-`Get event's bool value by name`
+Get event's bool value by name
 ## int GetInt(string name);
-``Get event's int value by name`
+Get event's int value by name
 ## float GetFloat(string name);
-``Get event's float value by name`
+Get event's float value by name
 ## string GetString(string name);
-``Get event's string value by name`
+Get event's string value by name
