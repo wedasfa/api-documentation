@@ -221,10 +221,10 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
 **[IGameEvent](IGameEvent.md):**
 
         string GetName();
-        bool GetBool();
-        int GetInt();
-        float GetFloat();
-        string GetString();
+        bool GetBool(string name);
+        int GetInt(string name);
+        float GetFloat(string name);
+        string GetString(string name);
         
 **[IMaterial](IMaterial.md):**
 
