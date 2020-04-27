@@ -1,8 +1,8 @@
 # INetChannelInfo
 
-## string GetName(void)
+## string GetName()
 `Get channel name`
-## string GetAddress(void);
+## string GetAddress();
 `Get channel IP address as string`
 ## float GetLatency(int flow);
 `Current latency (RTT), more accurate but jittering`
