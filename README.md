@@ -45,7 +45,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         bool GetPlayer()
         bool IsWeapon()
         void GetRenderBounds(Vector& mins, Vector& maxs)
-        int  EntIndex(void)
+        int  EntIndex()
         bool m_vecOrigin()
         bool m_nModelIndex()
         bool m_iTeamNum()
@@ -135,7 +135,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         m_vecPlayerPatchEconIndices()
         IsTeamMate()
         IsDormant()
-        bool IsDormant(void)
+        bool IsDormant()
 
 **[CUserCmd](CUserCmd.md):**
 
@@ -207,9 +207,9 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
 
 **[INetChannelInfo](INetChannelInfo.md):**
 
-        string GetName(void);
-        string GetAddress(void);
-        bool IsPlayback(void);
+        string GetName();
+        string GetAddress();
+        bool IsPlayback();
         float GetLatency(int flow);
         float GetAvgLatency(int flow);
         float GetAvgLoss(int flow);
