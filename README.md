@@ -228,8 +228,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         
 **[IMaterial](IMaterial.md):**
 
-        ColorModulate(float r, float g, float b);
-        AlphaModulate(float alpha);
+        void ColorModulate(float r, float g, float b);
+        void AlphaModulate(float alpha);
         string GetName();
         bool IsErrorMaterial();
         
