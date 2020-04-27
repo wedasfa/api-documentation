@@ -1,8 +1,8 @@
 # IMaterial
 
-## ColorModulate(float r, float g, float b)
+## void ColorModulate(float r, float g, float b)
 Apply constant color or alpha modulation
-## AlphaModulate(float alpha);
+## void AlphaModulate(float alpha);
 Apply constant color or alpha modulation
 ## string GetName();
 Get the name of the material.
