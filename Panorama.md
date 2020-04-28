@@ -1,4 +1,4 @@
 # Panorama
 
 ## void Exec(string code);
-Running JS code passing in string.
+Executes JS code has been passed in arguments.
