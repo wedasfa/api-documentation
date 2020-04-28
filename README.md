@@ -234,7 +234,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         int GetHighestEntityIndex();
         int NumberOfEntities(bool bIncludeNonNetworkable);
 
-**[IVEngineClient](IVEngineClient.md):**
+**[IEngineClient](IEngineClient.md):**
 
         void ClientCmd(string)
         void ClientCmdUnrestricted(string)
