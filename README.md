@@ -67,75 +67,63 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
     
 **[C_BasePlayer](C_BasePlayer.md) : [C_BaseEntity](C_BaseEntity.md):**
 
-        m_bStrafing()
-        m_bHasDefuser()
-        m_bClientSideAnimation()
-        m_ragPos()
-        m_bGunGameImmunity()
-        m_iShotsFired()
-        m_angEyeAngles()
-        m_ArmorValue()
-        m_iPlayerState()
-        m_bHasHeavyArmor()
-        m_bHasHelmet()
-        m_bIsScoped()
-        m_bWaitForNoAttack()
-        m_bIsDefusing()
-        m_bIsWalking()
-        m_bResumeZoom()
-        m_bIsLookingAtWeapon()
-        m_bDucked()
-        m_bDucking()
-        m_flLowerBodyYawTarget()
-        m_iHealth()
-        m_nWaterLevel()
-        m_lifeState()
-        m_fFlags()
-        m_nTickBase()
-        m_iMoveState()
-        m_vecViewOffset()
-        m_viewPunchAngle()
-        m_aimPunchAngle()
-        m_aimPunchAngleVel()
-        m_hViewModel()
-        m_vecVelocity()
-        m_flGroundAccelLinearFracLastTime()
-        m_flNextAttack()
-        m_hObserverTarget()
-        m_flFlashMaxAlpha()
-        m_fMolotovDamageTime()
-        m_flThirdpersonRecoil()
-        m_nHitboxSet()
-        m_hActiveWeapon()
-        m_iAccount()
-        m_flFlashDuration()
-        m_flSimulationTime()
-        m_nSequence()
-        m_iObserverMode()
-        m_szLastPlaceName()
-        m_flLowerBodyYawTarget()
-        m_angRotation()
-        m_pStudioHdr()
-        m_pIk()
-        m_BoneAccessor()
-        m_flLastBoneSetupTime()
-        m_iMostRecentModelBoneCounter()
-        m_angAbsAngles()
-        m_angAbsOrigin()
-        m_flDuckSpeed()
-        m_flDuckAmount()
-        m_vphysicsCollisionState()
-        m_nSurvivalTeam()
-        m_flVelocityModifier()
-        m_flFallVelocity()
-        m_iFOV()
-        m_iFOVStart()
-        m_flFOVTime()
-        m_iDefaultFOV()
-        m_vecPlayerPatchEconIndices()
-        IsTeamMate()
-        IsDormant()
-        bool IsDormant()
+        bool m_bStrafing();
+        bool m_bHasDefuser();
+        bool m_bClientSideAnimation();
+        Vector m_ragPos();
+        bool m_bGunGameImmunity();
+        int m_iShotsFired();
+        int m_angEyeAngles();
+        int m_ArmorValue();
+        int m_iPlayerState();
+        bool m_bHasHeavyArmor();
+        bool m_bHasHelmet();
+        bool m_bIsScoped();
+        bool m_bWaitForNoAttack();
+        bool m_bIsWalking();
+        bool m_bResumeZoom();
+        bool m_bIsLookingAtWeapon();
+        bool m_bDucked();
+        bool m_bDucking();
+        int m_flLowerBodyYawTarget();
+        int m_iHealth();
+        int m_nWaterLevel();
+        int m_lifeState();
+        int m_fFlags();
+        int m_nTickBase();
+        int m_iMoveState();
+        int m_vecViewOffset();
+        Vector m_viewPunchAngle();
+        Vector m_aimPunchAngle();
+        Vector m_aimPunchAngleVel();
+        int m_vecVelocity();
+        int m_flGroundAccelLinearFracLastTime();
+        int m_flNextAttack();
+        int m_flFlashMaxAlpha();
+        int m_fMolotovDamageTime();
+        int m_flThirdpersonRecoil();
+        int m_nHitboxSet();
+        int m_iAccount();
+        int m_flFlashDuration();
+        int m_flSimulationTime();
+        int m_nSequence();
+        int m_iObserverMode();
+        string m_szLastPlaceName();
+        int m_flLowerBodyYawTarget();
+        Vector m_angRotation();
+        int m_flDuckSpeed();
+        int m_flDuckAmount();
+        int m_vphysicsCollisionState();
+        int m_nSurvivalTeam();
+        int m_flVelocityModifier();
+        int m_flFallVelocity();
+        int m_iFOV();
+        int m_iFOVStart();
+        int m_flFOVTime();
+        int m_iDefaultFOV();
+        Vector m_vecPlayerPatchEconIndices();
+        bool IsTeamMate();
+        bool IsDormant();
 
 **[CUserCmd](CUserCmd.md):**
 
