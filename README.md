@@ -240,45 +240,27 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
 
 **[IEngineClient](IEngineClient.md):**
 
-        void ClientCmd(string)
-        void ClientCmdUnrestricted(string)
-        void ExecuteClientCmd(string)
-        int GetAppId()
-        int GetEngineBuildNumber()
-        string GetGameDirectory()
-        float GetLastTimestamp()
-        string GetLevelName()
-        string GetLevelNameShort()
-        int GetLocalPlayer()
-        string GetMapGroupName()
-        int GetMaxClients()
-        GetMouseDelta
-        INetChannelInfo* GetNetChannelInfo()
-        int GetPlayerForUserId(int userid)
-        player_info_t GetPlayerInfo()
-        string GetProductVersionString()
-        GetScreenSize
-        GetTimescale
-        GetViewAngles
-        IsConnected
-        IsHammerRunning
-        IsHltv
-        IsInGame
-        IsLowViolence
-        IsOccluded
-        IsPaused
-        IsPlayingDemo
-        IsRecordingDemo
-        IsTakingScreenshot
-        LevelLeafCount
-        MapHasHdrLighting
-        RemoveAllPaint
-        SetBlurFade
-        SetRestrictClientCommands
-        SetTimescale
-        SetViewAngles
-        SupportsHdr
-        WriteScreenshot
+        Vector2 GetScreenSize();
+        void ClientCmd(string);
+        player_info_t GetPlayerInfo();
+        int GetLocalPlayer();
+        QAngle GetViewAngles();
+        string GetMaxClients();
+        void ClientCmdUnrestricted(string);
+        bool IsConnected();
+        string GetLevelName();
+        string GetLevelNameShort();
+        string GetMapGroupName();
+        void ExecuteClientCmd(string);
+        int GetAppId();
+        int GetEngineBuildNumber();
+        string GetGameDirectory();
+        float GetLastTimestamp();
+        Vector2 GetMouseDelta(bool bIgnoreNextMouseDelta);
+        INetChannelInfo* GetNetChannelInfo();
+        int GetPlayerForUserId(int userid);
+        string GetProductVersionString();
+
         
 **[IRender](IRender.md):**
 
