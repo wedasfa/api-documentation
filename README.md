@@ -303,7 +303,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         g_Config - Config
         Utils - Utils
         g_Render - IRender instance
-        g_EngineClient - IVEngineClient
+        g_EngineTrace - IEngineTrace
+        g_EngineClient - IEngineClient
         g_EntityList - IEntityList
         g_CVar - ICvar
         g_GlobalVars - CGlobalVarsBase
