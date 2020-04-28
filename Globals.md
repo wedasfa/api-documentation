@@ -11,7 +11,9 @@
 ## g_Render
 [IRender](IRender.md) instance. For rendering something in screen.
 ## g_EngineClient
-[IVEngineClient](IVEngineClient.md) instance. Part of Source Engine.
+[IEngineClient](IEngineClient.md) instance. Part of Source Engine.
+## g_EngineTrace
+[IEngineTrace](IEngineTrace.md) instance. Part of Source Engine.
 ## g_EntityList
 [IEntityList](IEntityList.md) instance. Part of Source Engine.
 ## g_CVar
