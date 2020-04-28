@@ -1,4 +1,6 @@
-# C_BasePlayer
+# C_BasePlayer : [C_BaseEntity](C_BaseEntity.md)
+
+C_BasePlayer derived from [C_BaseEntity](C_BaseEntity.md)
 
 ## bool m_bStrafing();
 ## bool m_bHasDefuser();
