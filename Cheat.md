@@ -12,7 +12,7 @@ Possible event names:
   
   **events** - [game events](https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events). [IGameEvent](IGameEvent.md) pointer passed.
   
-    **destroy** - called when script destroyed. 0 arguments passed to callack.
+  **destroy** - called when script destroyed. 0 arguments passed to callack.
 ## void EspText(string classname, function callback);
 Registering esp(+ esp preview) callbacks. 
 Possible class names:
