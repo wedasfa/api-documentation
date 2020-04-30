@@ -1,7 +1,7 @@
-## Global config: 
-# main
+# Global config: 
+## main
 	autosave(bool)
-# esp
+## esp
 	weapon_enabled(bool)
 	weapon_boxes(bool)
 	weapon_outline(bool)
@@ -138,7 +138,7 @@
 	world_fog_color(Color)
 	world_fog_distance(int)
 	world_fog_density(int)
-# windows
+## windows
 	radar_enabled(bool)
 	radar_grenades(bool)
 	radar_c4(bool)
@@ -152,7 +152,7 @@
 	statusbar_enabled(bool)
 	statusbar_transparent(bool)
 	binds_enabled(bool)
-# glow
+## glow
 	weapon_enabled(bool)
 	weapon_style(int)
 	weapon_color(Color)
@@ -173,7 +173,7 @@
 	loot_color(Color)
 	width(int)
 	bloom(bool)
-# chams
+## chams
 	weapon_enabled(bool)
 	weapon_style(int)
 	weapon_visible_only(bool)
@@ -196,7 +196,7 @@
 	loot_style(int)
 	loot_visible_only(bool)
 	loot_color(Color)
-# misc
+## misc
 	bhop(bool)
 	thirdperson(bool)
 	thirdperson_spec(bool)
@@ -235,7 +235,7 @@
 	chatspam(bool)
 	unlock_cvars(bool)
 	disable_back(bool)
-# inventory
+## inventory
 	profile_enable(bool)
 	gc_vacbanned(int)
 	gc_ranking(int)
@@ -245,7 +245,7 @@
 	gc_friendly(int)
 	gc_leader(int)
 	gc_teaching(int)
-# ragebot
+## ragebot
 	enabled(bool)
 	silent_aim(bool)
 	hide_shots(bool)
@@ -254,7 +254,7 @@
 	multithreading(bool)
 	aim_lock(bool)
 	override_resolver(bool)
-# debug
+## debug
 	enabled(bool)
 	fake_lags(bool)
 	lag_amount(int)
@@ -262,11 +262,11 @@
 	fake_desync(bool)
 	fake_aa(bool)
 	desync_amount(float)
-# legitbot
+## legitbot
 	enabled(bool)
 	showfov(bool)
 	showfov_clr(Color)
-# antiaim
+## antiaim
 	enabled(bool)
 	yaw_base(int)
 	yaw_mod(int)
@@ -290,8 +290,8 @@
 	showdir(bool)
 	showdir_clr(Color)
 
-## Weapon config: 
-# ragebot
+# Weapon config: 
+## ragebot
 	aim_enabled(bool)
 	min_damage_override(bool)
 	min_damage(int)
@@ -316,7 +316,7 @@
 	auto_stop(bool)
 	autostop_conditions(int)
 	delay_shot(int)
-# legitbot
+## legitbot
 	enabled(bool)
 	mode(int)
 	key(int)
@@ -349,8 +349,8 @@
 	autofire(bool)
 	autofire_hitchance(int)
 
-## Team player config: 
-# esp
+# Team player config: 
+## esp
 	player_enabled(bool)
 	player_visible_only(bool)
 	player_boxes(bool)
@@ -386,12 +386,12 @@
 	color_offscreen(Color)
 	color_snaplines(Color)
 	color_bullettrace(Color)
-# glow
+## glow
 	player_enabled(bool)
 	player_visible_only(bool)
 	color_visible(Color)
 	color_invisible(Color)
-# chams
+## chams
 	player_enabled(bool)
 	player_fake_enabled(bool)
 	player_fake_style(int)
