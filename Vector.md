@@ -27,3 +27,11 @@
 ## float Length()
 
 			Returns Length ( sqrt(x*x + y*y + z*z) )
+			
+## float Length2D()
+
+			Returns Length in the place ( sqrt(x*x + y*y) )
+			
+## float DistTo(Vector other)
+
+			Returns distance to other Vector object ( (this - other).Length() )
