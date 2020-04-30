@@ -2,6 +2,7 @@
 
 C_BasePlayer derived from [C_BaseEntity](C_BaseEntity.md)
 
+## bool GetName();
 ## bool m_bStrafing();
 ## bool m_bHasDefuser();
 ## bool m_bClientSideAnimation();
