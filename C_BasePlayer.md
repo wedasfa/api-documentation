@@ -8,7 +8,7 @@ C_BasePlayer derived from [C_BaseEntity](C_BaseEntity.md)
 ## Vector m_ragPos();
 ## bool m_bGunGameImmunity();
 ## int m_iShotsFired();
-## int m_angEyeAngles();
+## QAngle m_angEyeAngles();
 ## int m_ArmorValue();
 ## int m_iPlayerState();
 ## bool m_bHasHeavyArmor();
