@@ -46,11 +46,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         bool IsWeapon()
         void GetRenderBounds(Vector& mins, Vector& maxs)
         int  EntIndex()
-        bool m_vecOrigin()
+        Vector m_vecOrigin()
         bool m_nModelIndex()
         bool m_iTeamNum()
         bool m_nRenderMode()
-        bool m_vecOrigin()
+        Vector m_vecOrigin()
         Vector  m_vecAngles
         bool m_bShouldGlow()
         bool m_bSpotted()
@@ -73,7 +73,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         Vector m_ragPos();
         bool m_bGunGameImmunity();
         int m_iShotsFired();
-        int m_angEyeAngles();
+        QAngle m_angEyeAngles();
         int m_ArmorValue();
         int m_iPlayerState();
         bool m_bHasHeavyArmor();
@@ -92,11 +92,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         int m_fFlags();
         int m_nTickBase();
         int m_iMoveState();
-        int m_vecViewOffset();
+        Vector m_vecViewOffset();
         Vector m_viewPunchAngle();
         Vector m_aimPunchAngle();
         Vector m_aimPunchAngleVel();
-        int m_vecVelocity();
+        Vector m_vecVelocity();
         int m_flGroundAccelLinearFracLastTime();
         int m_flNextAttack();
         int m_flFlashMaxAlpha();

@@ -3,12 +3,12 @@
 
  **Vector** used to describe point on world. Has three float's(x, y and z axis)
 
-## Vector(): 
+## Vector.new(): 
       
 			Creates new Vector object (+inf, +inf, +inf)
 			
 
-## Vector(float x, float y, float z): 
+## Vector.new(float x, float y, float z): 
       
 			Creates new Vector object (x, y, z)
 			
