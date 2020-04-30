@@ -67,6 +67,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
     
 **[C_BasePlayer](C_BasePlayer.md) : [C_BaseEntity](C_BaseEntity.md):**
 
+        string GetName();
         bool m_bStrafing();
         bool m_bHasDefuser();
         bool m_bClientSideAnimation();
