@@ -2,6 +2,8 @@
 
 *All methods can be called from draw callback only!*
 
+## void Line(Vector2 start, Vector2 end, Color clr);
+
 ## void Box(Vector2 start, Vector2 end, Color clr);
 
 ## void BoxFilled(Vector2 start, Vector2 end, Color clr);
