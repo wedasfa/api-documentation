@@ -31,7 +31,7 @@ C_BasePlayer derived from [C_BaseEntity](C_BaseEntity.md)
 ## Vector m_viewPunchAngle();
 ## Vector m_aimPunchAngle();
 ## Vector m_aimPunchAngleVel();
-## int m_vecVelocity();
+## Vector m_vecVelocity();
 ## int m_flGroundAccelLinearFracLastTime();
 ## int m_flNextAttack();
 ## int m_flFlashMaxAlpha();
