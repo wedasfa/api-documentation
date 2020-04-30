@@ -264,6 +264,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         
 **[IRender](IRender.md):**
 
+        void Line(Vector2 start, Vector2 end, Color clr);
         void Box(Vector2 start, Vector2 end, Color clr);
         void BoxFilled(Vector2 start, Vector2 end, Color clr);
         void Circle(Vector2 pos, float rad, int points, Color clr);
