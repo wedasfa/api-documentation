@@ -30,3 +30,12 @@
 * [Vector2](methods/vector2.md)
 * [trace\_t](methods/trace_t.md)
 
+## Examples
+
+* [Autohold bots](examples/autohold-bots.md)
+* [Custom ESP](examples/custom-esp.md)
+* [Indicators](examples/indicators.md)
+* [Internal radar](examples/internal-radar.md)
+* [Stop matchmaking](examples/stop-matchmaking.md)
+* [Animated clantag](examples/set-clantag-with-ffi.md)
+
