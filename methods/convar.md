@@ -14,6 +14,10 @@ Return ConVar value as an int
 
 Return ConVar value as an float
 
+## Color GetColor\(\);
+
+Return ConVar value as a Color
+
 ## void  SetInt\(int nValue\);
 
 Set ConVar value as an int
@@ -25,4 +29,8 @@ Set ConVar value as an string
 ## void  SetFloat\(float fNewValue\);
 
 Set ConVar value as an float
+
+## void SetColor\(Color value\);
+
+Set ConVar value as a Color
 
