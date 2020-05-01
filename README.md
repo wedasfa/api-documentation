@@ -298,6 +298,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT)  (Version 2.0.5) en
         void EspText(string classname, function callback);
         CheatVar Checkbox(string name);
         CheatVar SliderFloat(string name, float min, float max);
+        CheatVar Color(string name);
 
 **[Global variables available](Globals.md):**
 
