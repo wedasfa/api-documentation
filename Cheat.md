@@ -28,4 +28,5 @@ Possible class names:
 Registers UI switch element for current lua.
 ## CheatVar SliderFloat(string name, float min, float max);
 Registers UI slider(float) element for current lua.
-
+## CheatVar Color(string name);
+Registers UI Color picker element for current lua.
