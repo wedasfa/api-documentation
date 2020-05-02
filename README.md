@@ -155,46 +155,46 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**C\_BaseCombatWeapon**](methods/c_basecombatweapon.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
 
 ```text
-	GetProp                         
-	SetProp                         
-	IsPlayer                        
-	GetPlayer                       
-	IsWeapon                        
-	GetRenderBounds                 
-	EntIndex                        
-	m_flNextPrimaryAttack           
-	m_flNextSecondaryAttack         
-	m_iClip1                        
-	m_iClip2                        
-	m_zoomLevel                     
-	m_weaponMode                    
-	m_iPrimaryReserveAmmoCount      
-	m_flRecoilIndex                 
-	m_fAccuracyPenalty              
-	m_iBurstShotsRemaining          
-	m_fNextBurstShot                
-	m_bPinPulled                    
-	m_bReloadVisuallyComplete       
-	m_bBurstMode                    
-	m_fThrowTime                    
-	m_flThrowStrength               
-	m_bRedraw                       
-	m_flPostponeFireReadyTime       
-	IsGrenade                       
-	IsKnife                         
-	IsRifle                         
-	IsPistol                        
-	IsSniper                        
-	IsGun                           
-	IsReloading                     
-	GetInaccuracy                   
-	GetSpread                       
-	GetFireRate                     
-	GetMaxSpeed                     
-	GetMaxClip                      
-	GetWeaponDamage                 
-	GetWeaponRange                  
-	GetWeaponID                     
+    GetProp                         
+    SetProp                         
+    IsPlayer                        
+    GetPlayer                       
+    IsWeapon                        
+    GetRenderBounds                 
+    EntIndex                        
+    m_flNextPrimaryAttack           
+    m_flNextSecondaryAttack         
+    m_iClip1                        
+    m_iClip2                        
+    m_zoomLevel                     
+    m_weaponMode                    
+    m_iPrimaryReserveAmmoCount      
+    m_flRecoilIndex                 
+    m_fAccuracyPenalty              
+    m_iBurstShotsRemaining          
+    m_fNextBurstShot                
+    m_bPinPulled                    
+    m_bReloadVisuallyComplete       
+    m_bBurstMode                    
+    m_fThrowTime                    
+    m_flThrowStrength               
+    m_bRedraw                       
+    m_flPostponeFireReadyTime       
+    IsGrenade                       
+    IsKnife                         
+    IsRifle                         
+    IsPistol                        
+    IsSniper                        
+    IsGun                           
+    IsReloading                     
+    GetInaccuracy                   
+    GetSpread                       
+    GetFireRate                     
+    GetMaxSpeed                     
+    GetMaxClip                      
+    GetWeaponDamage                 
+    GetWeaponRange                  
+    GetWeaponID                     
 ```
 
 [**CUserCmd**](methods/cusercmd.md)**:**
@@ -404,6 +404,9 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     CheatVar Checkbox(string name);
     CheatVar SliderFloat(string name, float min, float max);
     CheatVar Color(string name);
+    float FireBullet(C_BasePlayer attacker, Vector start, Vector end)
+    Vector AngleToForward(QAngle angle)	
+    QAngle VectorToAngle(Vector vec)
 ```
 
 CClientState:
@@ -416,11 +419,11 @@ CClientState:
 
 Ragebot:
 ```text
-	void OverrideMinDamage(int index, int value);
-	void OverrideHitchance(int index, int value);
-	void ForceSafety(int index);
-	void ForceTarget(int index);
-	void IgnoreTarget(int index);
+    void OverrideMinDamage(int index, int value);
+    void OverrideHitchance(int index, int value);
+    void ForceSafety(int index);
+    void ForceTarget(int index);
+    void IgnoreTarget(int index);
 ```
 
 [**Fakelag**](methods/fakelag.md)**:**
