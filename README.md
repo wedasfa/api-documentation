@@ -379,6 +379,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 ```text
     void* CreateInterface(string module_name, string interface_name);
     void* PatternScan(string module_name, string pattern);
+    void RandomSeed(int seed);
+    int RandomInt(int min, int max);
     float RandomFloat(float min, float max);
 ```
 
