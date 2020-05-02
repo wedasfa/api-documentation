@@ -463,6 +463,7 @@ Ragebot:
     g_GlobalVars - CGlobalVarsBase
     g_MatSystem - IMaterialSystem
     g_DebugOverlay - IDebugOverlay
+    g_ClientState - CClientState
     cheat - Cheat
 ```
 
