@@ -44,3 +44,32 @@ Registers UI slider\(float\) element for current lua.
 
 Registers UI Color picker element for current lua.
 
+## float FireBullet\(C_BasePlayer attacker, Vector start, Vector end\);
+
+Simulate bullet with wall penetrating; Returns damage.
+
+## Vector AngleToForward\(QAngle angle\);
+
+Converts angle to vector.
+
+## QAngle VectorToAngle\(Vector vec\);
+
+Converts vector to angle.
+
+## bool IsMenuVisible\(\);
+
+Returns true if menu is visible.
+
+## Vector2 GetMousePos\(\);
+
+Returns mouse position.
+
+## bool IsKeyDown\(int key\);
+
+Returns true if key is down.
+Argument is [virtual key.](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
+
+## string GetCheatUserName\(\);
+
+Returns name of cheat user.
+
