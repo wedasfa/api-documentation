@@ -155,7 +155,46 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**C\_BaseCombatWeapon**](methods/c_basecombatweapon.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
 
 ```text
-
+	GetProp                         
+	SetProp                         
+	IsPlayer                        
+	GetPlayer                       
+	IsWeapon                        
+	GetRenderBounds                 
+	EntIndex                        
+	m_flNextPrimaryAttack           
+	m_flNextSecondaryAttack         
+	m_iClip1                        
+	m_iClip2                        
+	m_zoomLevel                     
+	m_weaponMode                    
+	m_iPrimaryReserveAmmoCount      
+	m_flRecoilIndex                 
+	m_fAccuracyPenalty              
+	m_iBurstShotsRemaining          
+	m_fNextBurstShot                
+	m_bPinPulled                    
+	m_bReloadVisuallyComplete       
+	m_bBurstMode                    
+	m_fThrowTime                    
+	m_flThrowStrength               
+	m_bRedraw                       
+	m_flPostponeFireReadyTime       
+	IsGrenade                       
+	IsKnife                         
+	IsRifle                         
+	IsPistol                        
+	IsSniper                        
+	IsGun                           
+	IsReloading                     
+	GetInaccuracy                   
+	GetSpread                       
+	GetFireRate                     
+	GetMaxSpeed                     
+	GetMaxClip                      
+	GetWeaponDamage                 
+	GetWeaponRange                  
+	GetWeaponID                     
 ```
 
 [**CUserCmd**](methods/cusercmd.md)**:**
@@ -324,9 +363,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void Line(Vector2 start, Vector2 end, Color clr);
     void Box(Vector2 start, Vector2 end, Color clr);
     void BoxFilled(Vector2 start, Vector2 end, Color clr);
+    void GradientBoxFilled(Vector2 start, Vector2 end, Color u_l, Color u_r, Color b_l, Color b_r) 
     void Circle(Vector2 pos, float rad, int points, Color clr);
     void CircleFilled(Vector2 pos, float rad, int points, Color clr);
     void Text(string text, Vector2 pos, Color clr, int size);
+    Vector2 CalcTextSize(string text, int size) 
     Vector2 ScreenPosition(Vector pos);
     void Circle3D(Vector pos, int points, float rad, Color clr);
     void CircleFilled3D(Vector pos, int points, float rad, Color clr);
@@ -365,6 +406,40 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     CheatVar Color(string name);
 ```
 
+CClientState:
+```text
+    int m_last_outgoing_command;
+    int m_choked_commands;
+    int m_last_command_ack;
+    int m_command_ack;
+```
+
+Ragebot:
+```text
+	void OverrideMinDamage(int index, int value);
+	void OverrideHitchance(int index, int value);
+	void ForceSafety(int index);
+	void ForceTarget(int index);
+	void IgnoreTarget(int index);
+```
+
+[**Fakelag**](methods/fakelag.md)**:**
+```text
+    bool Choking();
+    void ForceSend();
+    int SentPackets();
+    void SetState();
+```
+
+[**IDebugOverlay**](methods/debugoverlay.md)**:**
+```text
+    void AddBoxOverlay(Vector origin, Vector mins, const Vector max, QAngle orientation, int r, int g, int b, int a, float duration)
+    void AddSphereOverlay(Vector vOrigin, float flRadius, int nTheta, int nPhi, int r, int g, int b, int a, float flDuration)
+    void AddTriangleOverlay(Vector p1, Vector p2, Vector p3, int r, int g, int b, int a, bool noDepthTest, float duration)
+    void AddLineOverlay(Vector origin, Vector dest, int r, int g, int b, bool noDepthTest, float duration)
+    void AddCapsuleOverlay(Vector mins, Vector maxs, float pillradius, int r, int g, int b, int a, float duration)
+```
+
 [**Global variables available**](methods/globals.md)**:**
 
 ```text
@@ -378,6 +453,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     g_CVar - ICvar
     g_GlobalVars - CGlobalVarsBase
     g_MatSystem - IMaterialSystem
+    g_DebugOverlay - IDebugOverlay
     cheat - Cheat
 ```
 
