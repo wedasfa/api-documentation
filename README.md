@@ -406,9 +406,13 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     CheatVar Checkbox(string name);
     CheatVar SliderFloat(string name, float min, float max);
     CheatVar Color(string name);
-    float FireBullet(C_BasePlayer attacker, Vector start, Vector end)
-    Vector AngleToForward(QAngle angle)	
-    QAngle VectorToAngle(Vector vec)
+    float FireBullet(C_BasePlayer attacker, Vector start, Vector end);
+    Vector AngleToForward(QAngle angle)	;
+    QAngle VectorToAngle(Vector vec);
+    bool IsMenuVisible();
+    Vector2 GetMousePos();
+    bool IsKeyDown(int key);
+    string GetCheatUserName();
 ```
 
 CClientState:
