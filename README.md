@@ -37,11 +37,15 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     float y
     float z
     float Length()
+    float Length2D()
+    float Dot(Vector)
+    Vector Cross(Vector)
 ```
 
 [**QAngle**](methods/qangle.md)**:**
 
 ```text
+    QAngle(), QAngle(float, float, float)
     float pitch;
     float yaw;
     float roll;
@@ -56,6 +60,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     bool GetPlayer()
     bool IsWeapon()
     void GetRenderBounds(Vector& mins, Vector& maxs)
+    Vector GetRenderOrigin()
+    QAngle GetRenderAngles()
     int  EntIndex()
     Vector m_vecOrigin()
     bool m_nModelIndex()
@@ -80,6 +86,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**C\_BasePlayer**](methods/c_baseplayer.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
 
 ```text
+    bool IsVisible(C_BasePlayer* target, Vector from, Vector to);
+    Vector GetEyePosition();
+    C_BaseCombatWeapon* GetActiveWeapon();
+    Vector GetHitboxCenter(int hitbox_index);
+    int GetSequenceActivity(int sequence);
     string GetName();
     bool m_bStrafing();
     bool m_bHasDefuser();
@@ -138,6 +149,13 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     Vector m_vecPlayerPatchEconIndices();
     bool IsTeamMate();
     bool IsDormant();
+```
+
+
+[**C\_BaseCombatWeapon**](methods/c_basecombatweapon.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
+
+```text
+
 ```
 
 [**CUserCmd**](methods/cusercmd.md)**:**
