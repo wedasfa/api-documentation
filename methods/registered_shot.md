@@ -16,7 +16,7 @@ How many ticks was backtracked.
 0 - hit
 1 - resolver
 2 - spread
-3 - occulusion
+3 - occlusion
 
 ## float spread_degrees;
 Spread angle.
