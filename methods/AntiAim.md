@@ -1,41 +1,41 @@
 # AntiAim
 
-##void OverrideInverter\(bool value\); 
+## void OverrideInverter\(bool value\); 
 
 Override anti-aim inverter    
 
-##void OverrideLimit\(float value\);
+## void OverrideLimit\(float value\);
 
 Override desync limit      
 
-##void OverrideYawOffset\(float value\);
+## void OverrideYawOffset\(float value\);
 
 Override yaw offset    
 
-##void OverrideLBYOffset\(float value\);
+## void OverrideLBYOffset\(float value\);
 
 Override lby offset from view yaw     
 
-##void OverridePitch\(float value\);
+## void OverridePitch\(float value\);
 
 Override pitch antiaim value     
 
-##bool GetInverterState\(\); 
+## bool GetInverterState\(\); 
 
 Returns desync inverter state  
    
-##float GetMinDesyncDelta\(\);
+## float GetMinDesyncDelta\(\);
 
 Returns desync delta ( -58 by default )     
 
-##float GetMaxDesyncDelta\(\);
+## float GetMaxDesyncDelta\(\);
 
 Returns max desync delta ( 58 by default )     
 
-##float GetFakeRotation\(\);
+## float GetFakeRotation\(\);
 
 Returns fake rotation     
 
-##float GetCurrentRealRotation\(\);
+## float GetCurrentRealRotation\(\);
 
 Returns current real yaw

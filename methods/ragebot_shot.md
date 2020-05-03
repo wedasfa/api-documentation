@@ -1,4 +1,4 @@
-# ragebot_shot arg
+# Shot
 
 Arg provided in ragebot_shot event
 
