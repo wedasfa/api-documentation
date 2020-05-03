@@ -474,7 +474,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**Global variables available**](methods/globals.md)**:**
 
 ```text
-	AntiAim - AntiAim
+    AntiAim - AntiAim
     g_Panorama - Panorama
     g_Config - Config
     Utils - Utils
@@ -487,8 +487,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     g_MatSystem - IMaterialSystem
     g_DebugOverlay - IDebugOverlay
     g_ClientState - CClientState
-	Ragebot - Ragebot
-	Exploits - Exploits
+    Ragebot - Ragebot
+    Exploits - Exploits
     cheat - Cheat
 ```
 
