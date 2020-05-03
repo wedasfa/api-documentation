@@ -415,7 +415,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     string GetCheatUserName();
 ```
 
-CClientState:
+[**CClientState**](methods/clientstate.md)**:**
 ```text
     int m_last_outgoing_command;
     int m_choked_commands;
@@ -423,7 +423,7 @@ CClientState:
     int m_command_ack;
 ```
 
-Ragebot:
+[**Ragebot**](methods/ragebot.md)**:**
 ```text
     void OverrideMinDamage(int index, int value);
     void OverrideHitchance(int index, int value);
@@ -449,9 +449,32 @@ Ragebot:
     void AddCapsuleOverlay(Vector mins, Vector maxs, float pillradius, int r, int g, int b, int a, float duration)
 ```
 
+[**AntiAim**](methods/AntiAim.md)**:**
+```text
+	void OverrideInverter(bool) 
+	void OverrideLimit(float)
+	void OverrideYawOffset(float)
+	void OverrideLBYOffset(float)
+	void OverridePitch(float)
+	bool GetInverterState() 
+	float GetMinDesyncDelta()
+	float GetMaxDesyncDelta()
+	float GetFakeRotation()
+	float GetCurrentRealRotation()
+```
+
+[**Exploits**](methods/exploits.md)**:**
+```text
+	float GetCharge()
+	void AllowCharge(bool)
+	void ForceTeleport()
+	void ForceCharge()
+```
+
 [**Global variables available**](methods/globals.md)**:**
 
 ```text
+	AntiAim - AntiAim
     g_Panorama - Panorama
     g_Config - Config
     Utils - Utils
@@ -464,6 +487,8 @@ Ragebot:
     g_MatSystem - IMaterialSystem
     g_DebugOverlay - IDebugOverlay
     g_ClientState - CClientState
+	Ragebot - Ragebot
+	Exploits - Exploits
     cheat - Cheat
 ```
 

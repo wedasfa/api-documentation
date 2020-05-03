@@ -46,6 +46,18 @@
 
 [IMaterialSystem](imaterialsystem.md) instance. Part of Source Engine.
 
+### g\_DebugOverlay
+[IDebugOverlay](debugoverlay.md) instance. Part of source Engine.
+
+### g\_ClientState
+[CClientState](clientstate.md) instance. Part of source Engine.
+
+### Ragebot
+[Ragebot](ragebot.md) instance. Allows to work with ragebot logic.
+
+### Exploits
+[Exploits](exploits.md) instance. Allows to work with exploits.
+
 ## Global functions:
 
 ### print\(string\)
