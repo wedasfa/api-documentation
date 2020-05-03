@@ -22,6 +22,7 @@
 * [IMaterial](methods/imaterial.md)
 * [IMaterialSystem](methods/imaterialsystem.md)
 * [INetChannelInfo](methods/inetchannelinfo.md)
+* [IDebugOverlay](methods/debugoverlay.md)
 * [IRender](methods/irender.md)
 * [Panorama](methods/panorama.md)
 * [QAngle](methods/qangle.md)
