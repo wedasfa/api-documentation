@@ -14,13 +14,13 @@ Registering callbacks. Possible event names:
 
 **destroy** - called when script destroyed. 0 arguments passed to callack.
 
-**registered_shot** - called when registered ragebot shot. 1 argument passed to callback - [registered_shot](registered_shot.md)
+**registered\_shot** - called when registered ragebot shot. 1 argument passed to callback - [registered\_shot](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/registered_shot.md)
 
-**ragebot_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot_shot](ragebot_shot.md)
+**ragebot\_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot\_shot](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/ragebot_shot.md)
 
-**fire_bullet** - called when other players shooting. 1 argument passed to callback - [DT_FireBullets](DT_TEFireBullets.md)
+**fire\_bullet** - called when other players shooting. 1 argument passed to callback - [DT\_FireBullets](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/DT_TEFireBullets.md)
 
-**override_view** - called when game calculating view. 1 argument passed to callback - [CViewSetup](CViewSetup.md)
+**override\_view** - called when game calculating view. 1 argument passed to callback - [CViewSetup](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/CViewSetup.md)
 
 ## void EspText\(string classname, function callback\);
 
@@ -46,7 +46,7 @@ Registers UI slider\(float\) element for current lua.
 
 Registers UI Color picker element for current lua.
 
-## float FireBullet\(C_BasePlayer attacker, Vector start, Vector end\);
+## float FireBullet\(C\_BasePlayer attacker, Vector start, Vector end\);
 
 Simulate bullet with wall penetrating; Returns damage.
 
@@ -68,8 +68,7 @@ Returns mouse position.
 
 ## bool IsKeyDown\(int key\);
 
-Returns true if key is down.
-Argument is [virtual key.](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
+Returns true if key is down. Argument is [virtual key.](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
 
 ## string GetCheatUserName\(\);
 

@@ -151,8 +151,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     bool IsDormant();
 ```
 
-
-[**C\_BaseCombatWeapon**](methods/c_basecombatweapon.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
+[**C\_BaseCombatWeapon**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/c_basecombatweapon.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
 
 ```text
     GetProp                         
@@ -194,7 +193,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     GetMaxClip                      
     GetWeaponDamage                 
     GetWeaponRange                  
-    GetWeaponID                     
+    GetWeaponID
 ```
 
 [**CUserCmd**](methods/cusercmd.md)**:**
@@ -407,7 +406,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     CheatVar SliderFloat(string name, float min, float max);
     CheatVar Color(string name);
     float FireBullet(C_BasePlayer attacker, Vector start, Vector end);
-    Vector AngleToForward(QAngle angle)	;
+    Vector AngleToForward(QAngle angle)    ;
     QAngle VectorToAngle(Vector vec);
     bool IsMenuVisible();
     Vector2 GetMousePos();
@@ -415,7 +414,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     string GetCheatUserName();
 ```
 
-[**CClientState**](methods/clientstate.md)**:**
+[**CClientState**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/clientstate.md)**:**
+
 ```text
     int m_last_outgoing_command;
     int m_choked_commands;
@@ -423,7 +423,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     int m_command_ack;
 ```
 
-[**Ragebot**](methods/ragebot.md)**:**
+[**Ragebot**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/ragebot.md)**:**
+
 ```text
     void OverrideMinDamage(int index, int value);
     void OverrideHitchance(int index, int value);
@@ -432,7 +433,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void IgnoreTarget(int index);
 ```
 
-[**Fakelag**](methods/fakelag.md)**:**
+[**Fakelag**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/fakelag.md)**:**
+
 ```text
     bool Choking();
     void ForceSend();
@@ -440,7 +442,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void SetState();
 ```
 
-[**IDebugOverlay**](methods/debugoverlay.md)**:**
+[**IDebugOverlay**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/debugoverlay.md)**:**
+
 ```text
     void AddBoxOverlay(Vector origin, Vector mins, const Vector max, QAngle orientation, int r, int g, int b, int a, float duration)
     void AddSphereOverlay(Vector vOrigin, float flRadius, int nTheta, int nPhi, int r, int g, int b, int a, float flDuration)
@@ -449,26 +452,28 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void AddCapsuleOverlay(Vector mins, Vector maxs, float pillradius, int r, int g, int b, int a, float duration)
 ```
 
-[**AntiAim**](methods/AntiAim.md)**:**
+[**AntiAim**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/AntiAim.md)**:**
+
 ```text
-	void OverrideInverter(bool) 
-	void OverrideLimit(float)
-	void OverrideYawOffset(float)
-	void OverrideLBYOffset(float)
-	void OverridePitch(float)
-	bool GetInverterState() 
-	float GetMinDesyncDelta()
-	float GetMaxDesyncDelta()
-	float GetFakeRotation()
-	float GetCurrentRealRotation()
+    void OverrideInverter(bool) 
+    void OverrideLimit(float)
+    void OverrideYawOffset(float)
+    void OverrideLBYOffset(float)
+    void OverridePitch(float)
+    bool GetInverterState() 
+    float GetMinDesyncDelta()
+    float GetMaxDesyncDelta()
+    float GetFakeRotation()
+    float GetCurrentRealRotation()
 ```
 
-[**Exploits**](methods/exploits.md)**:**
+[**Exploits**](https://github.com/neverlosecc/api-documentation/tree/a3acb7c7ab788f1f1536b470e3259f16341eec6c/methods/exploits.md)**:**
+
 ```text
-	float GetCharge()
-	void AllowCharge(bool)
-	void ForceTeleport()
-	void ForceCharge()
+    float GetCharge()
+    void AllowCharge(bool)
+    void ForceTeleport()
+    void ForceCharge()
 ```
 
 [**Global variables available**](methods/globals.md)**:**

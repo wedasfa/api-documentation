@@ -47,16 +47,20 @@
 [IMaterialSystem](imaterialsystem.md) instance. Part of Source Engine.
 
 ### g\_DebugOverlay
-[IDebugOverlay](debugoverlay.md) instance. Part of source Engine.
+
+[IDebugOverlay](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/debugoverlay.md) instance. Part of source Engine.
 
 ### g\_ClientState
-[CClientState](clientstate.md) instance. Part of source Engine.
+
+[CClientState](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/clientstate.md) instance. Part of source Engine.
 
 ### Ragebot
-[Ragebot](ragebot.md) instance. Allows to work with ragebot logic.
+
+[Ragebot](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/ragebot.md) instance. Allows to work with ragebot logic.
 
 ### Exploits
-[Exploits](exploits.md) instance. Allows to work with exploits.
+
+[Exploits](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/exploits.md) instance. Allows to work with exploits.
 
 ## Global functions:
 

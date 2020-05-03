@@ -4,6 +4,8 @@
 
 ## Methods
 
+* [AntiAim](methods/antiaim.md)
+* [Clientstate](methods/clientstate.md)
 * [CGlobalVarsBase](methods/cglobalvarsbase.md)
 * [CUserCmd](methods/cusercmd.md)
 * [C\_BaseEntity](methods/c_baseentity.md)
@@ -14,6 +16,7 @@
 * [Color](methods/color.md)
 * [ConVar](methods/convar.md)
 * [Config](methods/config.md)
+* [Exploits](methods/exploits.md)
 * [Globals](methods/globals.md)
 * [ICvar](methods/icvar.md)
 * [IEngineClient](methods/iengineclient.md)
@@ -25,6 +28,8 @@
 * [IDebugOverlay](methods/debugoverlay.md)
 * [IRender](methods/irender.md)
 * [Panorama](methods/panorama.md)
+* [Ragebot](methods/ragebot/README.md)
+  * [Shot](methods/ragebot/shot.md)
 * [QAngle](methods/qangle.md)
 * [Utils](methods/utils.md)
 * [Vector](methods/vector.md)

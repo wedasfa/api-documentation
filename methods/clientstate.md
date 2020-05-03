@@ -1,9 +1,12 @@
-# CClientState
+# Clientstate
 
-## int m_last_outgoing_command;
+## CClientState
 
-## int m_choked_commands;
+### int m\_last\_outgoing\_command;
 
-## int m_last_command_ack;
+### int m\_choked\_commands;
 
-## int m_command_ack;
+### int m\_last\_command\_ack;
+
+### int m\_command\_ack;
+
