@@ -24,18 +24,18 @@ Override pitch antiaim value
 
 Returns desync inverter state  
    
-##float GetMinDesyncDelta\(\)
+##float GetMinDesyncDelta\(\);
 
 Returns desync delta ( -58 by default )     
 
-##float GetMaxDesyncDelta\(\)
+##float GetMaxDesyncDelta\(\);
 
 Returns max desync delta ( 58 by default )     
 
-##float GetFakeRotation\(\)
+##float GetFakeRotation\(\);
 
 Returns fake rotation     
 
-##float GetCurrentRealRotation\(\)
+##float GetCurrentRealRotation\(\);
 
 Returns current real yaw
