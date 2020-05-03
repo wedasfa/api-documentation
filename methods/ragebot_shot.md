@@ -1,5 +1,7 @@
 # ragebot_shot arg
 
+Arg provided in ragebot_shot event
+
 ##int index;
 
 Target entity.
