@@ -1,29 +1,31 @@
 # ragebot_shot arg
 
-##int index;
+Arg provided in ragebot_shot event
+
+## int index;
 
 Target entity.
 
-##int backtrack;
+## int backtrack;
 
 How many ticks backtracked.
 
-##int hitchance;
+## int hitchance;
 
 Chance to hit target.
 
-##int damage;
+## int damage;
 
 Estimated damage.
 
-##int hitgroup;
+## int hitgroup;
 
 Hitgroup
 
-##Vector shoot_pos;
+## Vector shoot_pos;
 
 Shot position.
 
-##QAngle angle;
+## QAngle angle;
 
 Aim angle.
