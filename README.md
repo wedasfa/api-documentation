@@ -416,7 +416,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     int m_command_ack;
 ```
 
-[**Ragebot**](methods/ragebot.md)**:**
+[**Ragebot**](methods/ragebot/README.md)**:**
 ```text
     void OverrideMinDamage(int index, int value);
     void OverrideHitchance(int index, int value);
