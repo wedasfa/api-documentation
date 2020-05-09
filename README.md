@@ -67,7 +67,6 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     bool m_nModelIndex()
     bool m_iTeamNum()
     bool m_nRenderMode()
-    Vector m_vecOrigin()
     Vector  m_vecAngles
     bool m_bShouldGlow()
     bool m_bSpotted()
@@ -134,7 +133,6 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     int m_nSequence();
     int m_iObserverMode();
     string m_szLastPlaceName();
-    int m_flLowerBodyYawTarget();
     Vector m_angRotation();
     int m_flDuckSpeed();
     int m_flDuckAmount();
