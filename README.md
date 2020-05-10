@@ -358,11 +358,14 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void Circle(Vector2 pos, float rad, int points, Color clr);
     void CircleFilled(Vector2 pos, float rad, int points, Color clr);
     void Text(string text, Vector2 pos, Color clr, int size);
-    Vector2 CalcTextSize(string text, int size) 
+    void Text(string text, Vector2 pos, Color clr, int size, Font* font);
+    Vector2 CalcTextSize(string text, int size);
+    Vector2 CalcTextSize(string text, int size, Font* font);
     Vector2 ScreenPosition(Vector pos);
     void Circle3D(Vector pos, int points, float rad, Color clr);
     void CircleFilled3D(Vector pos, int points, float rad, Color clr);
     void CylinderFilled3D(Vector pos, int points, float rad, float height, Color clr)
+    Font* InitFont\(string name, int size\);
 ```
 
 [**Utils**](methods/utils.md)**:**

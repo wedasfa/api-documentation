@@ -12,6 +12,16 @@ _All methods can be called from draw callback only!_
 
 ## void Text\(string text, Vector2 pos, Color clr, int size\);
 
+## void Text\(string text, Vector2 pos, Color clr, int size, Font* font\);
+
+## Vector2 CalcTextSize\(string text, int size\);
+
+Calculates size of provided text
+
+## Vector2 CalcTextSize\(string text, int size, Font* font\);
+
+Calculates size of provided text 
+
 ## Vector2 ScreenPosition\(Vector pos\);
 
 Converts world position to screen position.
@@ -54,3 +64,6 @@ Renders cylinder in world.
 
 **clr** - circle color
 
+## Font* InitFont\(string name, int size\);
+
+Initializes font
