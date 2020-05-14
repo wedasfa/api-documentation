@@ -10,7 +10,7 @@
 * [CUserCmd](methods/cusercmd.md)
 * [C\_BaseEntity](methods/c_baseentity.md)
 * [C\_BasePlayer](methods/c_baseplayer.md)
-* [C\_BsaeCombatWeapon](methods/c_basecombatweapon.md)
+* [C\_BaseCombatWeapon](methods/c_basecombatweapon.md)
 * [Cheat](methods/cheat.md)
 * [CheatVar](methods/cheatvar.md)
 * [CheatVars](methods/cheatvars.md)
