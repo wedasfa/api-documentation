@@ -497,7 +497,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     Ragebot - Ragebot
     Exploits - Exploits
     cheat - Cheat
-	Http - Http
-	g_Beams - Beams
+    Http - Http
+    g_Beams - Beams
 ```
 
