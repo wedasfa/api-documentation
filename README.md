@@ -80,7 +80,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     int m_fEffects();
     int m_nAnimationParity();
     void SetModelIndex(int index);
-	int GetClassId();
+    int GetClassId();
 ```
 
 [**C\_BasePlayer**](methods/c_baseplayer.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
