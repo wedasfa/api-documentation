@@ -12,7 +12,7 @@
 
 ### g\_Config
 
-[Config](https://github.com/neverlosecc/api-documentation/tree/3c0c32d4983479d96d233701c33cf7dec63afbb4/Config/README.md) instance. Allows you to control cheat variables.
+[Config](config.md) instance. Allows you to control cheat variables.
 
 ### Utils
 
@@ -28,7 +28,7 @@
 
 ### g\_EngineTrace
 
-[IEngineTrace](https://github.com/neverlosecc/api-documentation/tree/3c0c32d4983479d96d233701c33cf7dec63afbb4/IEngineTrace.md) instance. Part of Source Engine.
+[IEngineTrace](IEngineTrace.md) instance. Part of Source Engine.
 
 ### g\_EntityList
 
@@ -48,19 +48,27 @@
 
 ### g\_DebugOverlay
 
-[IDebugOverlay](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/debugoverlay.md) instance. Part of source Engine.
+[IDebugOverlay](debugoverlay.md) instance. Part of source Engine.
 
 ### g\_ClientState
 
-[CClientState](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/clientstate.md) instance. Part of source Engine.
+[CClientState](clientstate.md) instance. Part of source Engine.
 
 ### Ragebot
 
-[Ragebot](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/ragebot.md) instance. Allows to work with ragebot logic.
+[Ragebot](ragebot.md) instance. Allows to work with ragebot logic.
 
 ### Exploits
 
-[Exploits](https://github.com/neverlosecc/api-documentation/tree/3a04ef10ffb23dd5a75fe64fe3abb6231d05e118/methods/exploits.md) instance. Allows to work with exploits.
+[Exploits](exploits.md) instance. Allows to work with exploits.
+
+### Http
+
+[Http](http.md) instance. Allows to send http requests.
+
+### g\_Beams
+
+[Beams](beams.md) instance. Allows to create beams.
 
 ## Global functions:
 

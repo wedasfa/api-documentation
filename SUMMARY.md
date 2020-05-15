@@ -22,6 +22,7 @@
 * [Exploits](methods/exploits.md)
 * [Fakelag](methods/fakelag.md)
 * [Globals](methods/globals.md)
+* [Http](methods/http.md)
 * [ICvar](methods/icvar.md)
 * [IEngineClient](methods/iengineclient.md)
 * [IEntityList](methods/ientitylist.md)

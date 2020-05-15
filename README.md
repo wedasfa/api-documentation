@@ -21,7 +21,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**Vector2**](methods/vector2.md)**:**
 
 ```text
-    Vector2(float, float)
+    Vector2(float, float);=
     operator+
     operator-
     float x
@@ -54,32 +54,33 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**C\_BaseEntity**](methods/c_baseentity.md)**:**
 
 ```text
-    int/float/Vector/string GetProp(string table, string name)
-    void SetProp(string table, string name, int/float/Vector/string value)
-    bool IsPlayer()
-    bool GetPlayer()
-    bool IsWeapon()
-    void GetRenderBounds(Vector& mins, Vector& maxs)
-    Vector GetRenderOrigin()
-    QAngle GetRenderAngles()
-    int  EntIndex()
-    Vector m_vecOrigin()
-    bool m_nModelIndex()
-    bool m_iTeamNum()
-    bool m_nRenderMode()
-    Vector  m_vecAngles
-    bool m_bShouldGlow()
-    bool m_bSpotted()
-    float m_flC4Blow()
-    int m_nAnimationSequence()
-    int m_nSkin()
-    int m_nBody()
-    float m_flCycle()
-    float m_flAnimTime()
-    float m_flOldAnimTime()
-    int m_fEffects()
-    int m_nAnimationParity()
-    void SetModelIndex(int index)
+    int/float/Vector/string GetProp(string table, string name);
+    void SetProp(string table, string name, int/float/Vector/string value);
+    bool IsPlayer();
+    bool GetPlayer();
+    bool IsWeapon();
+    void GetRenderBounds(Vector& mins, Vector& maxs);
+    Vector GetRenderOrigin();
+    QAngle GetRenderAngles();
+    int  EntIndex();
+    Vector m_vecOrigin();
+    bool m_nModelIndex();
+    bool m_iTeamNum();
+    bool m_nRenderMode();
+    Vector  m_vecAngles;
+    bool m_bShouldGlow();
+    bool m_bSpotted();
+    float m_flC4Blow();
+    int m_nAnimationSequence();
+    int m_nSkin();
+    int m_nBody();
+    float m_flCycle();
+    float m_flAnimTime();
+    float m_flOldAnimTime();
+    int m_fEffects();
+    int m_nAnimationParity();
+    void SetModelIndex(int index);
+	int GetClassId();
 ```
 
 [**C\_BasePlayer**](methods/c_baseplayer.md) **:** [**C\_BaseEntity**](methods/c_baseentity.md)**:**
@@ -259,10 +260,10 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 
 ```text
     bool GetBool(string keyName = nullptr, bool defaultValue = false);
-    float GetFloat(string keyName = nullptr, float defaultValue = 0.0f)
-    int GetInt(string keyName = nullptr, int defaultValue = 0)
-    void SetBool(string keyName, bool value) = 0;
-    void SetInt(string keyName, int value) = 0;
+    float GetFloat(string keyName = nullptr, float defaultValue = 0.0f);
+    int GetInt(string keyName = nullptr, int defaultValue = 0);
+    void SetBool(string keyName, bool value);
+    void SetInt(string keyName, int value);
     void SetFloat(string keyName, float value);
 ```
 
@@ -317,7 +318,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     int NumberOfEntities(bool bIncludeNonNetworkable);
 ```
 
-[**IEngineTrace**](https://github.com/neverlosecc/api-documentation/tree/3c0c32d4983479d96d233701c33cf7dec63afbb4/IEngineTrace.md)**:**
+[**IEngineTrace**](methods/IEngineTrace.md)**:**
 
 ```text
     trace_t TraceRay(Vector start, Vector end, C_BaseEntity* skip, int mask);
@@ -465,6 +466,18 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 	void ForceCharge()
 ```
 
+[**Http**](methods/http.md)**:**
+```text
+	string Get(string);
+	string Post(string, string);
+```
+
+[**Beams**](methods/beams.md)**:**
+```text
+	void Line(Vector, Vector, Color);
+	void Circle(Vector, Color);
+```
+
 [**Global variables available**](methods/globals.md)**:**
 
 ```text
@@ -484,5 +497,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     Ragebot - Ragebot
     Exploits - Exploits
     cheat - Cheat
+	Http - Http
+	g_Beams - Beams
 ```
 

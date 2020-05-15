@@ -78,3 +78,4 @@ Allows you to set any \[netvar\]\([https://developer.valvesoftware.com/wiki/Netw
 
 ## void SetModelIndex\(int index\)
 
+## int GetClassId()
