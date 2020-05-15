@@ -21,7 +21,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 [**Vector2**](methods/vector2.md)**:**
 
 ```text
-    Vector2(float, float);=
+    Vector2(float, float)
     operator+
     operator-
     float x
