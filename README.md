@@ -446,36 +446,36 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
 
 [**AntiAim**](methods/AntiAim.md)**:**
 ```text
-	void OverrideInverter(bool) 
-	void OverrideLimit(float)
-	void OverrideYawOffset(float)
-	void OverrideLBYOffset(float)
-	void OverridePitch(float)
-	bool GetInverterState() 
-	float GetMinDesyncDelta()
-	float GetMaxDesyncDelta()
-	float GetFakeRotation()
-	float GetCurrentRealRotation()
+    void OverrideInverter(bool) 
+    void OverrideLimit(float)
+    void OverrideYawOffset(float)
+    void OverrideLBYOffset(float)
+    void OverridePitch(float)
+    bool GetInverterState() 
+    float GetMinDesyncDelta()
+    float GetMaxDesyncDelta()
+    float GetFakeRotation()
+    float GetCurrentRealRotation()
 ```
 
 [**Exploits**](methods/exploits.md)**:**
 ```text
-	float GetCharge()
-	void AllowCharge(bool)
-	void ForceTeleport()
-	void ForceCharge()
+    float GetCharge()
+    void AllowCharge(bool)
+    void ForceTeleport()
+    void ForceCharge()
 ```
 
 [**Http**](methods/http.md)**:**
 ```text
-	string Get(string);
-	string Post(string, string);
+    string Get(string);
+    string Post(string, string);
 ```
 
 [**Beams**](methods/beams.md)**:**
 ```text
-	void Line(Vector, Vector, Color);
-	void Circle(Vector, Color);
+    void Line(Vector, Vector, Color);
+    void Circle(Vector, Color);
 ```
 
 [**Global variables available**](methods/globals.md)**:**
