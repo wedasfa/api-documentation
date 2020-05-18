@@ -4,7 +4,7 @@
 
 Registering callbacks. Possible event names:
 
-**draw** - game thread, allows you do draw any primitives and has safe access to any game functions. 0 arguments passed to callack.
+**draw** - game thread, allows you do draw any primitives and has safe access to any game functions. 0 arguments passed to callback.
 
 **createmove** - createmove before cheat prediction. 1 argument passed to callback - [C\_UserCmd](cusercmd.md)
 
