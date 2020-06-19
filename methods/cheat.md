@@ -42,9 +42,17 @@ Registers UI switch element for current lua.
 
 Registers UI slider\(float\) element for current lua.
 
+## CheatVar SliderInt\(string name, int min, int max\);
+
+Registers UI slider\(int\) element for current lua.
+
 ## CheatVar Color\(string name\);
 
-Registers UI Color picker element for current lua.
+Registers UI color picker element for current lua.
+
+## CheatVar Combo\(string name, table elements\);
+
+Registers UI combo\(int\) element for current lua.
 
 ## float FireBullet\(C\_BasePlayer attacker, Vector start, Vector end\);
 
