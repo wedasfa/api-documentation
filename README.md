@@ -464,6 +464,8 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void AllowCharge(bool)
     void ForceTeleport()
     void ForceCharge()
+    void OverrideDoubleTapSpeed(int speed)
+    void OverrideDoubleTapPreserve(int preserve)
 ```
 
 [**Http**](methods/http.md)**:**
