@@ -428,6 +428,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void ForceSafety(int index);
     void ForceTarget(int index);
     void IgnoreTarget(int index);
+    void SetTargetPriority(int index, int priority);
+    void SetHitboxPriority(int index, int hitbox, int priority);
+    void ForceHitboxSafety(int index, int hitbox);
+    void EnableHitbox(int index, int hitbox, bool state);
+    void EnableMultipoints(int index, int hitbox, bool state);
 ```
 
 [**Fakelag**](methods/fakelag.md)**:**
