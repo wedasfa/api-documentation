@@ -44,7 +44,7 @@ Registers UI slider\(float\) element for current lua.
 
 ## CheatVar SliderInt\(string name, int min, int max\);
 
-Registers UI slider\(int\) element for current lua.
+Registers UI slider\(int\) element for current lua
 
 ## CheatVar Color\(string name\);
 

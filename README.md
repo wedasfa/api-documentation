@@ -262,6 +262,7 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     bool GetBool(string keyName = nullptr, bool defaultValue = false);
     float GetFloat(string keyName = nullptr, float defaultValue = 0.0f);
     int GetInt(string keyName = nullptr, int defaultValue = 0);
+    Color GetColor(string keyName = nullptr, int defaultValue = Color(1, 1, 1));
     void SetBool(string keyName, bool value);
     void SetInt(string keyName, int value);
     void SetFloat(string keyName, float value);
@@ -400,7 +401,9 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void EspText(string classname, function callback);
     CheatVar Checkbox(string name);
     CheatVar SliderFloat(string name, float min, float max);
+    CheatVar SliderInt(string name, int min, int max);
     CheatVar Color(string name);
+    CheatVar Combo(string name, table values);
     float FireBullet(C_BasePlayer attacker, Vector start, Vector end);
     Vector AngleToForward(QAngle angle)	;
     QAngle VectorToAngle(Vector vec);
@@ -425,6 +428,11 @@ neverlose.cc uses [LuaJIT](https://github.com/LuaJIT/LuaJIT) \(Version 2.0.5\) e
     void ForceSafety(int index);
     void ForceTarget(int index);
     void IgnoreTarget(int index);
+    void SetTargetPriority(int index, int priority);
+    void SetHitboxPriority(int index, int hitbox, int priority);
+    void ForceHitboxSafety(int index, int hitbox);
+    void EnableHitbox(int index, int hitbox, bool state);
+    void EnableMultipoints(int index, int hitbox, bool state);
 ```
 
 [**Fakelag**](methods/fakelag.md)**:**
