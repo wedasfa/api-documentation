@@ -4,7 +4,7 @@
 
 Registering callbacks. Possible event names:
 
-**draw** - game thread, allows you do draw any primitives and has safe access to any game functions. 0 arguments passed to callack.
+**draw** - game thread, allows you do draw any primitives and has safe access to any game functions. 0 arguments passed to callback.
 
 **createmove** - createmove before cheat prediction. 1 argument passed to callback - [C\_UserCmd](cusercmd.md)
 
@@ -48,11 +48,11 @@ Registers UI slider\(int\) element for current lua
 
 ## CheatVar Color\(string name\);
 
-Registers UI Color picker element for current lua.
+Registers UI color picker element for current lua.
 
-## CheatVar Combo\(string name, table values\);
+## CheatVar Combo\(string name, table elements\);
 
-Registers UI combobox element for current lua. 
+Registers UI combo\(int\) element for current lua.
 
 ## float FireBullet\(C\_BasePlayer attacker, Vector start, Vector end\);
 

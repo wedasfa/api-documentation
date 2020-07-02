@@ -24,7 +24,7 @@ Set CheatVar value as an bool. Used In switches \(checkboxes\)
 
 Set CheatVar value as an int. Used in Sliders with integer numbers.
 
-## void SetFloat\( float value\);
+## void SetFloat\(float value\);
 
 Set CheatVar value as an float. Used in Sliders with floating point.
 
