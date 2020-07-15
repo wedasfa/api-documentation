@@ -1,7 +1,7 @@
 # C\_BaseEntity
 
 {% hint style="info" %}
-You can get `C_BaseEntity` from [g\_EntityList](https://github.com/es3n1n/new_nl_docs/tree/828253d72f2e0605381050a16a92343072f56cbf/Developers/Classes/IEntityList.md)`::GetClientEntity`
+You can get `C_BaseEntity` from [g\_EntityList](ientitylist.md)`::GetClientEntity`
 {% endhint %}
 
 {% hint style="warning" %}

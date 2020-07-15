@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-You can get `C_BasePlayer` from [C\_BaseEntity](c_baseplayer.md)`::GetPlayer`
+You can get `C_BasePlayer` from [C\_BaseEntity](c_baseentity.md)`::GetPlayer`
 {% endhint %}
 
 {% hint style="warning" %}
