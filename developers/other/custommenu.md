@@ -60,7 +60,7 @@ print(sf_Test:GetFloat())
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sf_Test = cheat.SliderFloat("Drag me", 0, 10)
+local sf_Test = cheat.SliderInt("Drag me", 0, 10)
 print(sf_Test:GetInt())
 ```
 
