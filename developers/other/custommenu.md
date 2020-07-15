@@ -1,4 +1,4 @@
-# Menu API
+# CustomMenu
 
 ## Checkbox
 
@@ -89,7 +89,7 @@ local cp_Test = cheat.Color("Change my color")
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| name | string | color picker name | + |
+| name | string | Combo name | + |
 | elements | table | Elements | + |
 | def\_value | int | Default value index | - |
 
@@ -109,7 +109,7 @@ local combo_Test = cheat.Combo("Change my value", {"Testing1", "Testing2"}, 1)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| name | string | color picker name | + |
+| name | string | MultiCombo name | + |
 | elements | table | Values | + |
 | def | table | Default values | - |
 
@@ -124,6 +124,6 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 {% endhint %}
 
 ```lua
-local cp_Test = cheat.Color("Change my color")
+local mc_Test = cheat.MultiCombo("Change my value(s)", {"Testing1", "Testing2"}, {1})
 ```
 

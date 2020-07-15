@@ -48,7 +48,6 @@
     * [ESP API](developers/other/espapi.md)
     * [Menu API](developers/other/custommenu.md)
     * [CheatVars](developers/other/cheatvars.md)
-    * [CustomMenu](developers/other/custommenu-1.md)
 * [Examples](examples/README.md)
   * [Animated Clantag](examples/animatedclantag.md)
   * [Indicators](examples/indicators.md)
