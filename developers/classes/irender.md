@@ -194,7 +194,7 @@ local font = g_Render.InitFont("Arial", 16)
 local text_size - g_Render.Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), font)
 ```
 
-## DrawWeaponIcon
+## WeaponIcon
 
 ### Parameters:
 
@@ -206,7 +206,7 @@ local text_size - g_Render.Text("Hello world, it's me", Vector2.new(250, 250), C
 | size | int | Icon size |
 
 ```lua
-g_Render.DrawWeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
+g_Render.WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 ```
 
 ## CalcWeaponIconSize
