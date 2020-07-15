@@ -46,8 +46,8 @@ local clantag_change_fn = Utils.PatternScan("engine.dll", "53 56 57 8B DA 8B F9 
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| min | flost | Minimal value |
-| max | flost | Maximal value |
+| min | float | Min value |
+| max | float | Max value |
 
 ### Return value:
 
@@ -59,3 +59,33 @@ local clantag_change_fn = Utils.PatternScan("engine.dll", "53 56 57 8B DA 8B F9 
 local rnd_float = Utils.RandomFloat(0.0, 20.0)
 ```
 
+## RandomInt
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| min | int | Min value |
+| max | int | Max value |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | int | Random int from min to max |
+
+```lua
+local rnd_int = Utils.RandomInt(0, 20)
+```
+
+## RandomSeed
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| seed | int | Seed value |
+
+```lua
+Utils.RandomSeed(cmd.random_seed);
+```
