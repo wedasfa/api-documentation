@@ -137,6 +137,6 @@ local mat_ptr = g_MatSystem.GetMaterial("testing_material",  [[
     "$basetexture" "dev"
   }  
 ]])
-g_MatSystem.OverrideMaterial("enemies", mat_ptr)
+g_MatSystem.OverrideMaterial(mat_ptr, "enemies")
 ```
 
