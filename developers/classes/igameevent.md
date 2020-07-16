@@ -1,7 +1,7 @@
 # IGameEvent
 
 {% hint style="info" %}
-Instance of `IGameEvent` is passed to `events` callback
+Instance of `IGameEvent` is passed to `events` [callback](../other/callbacks.md)
 {% endhint %}
 
 {% hint style="info" %}

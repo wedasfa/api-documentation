@@ -90,7 +90,7 @@ local mat_ptr = g_MatSystem.GetMaterial(mat)
 | value | IMaterial\* | Material |
 
 ```lua
-local mat_ptr = g_MatSystem.GetMaterial("testing_material",  [[
+local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
     "$envmap" "editor/cube_vertigo"
@@ -129,7 +129,7 @@ Types can be:
 {% endhint %}
 
 ```lua
-local mat_ptr = g_MatSystem.GetMaterial("testing_material",  [[
+local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
     "$envmap" "editor/cube_vertigo"

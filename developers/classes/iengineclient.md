@@ -18,18 +18,6 @@ Instance of `IEngineClient` is `g_EngineClient`
 local screen_size = g_EngineClient.GetScreenSize()
 ```
 
-## ClientCmd
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| cmd | string | Client command |
-
-```lua
-g_EngineClient.ClientCmd("crash")
-```
-
 ## GetPlayerInfo
 
 ### Parameters:
@@ -82,6 +70,30 @@ local view_angles = g_EngineClient.GetViewAngles()
 
 ```lua
 local max_clients_count = g_EngineClient.GetMaxClients()
+```
+
+## ExecuteClientCmd
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | string | Command |
+
+```lua
+g_EngineClient.ExecuteClientCmd("crash")
+```
+
+## ClientCmd
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| cmd | string | Client command |
+
+```lua
+g_EngineClient.ClientCmd("crash")
 ```
 
 ## ClientCmdUnrestricted
@@ -144,18 +156,6 @@ local level_short_name = g_EngineClient.GetLevelNameShort()
 local map_group_name = g_EngineClient.GetMapGroupName()
 ```
 
-## ExecuteClientCmd
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | string | Command |
-
-```lua
-g_EngineClient.ExecuteClientCmd("crash")
-```
-
 ## GetAppId
 
 ### Return value:
@@ -165,7 +165,7 @@ g_EngineClient.ExecuteClientCmd("crash")
 | value | int | App ID |
 
 ```lua
-g_EngineClient.ExecuteClientCmd("crash")
+local app_id = g_EngineClient.GetAppId()
 ```
 
 ## GetEngineBuildNumber

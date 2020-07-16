@@ -5,7 +5,7 @@ List of all `CheatVars` can be found [here](../other/cheatvars.md)
 {% endhint %}
 
 {% hint style="info" %}
-You can access `CheatVar` instance through [g\_Config](https://github.com/es3n1n/new_nl_docs/tree/328eb7aec5d80dc9d2252df6bccb68a8faeba881/Developers/Classes/IConfig/README.md)
+You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 {% endhint %}
 
 ## Functions
