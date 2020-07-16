@@ -26,6 +26,6 @@ Beams.Line(Vector.new(0, 0, 0), Vector.new(100, 100, 100), Color.new(1.0, 1.0, 1
 | clr | Color | Color for beam |
 
 ```lua
-Beams.Line(Vector.new(0, 0, 0), Color.new(1.0, 1.0, 1.0))
+Beams.Circle(Vector.new(0, 0, 0), Color.new(1.0, 1.0, 1.0))
 ```
 

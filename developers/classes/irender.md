@@ -125,7 +125,7 @@ print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
 | pos | Vector2 | 2D Position on the screen |
 
 ```lua
-local screen_pos = g_Render.ScreenPosition(Vector.new(0, 0))
+local screen_pos = g_Render.ScreenPosition(Vector.new(0, 0, 0))
 ```
 
 ## Circle3D

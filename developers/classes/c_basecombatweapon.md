@@ -104,7 +104,7 @@ local count = weap:m_iPrimaryReserveAmmoCount()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| idx | float | m\_flRecoilIndex |
+| idx | float | Recoil index |
 
 ```lua
 local index = weap:m_flRecoilIndex()
