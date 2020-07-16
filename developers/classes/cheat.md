@@ -149,10 +149,6 @@ local mouse_pos = cheat.IsKeyDown(0x1)
 | :--- | :--- | :--- |
 | name | string | Neverlose's account username |
 
-{% hint style="info" %}
-You can find all virtual keys [here](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)
-{% endhint %}
-
 ```lua
 local username = cheat.GetCheatUserName()
 ```

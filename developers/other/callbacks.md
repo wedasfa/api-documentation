@@ -10,7 +10,7 @@ To register a callback, you can call [cheat.RegisterCallback](../classes/cheat.m
 * **createmove** - createmove after cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/c_usercmd.md)
 * **prediction** - createmove inside cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/c_usercmd.md)
 * **pre\_prediction** - createmove before cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/c_usercmd.md)
-* **events** - game events. [IGameEvent](https://github.com/es3n1n/new_nl_docs/tree/328eb7aec5d80dc9d2252df6bccb68a8faeba881/Developers/Other/IGameEvent.md) pointer passed.
+* **events** - game events. [IGameEvent](../classes/igameevent.md) pointer passed.
 
 {% hint style="info" %}
 You can read about events [here](https://wiki.alliedmods.net%20Counter-Strike:_Global_Offensive_Events).

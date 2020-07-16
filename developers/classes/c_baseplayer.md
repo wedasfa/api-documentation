@@ -116,10 +116,10 @@ local eye_ang = player:m_angEyeAngles()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| armour\_value | int | Armour value |
+| armor\_value | int | Armor value |
 
 ```lua
-local armour_value = player:m_ArmorValue()
+local armor_value = player:m_ArmorValue()
 ```
 
 ## m\_iPlayerState
@@ -140,10 +140,10 @@ local player_state = player:m_iPlayerState()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| has\_heavy\_armour | bool | Has heavy armour |
+| has\_heavy\_armor | bool | Has heavy armor |
 
 ```lua
-local has_heavy_armour = player:m_bHasHeavyArmor()
+local has_heavy_armor = player:m_bHasHeavyArmor()
 ```
 
 ## m\_bHasHelmet
@@ -224,7 +224,7 @@ local is_inspecting_weapon = player:m_bIsLookingAtWeapon()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ducked | bool | Is player was ducked |
+| ducked | bool | Player was ducked |
 
 ```lua
 local ducked = player:m_bDucked()
@@ -236,7 +236,7 @@ local ducked = player:m_bDucked()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ducking | bool | Is player is ducking |
+| ducking | bool | Player is ducking |
 
 ```lua
 local ducking = player:m_bDucking()
@@ -320,7 +320,7 @@ local tickbase = player:m_nTickBase()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| move\_state | int | Move State |
+| move\_state | int | Move state |
 
 ```lua
 local move_state = player:m_iMoveState()
@@ -440,7 +440,7 @@ local molotov_damage_time = player:m_fMolotovDamageTime()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| thirdperson\_recoil | int | Thirdperson Recoil |
+| thirdperson\_recoil | int | Thirdperson recoil |
 
 ```lua
 local thirdperson_recoil = player:m_flThirdpersonRecoil()
@@ -512,7 +512,7 @@ local sequence = player:m_nSequence()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| observer\_mode | int | Observer Mode |
+| observer\_mode | int | Observer mode |
 
 ```lua
 local observer_mode = player:m_iObserverMode()
@@ -528,18 +528,6 @@ local observer_mode = player:m_iObserverMode()
 
 ```lua
 local last_place_name = player:m_szLastPlaceName()
-```
-
-## m\_flLowerBodyYawTarget
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| lower\_body\_yaw\_target | int | Lower body yaw target |
-
-```lua
-local lower_body_yaw_target = player:m_flLowerBodyYawTarget()
 ```
 
 ## m\_angRotation
@@ -584,7 +572,7 @@ local duck_amount = player:m_flDuckAmount()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| col\_state | int | Collision State |
+| col\_state | int | Collision state |
 
 ```lua
 local col_state = player:m_vphysicsCollisionState()
@@ -608,7 +596,7 @@ local survival_team = player:m_nSurvivalTeam()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| velocity\_modifier | int | Velocity Modifier |
+| velocity\_modifier | int | Velocity modifier |
 
 ```lua
 local velocity_modifier = player:m_flVelocityModifier()
@@ -620,7 +608,7 @@ local velocity_modifier = player:m_flVelocityModifier()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| fall\_vel | int | Fall Velocity |
+| fall\_vel | int | Fall velocity |
 
 ```lua
 local fall_vel = player:m_flFallVelocity()
@@ -644,7 +632,7 @@ local ifov = player:m_iFOV()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| fov\_start | int | FOV Start |
+| fov\_start | int | FOV start |
 
 ```lua
 local fov_start = player:m_iFOVStart()
@@ -656,7 +644,7 @@ local fov_start = player:m_iFOVStart()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| fov\_time | int | FOV Time |
+| fov\_time | int | FOV time |
 
 ```lua
 local fov_time = player:m_flFOVTime()

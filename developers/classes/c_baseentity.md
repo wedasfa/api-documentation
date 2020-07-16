@@ -87,18 +87,6 @@ local is_weapon = ent:IsWeapon()
 local player = ent:GetPlayer()
 ```
 
-## GetPlayer
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | C\_BasePlayer\* | Pointer to player |
-
-```lua
-local player = ent:GetPlayer()
-```
-
 ## EntIndex
 
 ### Return value:

@@ -5,7 +5,7 @@ Instance of `IRender` is `g_Render`
 {% endhint %}
 
 {% hint style="warning" %}
-IRender functions can be called **only** from `draw` or `esp` callbacks
+IRender functions can be called **only** from `draw` or `esp` [callbacks](../other/callbacks.md)
 {% endhint %}
 
 ## Functions

@@ -23,7 +23,7 @@ In examples below all `weap` is `C_BaseCombatWeapon` instance
 | value | float | Time when next primary attack will be available |
 
 ```lua
-local next_attack = weap:m_flNextPrimaryAttack()
+local next_primary_attack = weap:m_flNextPrimaryAttack()
 ```
 
 ## m\_flNextSecondaryAttack
@@ -35,7 +35,7 @@ local next_attack = weap:m_flNextPrimaryAttack()
 | value | float | Time when next secondary attack will be available |
 
 ```lua
-local next_attack = weap:m_flNextSecondaryAttack()
+local next_secondary_attack = weap:m_flNextSecondaryAttack()
 ```
 
 ## m\_iClip1
@@ -59,7 +59,7 @@ local bullets_in_first_clip_count = weap:m_iClip1()
 | value | int | Bullets in second clip count |
 
 ```lua
-local bullets_in_second_clip_count = weap:m_iClip1()
+local bullets_in_second_clip_count = weap:m_iClip2()
 ```
 
 ## m\_zoomLevel
@@ -311,7 +311,7 @@ local is_gun = weap:IsGun()
 | isreload | bool | Is weapon reloading |
 
 ```lua
-local is_gun = weap:IsGun()
+local is_gun = weap:IsReloading()
 ```
 
 ## GetInaccuracy
@@ -359,7 +359,7 @@ local weapon_fire_rate = weap:GetFireRate()
 | speed | float | Weapon maximum speed |
 
 ```lua
-local weapon_inaccuracy = weap:GetInaccuracy()
+local weapon_inaccuracy = weap:GetMaxSpeed()
 ```
 
 ## GetMaxClip
