@@ -45,6 +45,7 @@ local event_name = event:GetName()
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Field name |
+| def_val | bool | Default value |
 
 ### Return value:
 
@@ -53,7 +54,7 @@ local event_name = event:GetName()
 | value | bool | Event's bool value |
 
 ```lua
-local is_headshot = event:GetBool("headshot")
+local is_headshot = event:GetBool("headshot", false)
 ```
 
 ## GetInt
@@ -63,6 +64,7 @@ local is_headshot = event:GetBool("headshot")
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Field name |
+| def_val | int | Default value |
 
 ### Return value:
 
@@ -71,7 +73,7 @@ local is_headshot = event:GetBool("headshot")
 | value | int | Event's int value |
 
 ```lua
-local user_id = event:GetInt("userid")
+local user_id = event:GetInt("userid", -1)
 ```
 
 ## GetFloat
@@ -81,6 +83,7 @@ local user_id = event:GetInt("userid")
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Field name |
+| def_val | float | Default value |
 
 ### Return value:
 
@@ -89,7 +92,7 @@ local user_id = event:GetInt("userid")
 | value | float | Event's float value |
 
 ```lua
-local x_axis = event:GetFloat("x")
+local x_axis = event:GetFloat("x", -1.0)
 ```
 
 ## GetString
@@ -99,6 +102,7 @@ local x_axis = event:GetFloat("x")
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Field name |
+| def_val | string | Default value |
 
 ### Return value:
 
@@ -107,6 +111,6 @@ local x_axis = event:GetFloat("x")
 | value | string | Event's string value |
 
 ```lua
-local x_axis = event:GetString("weapon")
+local x_axis = event:GetString("weapon", "unknown")
 ```
 
