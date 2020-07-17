@@ -19,6 +19,7 @@ Possible class names:
 
 * **player**
 * **weapon**
+* **grenade**
 * **c4** or **bomb**
 * **loot**
 {% endhint %}
@@ -65,6 +66,7 @@ Possible class names:
 
 * **player**
 * **weapon**
+* **grenade**
 * **c4** or **bomb**
 * **loot**
 {% endhint %}
