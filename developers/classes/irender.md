@@ -67,6 +67,21 @@ g_Render.BoxFilled(Vector2.new(0, 0), Vector2.new(100, 100), Color.new(1.0, 1.0,
 g_Render.CircleFilled(Vector2.new(100, 500), 1.0, 58, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
+## Circle
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| pos | Vector2 | Start 2D Position on the screen |
+| rad | float | Circle radius |
+| pnts | int | Circle points |
+| clr | Color | Circle's color |
+
+```lua
+g_Render.Circle(Vector2.new(100, 500), 1.0, 58, Color.new(1.0, 1.0, 1.0, 1.0))
+```
+
 ## Text
 
 ### Parameters:
