@@ -89,7 +89,7 @@ g_Config.FindGlobalVars("esp", "Hitmarker"):SetBool(false)
 g_Config.FindGlobalVars("esp", "Boxes"):SetInt(1)
 ```
 
-## SetFloat
+## setFloat
 
 ### Parameters:
 
@@ -98,7 +98,7 @@ g_Config.FindGlobalVars("esp", "Boxes"):SetInt(1)
 | value | float | New float value | + |
 
 ```lua
-g_Config.FindGlobalVars("esp", "Box Width"):SetFloat(1.0)
+g_Config.FindGlobalVars("esp", "Box Width"):setFloat(1.0)
 ```
 
 ## SetColor
