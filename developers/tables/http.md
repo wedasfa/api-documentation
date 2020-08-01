@@ -36,6 +36,6 @@ local google_content = Http.Get("https://google.com")
 | content | string | Content of provided URL |
 
 ```lua
-local google_content = Http.POST("https://google.com", "somedata=somevalue")
+local google_content = Http.Post("https://google.com", "somedata=somevalue")
 ```
 

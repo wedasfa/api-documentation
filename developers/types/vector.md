@@ -44,7 +44,7 @@ local my_vec = Vector.new(0.0, 0.0, 0.0)
 
 ```lua
 local my_vec = Vector.new(0.0, 0.0, 0.0)
-local my_vec_length = my_vec.Length()
+local my_vec_length = my_vec:Length()
 ```
 
 ## Length2D
@@ -57,7 +57,7 @@ local my_vec_length = my_vec.Length()
 
 ```lua
 local my_vec = Vector.new(0.0, 0.0, 0.0)
-local my_vec_2d_length = my_vec.Length2D()
+local my_vec_2d_length = my_vec:Length2D()
 ```
 
 ## DistTo
@@ -77,7 +77,7 @@ local my_vec_2d_length = my_vec.Length2D()
 ```lua
 local my_vec = Vector.new(0.0, 0.0, 0.0)
 local notmy_vec = Vector.new(0.0, 0.0, 0.0)
-local dist = my_vec.DistTo(notmy_vec)
+local dist = my_vec:DistTo(notmy_vec)
 ```
 
 ## Fields:

@@ -89,7 +89,7 @@ local vec = cheat.AngleToForward(QAngle.new())
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ang | QAngle | Output vector |
+| ang | QAngle | Output angle |
 
 ```lua
 local ang = cheat.VectorToAngle(Vector.new())
