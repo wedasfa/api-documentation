@@ -40,7 +40,7 @@ local me = g_EntityList.GetClientEntity(g_EngineClient.GetLocalPlayer())
 
 ```lua
 local me = g_EntityList.GetClientEntity(g_EngineClient.GetLocalPlayer())
-local weap = g_EntityList.GetClientEntityFromHandle(me:GetProp("m_hActiveWeapon"))
+local weap = g_EntityList.GetClientEntityFromHandle(me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon"))
 ```
 
 ## GetHighestEntityIndex

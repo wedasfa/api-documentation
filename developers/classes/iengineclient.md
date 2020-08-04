@@ -30,7 +30,7 @@ local screen_size = g_EngineClient.GetScreenSize()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | player\_info\_t | Player info \(name, model, etc.\) |
+| value | player\_info\_t | Player info |
 
 ```lua
 g_EngineClient.GetPlayerInfo(0)
