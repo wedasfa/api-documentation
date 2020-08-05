@@ -14,6 +14,7 @@
     * [DebugOverlay](developers/classes/debugoverlay.md)
     * [ICVar](developers/classes/icvar.md)
     * [IEngineClient](developers/classes/iengineclient.md)
+    * [IEngineTrace](developers/classes/IEngineTrace.md)
     * [IEntityList](developers/classes/ientitylist.md)
     * [IGameEvent](developers/classes/igameevent.md)
     * [IMaterial](developers/classes/imaterial.md)
