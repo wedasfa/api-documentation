@@ -4,10 +4,6 @@
 Instance of `IEngineTrace` is `g_EngineTrace`
 {% endhint %}
 
-{% hint style="warning" %}
-In examples below all `event` is `IGameEvent` instance
-{% endhint %}
-
 ## Functions
 
 ## TraceRay
@@ -18,7 +14,7 @@ In examples below all `event` is `IGameEvent` instance
 | :--- | :--- | :--- |
 | start | Vector | Start position |
 | end | Vector | End position |
-| skip | C_BaseEntity* | Entity, which will be skipped while tracing |
+| skip | C\_BaseEntity* | Entity, which will be skipped while tracing |
 | mask | int | Mask |
 
 ### Return value:
