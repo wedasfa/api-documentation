@@ -264,3 +264,28 @@ local user_id = g_EngineClient.GetPlayerForUserId(1337)
 local csgo_ver = g_EngineClient.GetProductVersionString()
 ```
 
+## GetViewAngles
+
+## Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | QAngle | View angles|
+
+```lua
+local viewangles = g_EngineClient.GetViewAngles()
+```
+
+## SetViewAngles
+
+## Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| angs | QAngle | New view angles |
+
+```lua
+local viewangles = g_EngineClient.GetViewAngles()
+local new_viewangles = viewangles - QAngle.new(15, 15)
+g_EngineClient.SetViewAngles(new_viewangles)
+```
