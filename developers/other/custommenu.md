@@ -1,5 +1,7 @@
 # CustomMenu
 
+## Functions
+
 ## Checkbox
 
 ### Parameters:
