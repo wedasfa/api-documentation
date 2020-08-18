@@ -69,7 +69,7 @@ local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
 
 ```lua
 local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local red = my_clr.r()
+local red = my_clr:r()
 ```
 
 ## g
@@ -82,7 +82,7 @@ local red = my_clr.r()
 
 ```lua
 local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local green = my_clr.g()
+local green = my_clr:g()
 ```
 
 ## b
@@ -95,7 +95,7 @@ local green = my_clr.g()
 
 ```lua
 local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local blue = my_clr.b()
+local blue = my_clr:b()
 ```
 
 ## a
@@ -108,6 +108,6 @@ local blue = my_clr.b()
 
 ```lua
 local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local alpha = my_clr.a()
+local alpha = my_clr:a()
 ```
 
