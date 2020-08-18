@@ -119,7 +119,7 @@ local combo_Test = cheat.Combo("Change my value", {"Testing1", "Testing2"}, 1)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | CheatVar | Cheatvar for colorpicker |
+| value | CheatVar | Cheatvar for MultiCombo |
 
 {% hint style="info" %}
 To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(int el\_idx, bool value\)
