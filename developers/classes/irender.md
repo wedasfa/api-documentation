@@ -93,6 +93,7 @@ g_Render.CircleFilled(Vector2.new(100, 500), 1.0, 58, Color.new(1.0, 1.0, 1.0, 1
 | clr | Color | Text color | + |
 | size | int | Text's size | + |
 | font | Font\* | Text's font | - |
+| outline | bool | Text outline | - |
 
 ```lua
 g_Render.Text("Hello world, it's me", Vector2.new(150, 150), Color.new(1.0, 1.0, 1.0, 1.0), 16)
