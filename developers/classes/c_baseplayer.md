@@ -698,3 +698,14 @@ local is_teammate = player:IsTeamMate()
 local is_dormant = player:IsDormant()
 ```
 
+## GetActiveWeapon
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| weapon | C\_BaseCombatWeapon | Active weapon |
+
+```lua
+local wepaon = player:GetActiveWeapon()
+```
