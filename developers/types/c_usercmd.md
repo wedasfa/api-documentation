@@ -10,7 +10,7 @@ You can access `C_UserCmd` instance through `createmove`, `prediction` and `pre_
 | :--- | :--- | :--- |
 | command\_number | int | For matching server and client commands for debugging |
 | tick\_count | int | The tick the client created this command |
-| viewangles | Vector | Player instantaneous view angles |
+| viewangles | QAngle | Player instantaneous view angles |
 | aimdirection | Vector | For pointing devices |
 | forwardmove | float | Forward velocity |
 | sidemove | float | Sideways velocity |
