@@ -50,7 +50,7 @@ Team numbers: 0. Enemies 1. Teammates 2. LocalPlayer
 {% endhint %}
 
 ```lua
-local var = g_Config.FindTeamVar("esp", "Boxes", 3)
+local var = g_Config.FindTeamVar("esp", "Boxes", 2)
 ```
 
 ## FindWeaponVar

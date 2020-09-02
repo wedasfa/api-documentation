@@ -392,7 +392,7 @@ local velocity = player:m_vecVelocity()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ground\_accel\_linear\_frac\_last\_time | int | - |
+| ground\_accel\_linear\_frac\_last\_time | float | - |
 
 ```lua
 local ground_accel_linear_frac_last_time = player:m_flGroundAccelLinearFracLastTime()
@@ -404,7 +404,7 @@ local ground_accel_linear_frac_last_time = player:m_flGroundAccelLinearFracLastT
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| next\_attack\_time | int | Time to next attack |
+| next\_attack\_time | float | Time to next attack |
 
 ```lua
 local next_attack_time = player:m_flNextAttack()
@@ -416,7 +416,7 @@ local next_attack_time = player:m_flNextAttack()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| flash\_max\_alpha | int | Max flash alpha |
+| flash\_max\_alpha | float | Max flash alpha |
 
 ```lua
 local flash_max_alpha = player:m_flFlashMaxAlpha()
@@ -440,7 +440,7 @@ local molotov_damage_time = player:m_fMolotovDamageTime()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| thirdperson\_recoil | int | Thirdperson recoil |
+| thirdperson\_recoil | float | Thirdperson recoil |
 
 ```lua
 local thirdperson_recoil = player:m_flThirdpersonRecoil()
@@ -476,7 +476,7 @@ local iaccount = player:m_iAccount()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| flash\_dur | int | Flash duration |
+| flash\_dur | float | Flash duration |
 
 ```lua
 local flash_dur = player:m_flFlashDuration()
@@ -488,7 +488,7 @@ local flash_dur = player:m_flFlashDuration()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| simtime | int | Simulation time |
+| simtime | float | Simulation time |
 
 ```lua
 local simtime = player:m_flSimulationTime()
@@ -548,7 +548,7 @@ local rotation_ang = player:m_angRotation()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| duck\_speed | int | Duck speed |
+| duck\_speed | float | Duck speed |
 
 ```lua
 local duck_speed = player:m_flDuckSpeed()
@@ -560,7 +560,7 @@ local duck_speed = player:m_flDuckSpeed()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| duck\_amount | int | Duck amount |
+| duck\_amount | float | Duck amount |
 
 ```lua
 local duck_amount = player:m_flDuckAmount()
@@ -608,7 +608,7 @@ local velocity_modifier = player:m_flVelocityModifier()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| fall\_vel | int | Fall velocity |
+| fall\_vel | float | Fall velocity |
 
 ```lua
 local fall_vel = player:m_flFallVelocity()
@@ -644,7 +644,7 @@ local fov_start = player:m_iFOVStart()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| fov\_time | int | FOV time |
+| fov\_time | float | FOV time |
 
 ```lua
 local fov_time = player:m_flFOVTime()
