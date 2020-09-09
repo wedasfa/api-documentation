@@ -113,7 +113,7 @@ local combo_Test = cheat.Combo("Change my value", {"Testing1", "Testing2"}, 1)
 | :--- | :--- | :--- | :--- |
 | name | string | MultiCombo name | + |
 | elements | table | Values | + |
-| def | table | Default values | - |
+| def | int | Default values | - |
 
 ### Return value:
 
@@ -126,6 +126,15 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 {% endhint %}
 
 ```lua
-local mc_Test = cheat.MultiCombo("Change my value(s)", {"Testing1", "Testing2"}, {1})
+local elements = {
+    "Testing1", 
+    "Testing2"
+}
+
+local default_values = 0
+default_values = bit.bor(default_values, bit.lshift(1, 0)) -- Testing1 will be selected
+default_values = bit.bor(default_values, bit.lshift(1, 1)) -- Testing2 will be selected too
+
+local mc_Test = cheat.MultiCombo("Change my value(s)", elements, default_values)
 ```
 
