@@ -207,7 +207,7 @@ g_Render.CylinderFilled3D(Vector.new(0, 0), 58, 10.0, 30.0, Color.new(1.0, 1.0, 
 
 ```lua
 local font = g_Render.InitFont("Arial", 16)
-g_Render.Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), font)
+g_Render.Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), 16, font)
 ```
 
 ## WeaponIcon
