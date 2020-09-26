@@ -332,7 +332,7 @@ local move_state = player:m_iMoveState()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| view\_offset | int | View offset |
+| view\_offset | Vector | View offset |
 
 ```lua
 local view_offset = player:m_vecViewOffset()
