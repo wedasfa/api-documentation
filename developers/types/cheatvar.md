@@ -25,7 +25,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | el\_index | int | Element index for multicombo cheatvar | - |
 
 ```lua
-local bool_value = g_Config.FindGlobalVars("esp", "Hitmarker"):GetBool()
+local bool_value = g_Config.FindGlobalVar("esp", "Hitmarker"):GetBool()
 ```
 
 ## GetFloat
@@ -37,7 +37,7 @@ local bool_value = g_Config.FindGlobalVars("esp", "Hitmarker"):GetBool()
 | value | float | CheatVar value as a float |
 
 ```lua
-local float_value = g_Config.FindGlobalVars("esp", "Box Width"):GetFloat()
+local float_value = g_Config.FindGlobalVar("esp", "Box Width"):GetFloat()
 ```
 
 ## GetInt
@@ -49,7 +49,7 @@ local float_value = g_Config.FindGlobalVars("esp", "Box Width"):GetFloat()
 | value | int | CheatVar value as int |
 
 ```lua
-local int_value = g_Config.FindGlobalVars("esp", "Boxes"):GetInt()
+local int_value = g_Config.FindGlobalVar("esp", "Boxes"):GetInt()
 ```
 
 ## GetColor
@@ -61,7 +61,7 @@ local int_value = g_Config.FindGlobalVars("esp", "Boxes"):GetInt()
 | value | Color | CheatVar value as Color |
 
 ```lua
-local clr_value = g_Config.FindGlobalVars("esp", "Molotov"):GetColor()
+local clr_value = g_Config.FindGlobalVar("esp", "Molotov"):GetColor()
 ```
 
 ## SetBool
@@ -74,7 +74,7 @@ local clr_value = g_Config.FindGlobalVars("esp", "Molotov"):GetColor()
 | el\_index | int | Element index for multicombo cheatvar | - |
 
 ```lua
-g_Config.FindGlobalVars("esp", "Hitmarker"):SetBool(false)
+g_Config.FindGlobalVar("esp", "Hitmarker"):SetBool(false)
 ```
 
 ## SetInt
@@ -86,10 +86,10 @@ g_Config.FindGlobalVars("esp", "Hitmarker"):SetBool(false)
 | value | int | New int value | + |
 
 ```lua
-g_Config.FindGlobalVars("esp", "Boxes"):SetInt(1)
+g_Config.FindGlobalVar("esp", "Boxes"):SetInt(1)
 ```
 
-## setFloat
+## SetFloat
 
 ### Parameters:
 
@@ -98,7 +98,7 @@ g_Config.FindGlobalVars("esp", "Boxes"):SetInt(1)
 | value | float | New float value | + |
 
 ```lua
-g_Config.FindGlobalVars("esp", "Box Width"):setFloat(1.0)
+g_Config.FindGlobalVar("esp", "Box Width"):setFloat(1.0)
 ```
 
 ## SetColor
@@ -110,6 +110,6 @@ g_Config.FindGlobalVars("esp", "Box Width"):setFloat(1.0)
 | value | Color | New Color value | + |
 
 ```lua
-g_Config.FindGlobalVars("esp", "Molotov"):SetColor(Color.new(1.0, 1.0, 1.0, 1.0))
+g_Config.FindGlobalVar("esp", "Molotov"):SetColor(Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
