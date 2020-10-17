@@ -18,5 +18,5 @@ Miss reasons: 0. Hit 1. Resolver 2. Spread 3. Occlusion 4. Prediction error
 | damage | int | Damage |
 | target\_index | int | Target ent index |
 | reason | int | Miss reason |
-| spread\_angle | float | Spread angle |
+| spread\_degree | float | Spread angle |
 
