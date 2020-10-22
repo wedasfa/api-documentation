@@ -707,5 +707,5 @@ local is_dormant = player:IsDormant()
 | weapon | C\_BaseCombatWeapon | Active weapon |
 
 ```lua
-local wepaon = player:GetActiveWeapon()
+local weapon = player:GetActiveWeapon()
 ```
