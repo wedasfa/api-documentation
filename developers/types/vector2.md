@@ -39,7 +39,7 @@ local my_vec = Vector2.new(0.0, 0.0)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| length | flaot | Length of Vector2 |
+| length | float | Length of Vector2 |
 
 ```lua
 local my_vec = Vector2.new(0.0, 0.0)
