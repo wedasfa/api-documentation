@@ -54,4 +54,6 @@
   * [Indicators](examples/indicators.md)
   * [Internal Radar](examples/internalradar.md)
   * [Stop matchmaking](examples/stopmatchmaking.md)
+  * [Get Windows Time](examples/windowstime.md)
+  * [FFI Chat Print](examples/chatprint.md)
 
