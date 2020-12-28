@@ -1,24 +1,24 @@
 # Color
 
 {% hint style="info" %}
-R/G/B/A colors is a fractions from `0.0` to `1.0`
+RGBA values are clamped fractions from `0.0` to `1.0`
 {% endhint %}
 
 ## Functions
 
-## new
+## Color
 
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| instance | Color | New instance of a Color |
+| instance | Color | New instance of Color |
 
 ```lua
-local my_clr = Color.new()
+local clr = Color();
 ```
 
-## new
+## Color
 
 ### Parameters:
 
@@ -35,10 +35,10 @@ local my_clr = Color.new()
 | instance | Color | New instance of a Color |
 
 ```lua
-local my_clr = Color.new(1.0, 1.0, 1.0)
+local my_clr = Color(1.0, 1.0, 1.0);
 ```
 
-## new
+## Color
 
 ### Parameters:
 
@@ -56,7 +56,7 @@ local my_clr = Color.new(1.0, 1.0, 1.0)
 | instance | Color | New instance of a Color |
 
 ```lua
-local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
+local my_clr = Color(1.0, 1.0, 1.0, 1.0);
 ```
 
 ## r
@@ -110,4 +110,3 @@ local blue = my_clr:b()
 local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
 local alpha = my_clr:a()
 ```
-

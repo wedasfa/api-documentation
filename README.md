@@ -1,5 +1,8 @@
 # Useful information
 
+## Disclaimer
+* Some classes and api functions have been subject to change in Neverlose v2. Your old scripts may need to be updated!
+
 ## Libraries/Engines included
 
 * [LuaJIT](https://github.com/LuaJIT/LuaJIT) **2.0.5**
