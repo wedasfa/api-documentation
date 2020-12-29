@@ -211,11 +211,13 @@
 
 ## DrawHitbox
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| name | string | Name |
+| index | int | Hitbox index |
+| clr | Color | Color |
+| tick_n | int | Tick |
 
 ```lua
 --soonTM
