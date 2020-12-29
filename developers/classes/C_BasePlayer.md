@@ -193,11 +193,17 @@
 
 ## GetSequenceActivity
 
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| sec | int | Sequence |
+
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| name | string | Name |
+| act | int | Sequence activity |
 
 ```lua
 --soonTM
