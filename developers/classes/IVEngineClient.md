@@ -4,7 +4,7 @@
 
 ## ClientCmd
 
-## Parameters:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -16,7 +16,7 @@
 
 ## ClientCmdUnrestricted
 
-## Parameters:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -28,7 +28,7 @@
 
 ## ExecuteClientCmd
 
-## Parameters:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -40,7 +40,7 @@
 
 ## GetAppId
 
-## Return values:
+### Return values:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -52,7 +52,7 @@
 
 ## GetEngineBuildNumber
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -64,7 +64,7 @@
 
 ## GetGameDirectory
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -76,7 +76,7 @@
 
 ## GetLastTimestamp
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -88,7 +88,7 @@
 
 ## GetLevelName
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -100,7 +100,7 @@
 
 ## GetLevelNameShort
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -112,7 +112,7 @@
 
 ## GetMapGroupName
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -124,7 +124,7 @@
 
 ## GetLocalPlayer
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -136,7 +136,7 @@
 
 ## GetMaxClients
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -148,7 +148,7 @@
 
 ## GetNetChannelInfo
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -160,13 +160,13 @@
 
 ## GetPlayerForUserId
 
-## Parameters:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | int | User ID |
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -178,17 +178,282 @@
 
 ## GetPlayerInfo
 
-## Parameters
+### Parameters
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | idx | int | Player index |
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | player_info_t | Player info |
+
+```lua
+
+```
+
+## GetProductVersionString
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | string | CSGO version string |
+
+```lua
+
+```
+
+## GetScreenSize
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | Vector2 | Size of game window |
+
+```lua
+
+```
+
+## GetTimeScale
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | float | Timescale |
+
+```lua
+
+```
+
+## GetViewAngles
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | QAngle | View angles |
+
+```lua
+
+```
+
+## IsConnected
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is player connected to any server |
+
+```lua
+
+```
+
+## IsHammerRunning
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is Hammer editor running |
+
+```lua
+
+```
+
+## IsHltv
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is Hltv |
+
+```lua
+
+```
+
+## IsIngame
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is player ingame |
+
+```lua
+
+```
+
+## IsOccluded
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| absMin | Vector |  |
+| absMax | Vector |  |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is player occluded |
+
+```lua
+
+```
+
+## IsPaused
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is game paused |
+
+```lua
+
+```
+
+## IsPlayingDemo
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is demo being played back |
+
+```lua
+
+```
+
+## IsRecordingDemo
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is demo being recorded |
+
+```lua
+
+```
+
+## IsTakingScreenshot
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is game taking a screenshot |
+
+```lua
+
+```
+
+## LevelLeafCount
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | int | Amount of leaves in the level |
+
+```lua
+
+```
+
+## MapHasHdrLighting
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Was map loaded with HDR info |
+
+```lua
+
+```
+
+## RemoveAllPaint
+
+```lua
+
+```
+
+## SetBlurFade
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | float | scale |
+
+```lua
+
+```
+
+## SetRestrictClientCommands
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| bRestrict | bool | If true, ClientCmd can only execute things marked with `FCVAR_CLIENTCMD_CAN_EXECUTE` |
+
+```lua
+
+```
+
+## SetTimescale
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| flTimescale | float | Timescale |
+
+```lua
+
+```
+
+## SetViewAngles
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | QAngle | Angles |
+
+```lua
+
+```
+
+## SupportsHdr
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | HDR support |
+
+```lua
+
+```
+
+## WriteScreenshot
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| name | string | Filename |
 
 ```lua
 

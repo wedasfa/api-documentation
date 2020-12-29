@@ -8,7 +8,7 @@ In all examples below, `cvar` is an instance of `ConVar`.
 
 ## GetString
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -20,7 +20,7 @@ local string_value = cvar:GetString()
 
 ## GetInt
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ local int_value = cvar:GetInt()
 
 ## GetFloat
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -44,7 +44,7 @@ local float_value = cvar:GetFloat()
 
 ## GetColor
 
-## Return value:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
