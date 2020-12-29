@@ -55,12 +55,6 @@
 | name | string | Netvar name |
 | value | Netvar dependant | Netvar value |
 
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
-
 ```lua
 --soonTM
 ```
