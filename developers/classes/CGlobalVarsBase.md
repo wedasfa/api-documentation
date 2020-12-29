@@ -23,15 +23,3 @@ Instance of `CGlobalVarsBase` is `g_GlobalVars`
 | pSaveData | void* | Current saverestore data |
 | m_bClient | bool | Set to true in client code |
 | m_bRemoteClient | bool | True if we are a remote client |
-| mapname |  |  |
-| mapGroupName |  |  |
-| mapversion |  |  |
-| startspot |  |  |
-| eLoadType |  |  |
-| bMapLoadFailed |  |  |
-| deathmatch |  |  |
-| coop |  |  |
-| teamplay |  |  |
-| maxEntities |  |  |
-| serverCount |  |  |
-| pEdicts |  |  |
