@@ -221,28 +221,19 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| name | string | Font name |
+| size | int | Font size |
 
-### Usage:
-```lua
-
-```
-
-## InitFontFromMemory
-
-### Parameters:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| font | Font* | Created Font |
 
 ### Usage:
 ```lua
-
+local font = g_Render:InitFont("Arial", 16)
+g_Render:Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), 16, font)
 ```
 
 ## ScreenPosition
@@ -251,13 +242,17 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| vec | Vector | 3-dimensional position |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| vec | Vector2 | 2-dimensional screen position |
 
 ### Usage:
 ```lua
-
+local screen_pos = g_Render:ScreenPosition(Vector.new(0, 0, 0))
 ```
 
 ## Circle3D
@@ -266,13 +261,14 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| pos | Vector | 3-dimensional position |
+| seg | int | Amount of segments |
+| rad | float | Radius |
+| clr | Color | Circle color |
 
 ### Usage:
 ```lua
-
+g_Render:Circle3D(Vector.new(0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## Circle3DFilled
@@ -281,13 +277,14 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| pos | Vector | 3-dimensional position |
+| seg | int | Amount of segments |
+| rad | float | Radius |
+| clr | Color | Circle color |
 
 ### Usage:
 ```lua
-
+g_Render:CircleFilled3D(Vector.new(0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## Cylinder3DFilled
@@ -296,13 +293,15 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| pos | Vector | 3-dimensional position |
+| seg | int | Amount of segments |
+| rad | float | Radius |
+| height | float | Cylinder height |
+| clr | Color | Cylinder color |
 
 ### Usage:
 ```lua
-
+g_Render:CylinderFilled3D(Vector.new(0, 0), 58, 10.0, 30.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## GradientBoxFilled
@@ -311,13 +310,16 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| start | Vector2 | Beginning of the box |
+| end | Vector2 | End of the box |
+| t_l | Color | Color top left |
+| t_r | Color | Color top right |
+| b_l | Color | Color bottom left |
+| b_r | Color | Color bottom right |
 
 ### Usage:
 ```lua
-
+g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new(0, 0, 0, 1), Color.new(0, 0, 0, 1), Color.new(1, 1, 1, 1), Color.new(1, 1, 1, 1))
 ```
 
 ## Image
@@ -367,30 +369,28 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 ## GetMenuPos
 
-### Parameters:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| vec | Vector2 | Menu position |
 
 ### Usage:
 ```lua
-
+local menu_pos = g_Render:GetMenuPos()
+print(menu_pos.x)
 ```
 
 ## GetMenuSize
 
-### Parameters:
+### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| vec | Vector2 | Menu size |
 
 ### Usage:
 ```lua
-
+local menu_sz = g_Render:GetMenuSize()
+print(menu_sz.y)
 ```
