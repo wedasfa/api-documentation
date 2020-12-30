@@ -1,5 +1,9 @@
 # IVEngineClient
 
+{% hint style="info" %}
+Instance of `IVEngineClient` is `g_EngineClient`
+{% endhint %}
+
 ## Functions
 
 ## ClientCmd
