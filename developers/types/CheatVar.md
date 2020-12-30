@@ -1,10 +1,6 @@
 # CheatVar
 
 {% hint style="info" %}
-List of all `CheatVars` can be found [here](../other/cheatvars.md)
-{% endhint %}
-
-{% hint style="info" %}
 You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 {% endhint %}
 
@@ -25,7 +21,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | el\_index | int | Element index for multicombo cheatvar | - |
 
 ```lua
-
+local val = var:GetBool()
 ```
 
 ## GetFloat
@@ -37,7 +33,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | float | CheatVar value as a float |
 
 ```lua
-
+local val = var:GetFloat()
 ```
 
 ## GetInt
@@ -49,7 +45,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | int | CheatVar value as int |
 
 ```lua
-
+local val = var:GetInt()
 ```
 
 ## GetColor
@@ -61,7 +57,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | Color | CheatVar value as Color |
 
 ```lua
-
+local val = var:GetColor()
 ```
 
 ## GetString
@@ -73,7 +69,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | string | CheatVar value as string |
 
 ```lua
-
+local val = var:GetString()
 ```
 
 ## SetBool
@@ -86,7 +82,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | el\_index | int | Element index for multicombo cheatvar | - |
 
 ```lua
-
+var:SetBool(val)
 ```
 
 ## SetInt
@@ -98,7 +94,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | int | New int value | + |
 
 ```lua
-
+var:SetInt(val)
 ```
 
 ## SetFloat
@@ -110,7 +106,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | float | New float value | + |
 
 ```lua
-
+var:SetFloat(val)
 ```
 
 ## SetColor
@@ -122,7 +118,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | Color | New Color value | + |
 
 ```lua
-
+var:SetColor(val)
 ```
 
 ## SetString
@@ -134,7 +130,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | string | New string value | + |
 
 ```lua
-
+var:SetString(val)
 ```
 
 ## RegisterCallback
@@ -146,7 +142,9 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | function | Callback | + |
 
 ```lua
-
+var:RegisterCallback(function()
+	print("callback!")
+end)
 ```
 
 ## SetVisible
@@ -158,7 +156,7 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | bool | Item visibility | + |
 
 ```lua
-
+var:SetVisible(false)
 ```
 
 ## SetTooltip
@@ -170,6 +168,6 @@ You can access `CheatVar` instance through [g\_Config](../classes/config.md)
 | value | string | Tooltip content | + |
 
 ```lua
-
+var:SetTooltip("Tooltip")
 ```
 
