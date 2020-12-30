@@ -48,7 +48,6 @@
     * [Callbacks](developers/other/callbacks.md)
     * [ESP API](developers/other/espapi.md)
     * [Menu API](developers/other/menuapi.md)
-    * [CheatVars](developers/other/cheatvars.md)
     * [Netvars list](developers/other/netvars/)
         * [DT_AI_BaseNPC](developers/other/netvars/DT_AI_BaseNPC.md)
         * [DT_BRC4Target](developers/other/netvars/DT_BRC4Target.md)
