@@ -15,7 +15,7 @@ RGBA values are clamped fractions from `0.0` to `1.0`
 | instance | Color | New instance of Color |
 
 ```lua
-local clr = Color.new();
+local clr = Color.new()
 ```
 
 ## new
@@ -35,7 +35,7 @@ local clr = Color.new();
 | instance | Color | New instance of a Color |
 
 ```lua
-local my_clr = Color.new(1.0, 1.0, 1.0);
+local my_clr = Color.new(1.0, 1.0, 1.0)
 ```
 
 ## new
@@ -56,7 +56,7 @@ local my_clr = Color.new(1.0, 1.0, 1.0);
 | instance | Color | New instance of a Color |
 
 ```lua
-local my_clr = Color.new(1.0, 1.0, 1.0, 1.0);
+local my_clr = Color.new(1.0, 1.0, 1.0, 1.0)
 ```
 
 ## r
