@@ -1,6 +1,6 @@
 # Doubletap Speed
 
-> Author: [@Neverlose](https://github.com/neverlosecc)  
+> Author: [@elleqt](https://github.com/elleqt)  
 >
 > Name: `Doubletap speed`  
 >

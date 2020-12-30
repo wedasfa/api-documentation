@@ -1,6 +1,6 @@
 # Chicken ESP
 
-> Author: [@Neverlose](https://github.com/neverlosecc)  
+> Author: [@elleqt](https://github.com/elleqt)  
 >
 > Name: `Chicken esp`  
 >

@@ -1,6 +1,6 @@
 # Menu Elements
 
-> Author: [@Neverlose](https://github.com/neverlosecc)  
+> Author: [@elleqt](https://github.com/elleqt)  
 >
 > Name: `Menu Elements`  
 >
