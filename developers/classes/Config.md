@@ -10,13 +10,13 @@ Instance of `Config` is `g_Config`
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| tab_name | string |  |
-| sub_tab_name | string |  |
-| group_name | string |  |
-| opt_name | string |  |
-| combo_val | string | |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| tab_name | string | Tab name | + |
+| sub_tab_name | string | Subtab name | + |
+| group_name | string | Group name | + |
+| opt_name | string | Option name | + |
+| combo_val | string | Tab combo value(for example, "Enemies") | - |
 
 ### Return value:
 
