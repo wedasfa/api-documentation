@@ -15,7 +15,7 @@
 | instance | Vector | New instance of a Vector |
 
 ```lua
-local my_vec = Vector.new();
+local my_vec = Vector.new()
 ```
 
 ## new
@@ -35,7 +35,7 @@ local my_vec = Vector.new();
 | instance | Vector | New instance of a Vector |
 
 ```lua
-local my_vec = Vector.new(2.0, 3.0, 9.0);
+local my_vec = Vector.new(2.0, 3.0, 9.0)
 ```
 
 ## Arithmetics:
