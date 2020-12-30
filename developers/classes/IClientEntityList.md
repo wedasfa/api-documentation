@@ -1,5 +1,9 @@
 # IClientEntityList
 
+{% hint style="info" %}
+Instance of `IClientEntityList` is `g_EntityList`
+{% endhint %}
+
 ## Functions
 
 ## GetClientEntity
