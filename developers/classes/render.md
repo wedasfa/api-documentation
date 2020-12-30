@@ -25,9 +25,8 @@ g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| clr | Color | Line color |
+| vec | Vector | Variadic vector |
 
 ### Usage:
 ```lua
@@ -40,9 +39,8 @@ g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| clr | Color | Line color |
+| vec | Vector | Variadic vector |
 
 ### Usage:
 ```lua

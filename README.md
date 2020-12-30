@@ -2,6 +2,7 @@
 
 ## Disclaimer
 * Some classes and api functions have been subject to change in Neverlose v2. Your old scripts may need to be updated!
+* The api documentation is a work in progress and will continuously be improved upon by adding new usage examples and use cases
 
 ## Libraries/Engines included
 
