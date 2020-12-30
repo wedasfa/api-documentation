@@ -21,8 +21,4 @@ You can read about events [here](https://wiki.alliedmods.net%20Counter-Strike:_G
 * **ragebot\_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot\_shot](../types/ragebot_shot.md)
 * **fire\_bullet** - called when other players shooting. 1 argument passed to callback - [DT\_FireBullets](../types/dt_firebullets.md)
 * **override\_view** - called when game calculating view. 1 argument passed to callback - [CViewSetup](../types/cviewsetup.md)
-* **esp** - called when cheat rendering esp on entity. 3 arguments passed to callback - [C\_BaseEntity](../classes/c_baseentity.md), [Rect](../types/rect.md), string entity\_type
 
-{% hint style="info" %}
-entity\_type can be player, weapon, grenade, bomb, loot.
-{% endhint %}
