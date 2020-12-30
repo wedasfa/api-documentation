@@ -1,9 +1,5 @@
 # Useful information
 
-## Disclaimer
-* Some classes and api functions have been subject to change in Neverlose v2. Your old scripts may need to be updated!
-* The api documentation is a work in progress and will continuously be improved upon by adding new usage examples and use cases
-
 ## Libraries/Engines included
 
 * [LuaJIT](https://github.com/LuaJIT/LuaJIT) **2.0.5**
@@ -13,3 +9,10 @@
 ## Official extensions with snippets
 
 * [VSCode](https://marketplace.visualstudio.com/items?itemName=es3n1n.neverlose-lua-api)
+
+## Other helpful information
+
+Scripts stored in (csgo folder)/nl (for example, "C:\\program files (x86)\\steam\\steamapps\\common\\Counter-Strike Global Offensive\\nl")
+You can edit them with any editor you want, cheat will sync scripts automatically
+
+Small LUA guide we recommend for new developers: [Learn LUA](http://tylerneylon.com/a/learn-lua/) (credits to Tyler Neylon)
