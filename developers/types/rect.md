@@ -45,9 +45,9 @@ local my_rect = Rect.new(1.0, 2.0, 3.0, 4.0)
 | w | float | - |
 
 ```lua
-local my_rect = Rect.new(1.0, 2.0, 3.0, 4.0);
-local x = my_rect.x; --1.0
-local y = my_rect.y; --2.0
-local z = my_rect.z; --3.0
-local w = my_rect.w; --4.0
+local my_rect = Rect.new(1.0, 2.0, 3.0, 4.0)
+local x = my_rect.x --1.0
+local y = my_rect.y --2.0
+local z = my_rect.z --3.0
+local w = my_rect.w --4.0
 ```
