@@ -1,6 +1,6 @@
 # IMaterialSystem
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Instance of `IMaterialSystem` is `g_MatSystem`
 {% endhint %}
 
