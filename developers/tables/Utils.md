@@ -87,7 +87,7 @@ local rnd_int = utils.RandomInt(0, 20)
 | seed | int | Seed value |
 
 ```lua
-utils.RandomSeed(cmd.random_seed);
+utils.RandomSeed(cmd.random_seed)
 ```
 
 ## UnixTime
@@ -99,5 +99,5 @@ utils.RandomSeed(cmd.random_seed);
 | epoch | int | Unix time |
 
 ```lua
-local unx = utils.UnixTime();
+local unx = utils.UnixTime()
 ```
