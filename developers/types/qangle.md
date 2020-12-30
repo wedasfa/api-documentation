@@ -80,8 +80,8 @@ local my_angle = QAngle.new(1.0, 2.0, 3.0)
 | roll | float | - |
 
 ```lua
-local my_qangle = QAngle.new(1.0, 2.0, 3.0);
-local pitch = my_qangle.pitch; --1.0
-local yaw = my_qangle.yaw; --2.0
-local roll = my_qangle.roll; --3.0
+local my_qangle = QAngle.new(1.0, 2.0, 3.0)
+local pitch = my_qangle.pitch --1.0
+local yaw = my_qangle.yaw --2.0
+local roll = my_qangle.roll --3.0
 ```
