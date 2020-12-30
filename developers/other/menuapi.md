@@ -209,3 +209,64 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 ```lua
 
 ```
+
+## TextBox
+
+### Parameters:
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| group | string | Group | + |
+| name | string | Name | + |
+| max_size | size_t | Max size | + |
+| def\_value | string | Default value  | + |
+| tooltip | string | Tooltip | - |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | CheatVar | Cheatvar for textbox |
+
+```lua
+
+```
+
+## Text
+
+### Parameters:
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| group | string | Group | + |
+| name | string | Name | + |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | CheatVar | Cheatvar for text |
+
+```lua
+
+```
+
+## Button
+
+### Parameters:
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| group | string | Group | + |
+| name | string | Name | + |
+| tooltip | string | Tooltip | - |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | CheatVar | Cheatvar for button |
+
+```lua
+
+```
