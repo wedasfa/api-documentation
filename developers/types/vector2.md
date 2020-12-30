@@ -15,7 +15,7 @@
 | instance | Vector2 | New instance of a Vector2 |
 
 ```lua
-local my_vec2 = Vector2.new();
+local my_vec2 = Vector2.new()
 ```
 
 ## new
@@ -35,7 +35,7 @@ local my_vec2 = Vector2.new();
 | instance | Vector2 | New instance of a Vector2 |
 
 ```lua
-local my_vec2 = Vector2.new(1.0, 2.0);
+local my_vec2 = Vector2.new(1.0, 2.0)
 ```
 
 ## Arithmetics:
@@ -85,7 +85,7 @@ local div = vec1 / vec2
 #### Usage:
 ```lua
 local vec1 = Vector.new(1.0, 2.0)
-local len = #vec1;
+local len = #vec1
 -- Expected value of len: sqrt(1^2 + 2^2) = 2.2360
 ```
 
