@@ -13,7 +13,7 @@
     * [ConVar](developers/classes/convar.md)
     * [DebugOverlay](developers/classes/debugoverlay.md)
     * [ICVar](developers/classes/icvar.md)
-    * [IVEngineClient](developers/classes/ivengineclient.md)
+    * [IVEngineClient](developers/classes/IVEngineClient.md)
     * [IEngineTrace](developers/classes/IEngineTrace.md)
     * [IEntityList](developers/classes/ientitylist.md)
     * [IGameEvent](developers/classes/igameevent.md)
