@@ -1,7 +1,7 @@
 # CheatVar
 
 {% hint style="info" %}
-You can access `CheatVar` instance through [g\_Config](../classes/config.md)
+You can access `CheatVar` instance through [g\_Config](../classes/Config.md)
 {% endhint %}
 
 ## Functions
