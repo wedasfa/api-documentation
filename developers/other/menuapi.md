@@ -20,7 +20,7 @@
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-
+local switch = menu.Switch("Debug", "Switch", false, "Tooltip")
 ```
 
 ## SwitchColor
@@ -42,7 +42,7 @@
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-
+local switch = menu.SwitchColor("Debug", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderInt
@@ -65,7 +65,7 @@
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-
+local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, "Tooltip")
 ```
 
 ## SliderIntColor
@@ -89,7 +89,7 @@
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-
+local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderFloat
@@ -112,7 +112,7 @@
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-
+local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, "Tooltip")
 ```
 
 ## SliderFloatColor
@@ -136,7 +136,7 @@
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-
+local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## Combo
@@ -158,7 +158,7 @@
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-
+local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## ComboColor
@@ -181,7 +181,7 @@
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-
+local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## MultiCombo
@@ -193,7 +193,7 @@
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Values | + |
-| def | int | Default values | + |
+| def\_value | int | Default values | + |
 | tooltip | string | Tooltip | - |
 
 ### Return value:
@@ -207,7 +207,7 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 {% endhint %}
 
 ```lua
-
+local combo = menu.MultiCombo("Debug", "MultiCombo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## TextBox
@@ -229,7 +229,7 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 | value | CheatVar | Cheatvar for textbox |
 
 ```lua
-
+local textbox = menu.TextBox("Debug", "TextBox", 64, "Value", "Tooltip")
 ```
 
 ## Text
@@ -248,7 +248,7 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 | value | CheatVar | Cheatvar for text |
 
 ```lua
-
+local text = menu.Text("Debug", "Text")
 ```
 
 ## Button
@@ -268,5 +268,5 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 | value | CheatVar | Cheatvar for button |
 
 ```lua
-
+local button = menu.Button("Debug", "Test")
 ```
