@@ -11,7 +11,7 @@ local screen_size = g_EngineClient:GetScreenSize()
 
 cheat.RegisterCallback("draw", function()
 
-    local players = cheat.GetEntitiesByName("CCSPlayer");
+    local players = cheat.GetEntitiesByName("CCSPlayer")
     local local_index = g_EngineClient:GetLocalPlayer()
     for i = 1, #players do
         local player = players[i];
