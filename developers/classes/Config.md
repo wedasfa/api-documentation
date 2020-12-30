@@ -4,10 +4,6 @@
 Instance of `Config` is `g_Config`
 {% endhint %}
 
-{% hint style="info" %}
-List of all CheatVars names can be found [here](../other/cheatvars.md)
-{% endhint %}
-
 ## Functions
 
 ## FindVar
@@ -29,5 +25,5 @@ List of all CheatVars names can be found [here](../other/cheatvars.md)
 | value | CheatVar\* | CheatVar value |
 
 ```lua
-local var = g_Config:FindVar("esp", "Molotov")
+local var = g_Config:FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance")
 ```
