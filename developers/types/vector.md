@@ -85,7 +85,7 @@ local div = vec1 / vec2
 #### Usage:
 ```lua
 local vec1 = Vector.new(1.0, 2.0, 3.0)
-local len = #vec1;
+local len = #vec1
 -- Expected value of len: sqrt(1^2 + 2^2 + 3^2) = 3.741
 ```
 
@@ -174,7 +174,7 @@ local dot = my_vec:Cross(my_vec2)
 
 ```lua
 local my_vec = Vector.new(1.0, 2.0, 3.0);
-local x = my_vec.x; --1.0
-local y = my_vec.y; --2.0
-local z = my_vec.z; --3.0
+local x = my_vec.x --1.0
+local y = my_vec.y --2.0
+local z = my_vec.z --3.0
 ```
