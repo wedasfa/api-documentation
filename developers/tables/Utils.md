@@ -1,4 +1,4 @@
-# Utils
+# utils
 
 ## Functions
 
@@ -18,7 +18,7 @@
 | value | void\* | Interface |
 
 ```lua
-local game_movement = Utils.CreateInterface("client.dll", "GameMovement001")
+local game_movement = utils.CreateInterface("client.dll", "GameMovement001")
 ```
 
 ## PatternScan
@@ -37,7 +37,7 @@ local game_movement = Utils.CreateInterface("client.dll", "GameMovement001")
 | value | void\* | Interface |
 
 ```lua
-local clantag_change_fn = Utils.PatternScan("engine.dll", "53 56 57 8B DA 8B F9 FF 15")
+local clantag_change_fn = utils.PatternScan("engine.dll", "53 56 57 8B DA 8B F9 FF 15")
 ```
 
 ## RandomFloat
@@ -56,7 +56,7 @@ local clantag_change_fn = Utils.PatternScan("engine.dll", "53 56 57 8B DA 8B F9 
 | value | float | Random float from min to max |
 
 ```lua
-local rnd_float = Utils.RandomFloat(0.0, 20.0)
+local rnd_float = utils.RandomFloat(0.0, 20.0)
 ```
 
 ## RandomInt
@@ -75,7 +75,7 @@ local rnd_float = Utils.RandomFloat(0.0, 20.0)
 | value | int | Random int from min to max |
 
 ```lua
-local rnd_int = Utils.RandomInt(0, 20)
+local rnd_int = utils.RandomInt(0, 20)
 ```
 
 ## RandomSeed
@@ -87,7 +87,7 @@ local rnd_int = Utils.RandomInt(0, 20)
 | seed | int | Seed value |
 
 ```lua
-Utils.RandomSeed(cmd.random_seed);
+utils.RandomSeed(cmd.random_seed);
 ```
 
 ## UnixTime
@@ -99,5 +99,5 @@ Utils.RandomSeed(cmd.random_seed);
 | epoch | int | Unix time |
 
 ```lua
-local unx = Utils.UnixTime();
+local unx = utils.UnixTime();
 ```
