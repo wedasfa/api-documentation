@@ -181,7 +181,7 @@ local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local combo = menu.ComboColor("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## MultiCombo
@@ -269,4 +269,25 @@ local text = menu.Text("Debug", "Text")
 
 ```lua
 local button = menu.Button("Debug", "Test")
+```
+
+## ColorEdit
+
+### Parameters:
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| group | string | Group | + |
+| name | string | Name | + |
+| def\_value | Color | Default value  | + |
+| tooltip | string | Tooltip | - |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | CheatVar | Cheatvar for coloredit |
+
+```lua
+local coloredit = menu.ColorEdit("Debug", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
