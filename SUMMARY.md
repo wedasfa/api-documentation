@@ -23,7 +23,7 @@
     * [IRender](developers/classes/render.md)
     * [Panorama](developers/classes/panorama.md)
   * [Tables](developers/tables/README.md)
-    * [AntiAim](developers/tables/Antiaim.md)
+    * [AntiAim](developers/tables/AntiAim.md)
     * [Beams](developers/tables/Beams.md)
     * [Exploits](developers/tables/Exploits.md)
     * [FakeLag](developers/tables/Fakelag.md)
