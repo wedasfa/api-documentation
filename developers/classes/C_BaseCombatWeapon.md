@@ -1,5 +1,19 @@
 # C_BaseCombatWeapon
 
+{% hint style="warn" %}
+C_BaseCombatWeapon class is derived from C_BaseEntity, so all methods from the C_BaseEntity can be called from the C_BaseCombatWeapon
+
+In all examples below, `weap` is a C_BaseCombatWeapon instance
+
+```lua
+-- @summary: Get active weapon
+
+local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
+local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
+```
+{% endhint %}
+
 ## Functions
 
 ## GetProp
@@ -18,7 +32,22 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+-- @summary: Detect when grenade is throwing
+
+if not weap:IsGrenade() then
+	return -- filter out the entities which is not a grenade
+end 
+
+local m_bPinPulled = weap:GetProp("DT_BaseCSGrenade", "m_bPinPulled") -- is grenade's pin is pulled on or not
+local m_flThrowTime = weap:GetProp("DT_BaseCSGrenade", "m_flThrowTime") -- get grenade throw time
+
+if m_bPinPulled then 
+	return 
+end
+
+if m_flThrowTime > 0 then
+	print("Throwing a grenade!")
+end
 ```
 
 ## SetProp
@@ -32,7 +61,7 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+weap:SetProp("DT_BaseCSGrenade", "m_bPinPulled", true)
 ```
 
 ## GetClassId
@@ -44,83 +73,17 @@
 | id | int | Class id |
 
 ```lua
---soonTM
+-- @summary: Detects when active weapon is AK-47 by weapon class id
+
+local ClassId_CAK47 = 1 -- https://github.com/spirthack/CSGOSimple/blob/master/CSGOSimple/valve_sdk/misc/Enums.hpp#L164
+
+local weapon_classid = weap:GetClassId()
+if weapon_classid == ClassId_CAK47 then
+	print("Active weapon is AK-47")
+end
 ```
 
-## IsPlayer
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | bool | Is entity a player |
-
-```lua
---soonTM
-```
-
-## GetPlayer
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | C_BasePlayer* | Pointer to player |
-
-```lua
---soonTM
-```
-
-## IsWeapon
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | bool | Is entity a weapon |
-
-```lua
---soonTM
-```
-
-## GetWeapon
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | C_BaseWeapon* | Pointer to weapon |
-
-```lua
---soonTM
-```
-
-## GetRenderBounds
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| min | Vector | - |
-| max | Vector | - |
-
-```lua
---soonTM
-```
-
-## EntIndex
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | int | Entity index |
-
-```lua
---soonTM
-```
-
-## IsGranade
+## IsGrenade
 
 ### Return value:
 
@@ -129,7 +92,7 @@
 | value | bool | Is weapon granade |
 
 ```lua
---soonTM
+weap:IsGrenade()
 ```
 
 ## IsKnife
@@ -141,7 +104,7 @@
 | value | bool | Is weapon knife |
 
 ```lua
---soonTM
+weap:IsKnife()
 ```
 
 ## IsRifle
@@ -153,7 +116,7 @@
 | value | bool | Is weapon rifle |
 
 ```lua
---soonTM
+weap:IsRifle()
 ```
 
 ## IsPistol
@@ -165,7 +128,7 @@
 | value | bool | Is weapon pistol |
 
 ```lua
---soonTM
+weap:IsPistol()
 ```
 
 ## IsSniper
@@ -177,7 +140,7 @@
 | value | bool | Is weapon sniper |
 
 ```lua
---soonTM
+weap:IsSniper()
 ```
 
 ## IsGun
@@ -189,7 +152,7 @@
 | value | bool | Is weapon gun |
 
 ```lua
---soonTM
+weap:IsGun()
 ```
 
 ## IsReloading
@@ -201,7 +164,7 @@
 | value | bool | Is weapon being reloaded |
 
 ```lua
---soonTM
+weap:IsReloading()
 ```
 
 ## GetInaccuracy
@@ -213,7 +176,7 @@
 | value | float | Weapon inaccuarcy |
 
 ```lua
---soonTM
+local weapon_inaccuracy = weap:GetInaccuracy()
 ```
 
 ## GetSpread
@@ -225,7 +188,7 @@
 | value | float | Weapon inaccuarcy |
 
 ```lua
---soonTM
+weap:GetSpread()
 ```
 
 ## GetFirerate
@@ -237,7 +200,7 @@
 | value | float | Weapon fire rate |
 
 ```lua
---soonTM
+weap:GetFirerate()
 ```
 
 ## GetMaxSpeed
@@ -249,7 +212,7 @@
 | value | float | Max weapon speed |
 
 ```lua
---soonTM
+weap:GetMaxSpeed()
 ```
 
 ## GetMaxClip
@@ -261,7 +224,12 @@
 | value | int | Max weapon clip count|
 
 ```lua
---soonTM
+-- @summary: Prints amount if bullets in clip and max bullets in clip available
+
+local clip = weap:GetProp("DT_BaseCombatWeapon", "m_iClip1")
+local max_clip = weap:GetmaxClip()
+
+print("Bullets in clip: "..tostring(clip).."/"..tostring(max_clip))
 ```
 
 ## GetWeaponDamage
@@ -273,7 +241,7 @@
 | value | int | Weapon damage |
 
 ```lua
---soonTM
+weap:GetWeaponDamage()
 ```
 
 ## GetWeaponRange
@@ -285,7 +253,7 @@
 | value | int | Weapon range |
 
 ```lua
---soonTM
+weap:GetWeaponRange()
 ```
 
 ## GetWeaponID
@@ -297,5 +265,12 @@
 | value | int | Weapon id |
 
 ```lua
---soonTM
+-- @summary: Detects when active weapon is AK-47 by weapon id
+
+local WEAPON_AK47 = 7 -- https://github.com/spirthack/CSGOSimple/blob/master/CSGOSimple/valve_sdk/misc/Enums.hpp#L80
+local weapon_id = weap:GetWeaponID()
+
+if weapon_id == WEAPON_AK47 then
+	print("Your active weapon is AK-47")
+end
 ```
