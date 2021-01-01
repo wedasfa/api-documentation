@@ -1,7 +1,7 @@
 # C_BaseCombatWeapon
 
 {% hint style="warn" %}
-C_BaseCombatWeapon class is derived from C_BaseEntity, so all methods from the C_BaseEntity can be called from the C_BaseCombatWeapon
+C_BaseCombatWeapon class is derived from C_BaseEntity, so all methods from the C_BaseEntity can be called from rthe C_BaseCombatWeapon
 
 In all examples below, `weap` is a C_BaseCombatWeapon instance
 
@@ -224,7 +224,7 @@ weap:GetMaxSpeed()
 | value | int | Max weapon clip count|
 
 ```lua
--- @summary: Prints amount if bullets in clip and max bullets in clip available
+-- @summary: Prints the amount of bullets in clip and max bullets in clip available
 
 local clip = weap:GetProp("DT_BaseCombatWeapon", "m_iClip1")
 local max_clip = weap:GetmaxClip()
