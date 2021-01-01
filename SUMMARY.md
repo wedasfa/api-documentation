@@ -15,7 +15,7 @@
     * [ICVar](developers/classes/ICVar.md)
     * [IVEngineClient](developers/classes/IVEngineClient.md)
     * [IEngineTrace](developers/classes/IEngineTrace.md)
-    * [IEntityList](developers/classes/IClientEntityList..md)
+    * [IEntityList](developers/classes/IClientEntityList.md)
     * [IGameEvent](developers/classes/IGameEvent.md)
     * [IMaterial](developers/classes/IMaterial.md)
     * [IMaterialSystem](developers/classes/IMaterialSystem.md)
