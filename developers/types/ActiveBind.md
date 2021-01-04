@@ -4,47 +4,29 @@
 
 ## GetName
 
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
-
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
+| name | string | Bind Name |
 
 ```lua
-
+bind:GetName()
 ```
 
 ## GetValue
 
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
-
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
+| value | string | Bind value |
 
 ```lua
-
+bind:GetValue()
 ```
 
 ## IsActive
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
 
 ### Return value:
 
@@ -53,5 +35,5 @@
 | value | bool | Is keybind active |
 
 ```lua
-
+bind:IsActive()
 ```

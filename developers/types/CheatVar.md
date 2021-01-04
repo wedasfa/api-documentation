@@ -82,7 +82,7 @@ local val = var:GetString()
 | el\_index | int | Element index for multicombo cheatvar | - |
 
 ```lua
-var:SetBool(val)
+var:SetBool(true)
 ```
 
 ## SetInt
@@ -94,7 +94,7 @@ var:SetBool(val)
 | value | int | New int value | + |
 
 ```lua
-var:SetInt(val)
+var:SetInt(1)
 ```
 
 ## SetFloat
@@ -106,7 +106,7 @@ var:SetInt(val)
 | value | float | New float value | + |
 
 ```lua
-var:SetFloat(val)
+var:SetFloat(1.5)
 ```
 
 ## SetColor
@@ -118,7 +118,7 @@ var:SetFloat(val)
 | value | Color | New Color value | + |
 
 ```lua
-var:SetColor(val)
+var:SetColor(Color.new(1, 1, 1, 1))
 ```
 
 ## SetString
@@ -130,7 +130,7 @@ var:SetColor(val)
 | value | string | New string value | + |
 
 ```lua
-var:SetString(val)
+var:SetString("Hello")
 ```
 
 ## RegisterCallback

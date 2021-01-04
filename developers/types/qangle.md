@@ -40,35 +40,45 @@ local my_angle = QAngle.new(1.0, 2.0, 3.0)
 
 #### Usage:
 ```lua
---soonTM
+local angle1 = QAngle.new(1.0, 2.0, 3.0)
+local angle2 = QAngle.new(1.0, 2.0, 3.0)
+local angle3 = angle1 + angle2
 ```
 
 ### sub
 
 #### Usage:
 ```lua
---soonTM
+local angle1 = QAngle.new(1.0, 2.0, 3.0)
+local angle2 = QAngle.new(1.0, 2.0, 3.0)
+local angle3 = angle1 - angle2
 ```
 
 ### mul
 
 #### Usage:
 ```lua
---soonTM
+local angle1 = QAngle.new(1.0, 2.0, 3.0)
+local angle2 = QAngle.new(1.0, 2.0, 3.0)
+local angle3 = angle1 * angle2
 ```
 
 ### div
 
 #### Usage:
 ```lua
---soonTM
+local angle1 = QAngle.new(1.0, 2.0, 3.0)
+local angle2 = QAngle.new(1.0, 2.0, 3.0)
+local angle3 = angle1 / angle2
 ```
 
 ### len
 
 #### Usage:
 ```lua
---soonTM
+local angle = QAngle.new(1.0, 2.0, 3.0)
+local length = #angle
+print(length)
 ```
 
 ## Fields:
