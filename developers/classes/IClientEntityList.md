@@ -39,8 +39,8 @@ local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer()
 | value | int | Number of entities currently in use |
 
 ```lua
-local NumberOfEntities = g_EntityList:NumberOfEntities(false)
-print(NumberOfEntities)
+local num_ents = g_EntityList:NumberOfEntities(false)
+print(num_ents)
 ```
 
 ## GetHighestEntityIndex
@@ -52,8 +52,8 @@ print(NumberOfEntities)
 | value | int | Highest entity index |
 
 ```lua
-local GetHighestEntityIndex = g_EntityList:GetHighestEntityIndex()
-print(GetHighestEntityIndex)
+local highest_index = g_EntityList:GetHighestEntityIndex()
+print(highest_index)
 ```
 
 ## GetClientEntityFromHandle
