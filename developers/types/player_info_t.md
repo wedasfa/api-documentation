@@ -1,5 +1,9 @@
 # player_info_t
 
+{% hint style="info" %}
+You can access `player_info_t` instance through `GetPlayerInfo` [function](../classes/IVEngineClient.md)
+{% endhint %}
+
 ## Fields
 
 | Name | Type | Description |
