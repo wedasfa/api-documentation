@@ -1,5 +1,9 @@
 # ConVar
 
+{% hint style="info" %}
+You can access `ConVar` instance through `ICVar` [class](../classes/ICVar.md)
+{% endhint %}
+
 ## Functions
 
 {% hint style="warning" %}
