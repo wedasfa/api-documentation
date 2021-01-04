@@ -284,8 +284,8 @@ print(IsConnected)
 | value | bool | Is Hammer editor running |
 
 ```lua
-local IsHammerRunning = g_EngineClient:IsHammerRunning()
-print(IsHammerRunning)
+local hammer = g_EngineClient:IsHammerRunning()
+print(hammer)
 ```
 
 ## IsHltv
@@ -297,8 +297,8 @@ print(IsHammerRunning)
 | value | bool | Is Hltv |
 
 ```lua
-local IsHltv = g_EngineClient:IsHltv()
-print(IsHltv)
+local hltv = g_EngineClient:IsHltv()
+print(hltv)
 ```
 
 ## IsInGame
@@ -310,8 +310,8 @@ print(IsHltv)
 | value | bool | Is player ingame |
 
 ```lua
-local IsInGame = g_EngineClient:IsInGame()
-print(IsInGame)
+local in_game = g_EngineClient:IsInGame()
+print(in_game)
 ```
 
 ## IsOccluded
@@ -342,8 +342,8 @@ print(IsInGame)
 | value | bool | Is game paused |
 
 ```lua
-local IsPaused = g_EngineClient:IsPaused()
-print(IsPaused)
+local paused = g_EngineClient:IsPaused()
+print(paused)
 ```
 
 ## IsPlayingDemo
@@ -355,8 +355,8 @@ print(IsPaused)
 | value | bool | Is demo being played back |
 
 ```lua
-local IsPlayingDemo = g_EngineClient:IsPlayingDemo()
-print(IsPlayingDemo)
+local playing_demo = g_EngineClient:IsPlayingDemo()
+print(playing_demo)
 ```
 
 ## IsRecordingDemo
@@ -368,8 +368,8 @@ print(IsPlayingDemo)
 | value | bool | Is demo being recorded |
 
 ```lua
-local IsRecordingDemo = g_EngineClient:IsRecordingDemo()
-print(IsRecordingDemo)
+local recording_demo = g_EngineClient:IsRecordingDemo()
+print(recording_demo)
 ```
 
 ## IsTakingScreenshot
