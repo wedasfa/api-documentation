@@ -14,7 +14,8 @@ Instance of `GameRulesProxy` is `g_GameRules`.
 | value | bool | Is timeout active |
 
 ```lua
-
+local is_freezed = g_GameRules:m_bFreezePeriod()
+print(is_freezed)
 ```
 
 ## m_bIsValveDS
@@ -25,8 +26,8 @@ Instance of `GameRulesProxy` is `g_GameRules`.
 | value | bool | Is player on a valve server |
 
 ```lua
-local m_bFreezePeriod = g_GameRules:m_bFreezePeriod()
-print(m_bFreezePeriod)
+local valve_ds = g_GameRules:m_bIsValveDS()
+print(valve_ds)
 ```
 
 ## m_fRoundStartTime
@@ -37,8 +38,8 @@ print(m_bFreezePeriod)
 | value | float | Round start time |
 
 ```lua
-local m_fRoundStartTime = g_GameRules:m_fRoundStartTime()
-print(m_fRoundStartTime)
+local round_start_time = g_GameRules:m_fRoundStartTime()
+print(round_start_time)
 ```
 
 ## m_gamePhase
@@ -49,8 +50,8 @@ print(m_fRoundStartTime)
 | value | int | Game phase |
 
 ```lua
-local m_gamePhase = g_GameRules:m_gamePhase()
-print(m_gamePhase)
+local game_phase = g_GameRules:m_gamePhase()
+print(game_phase)
 ```
 
 ## m_iNumConsecutiveCTLoses
@@ -61,8 +62,8 @@ print(m_gamePhase)
 | value | int | Number of consecutive CT loses |
 
 ```lua
-local m_iNumConsecutiveCTLoses = g_GameRules:m_iNumConsecutiveCTLoses()
-print(m_iNumConsecutiveCTLoses)
+local ct_loses = g_GameRules:m_iNumConsecutiveCTLoses()
+print(ct_loses)
 ```
 
 ## m_iNumConsecutiveTerroristLoses
@@ -73,8 +74,8 @@ print(m_iNumConsecutiveCTLoses)
 | value | int | Number of consecutive T loses |
 
 ```lua
-local m_iNumConsecutiveTerroristLoses = g_GameRules:m_iNumConsecutiveTerroristLoses()
-print(m_iNumConsecutiveTerroristLoses)
+local t_loses = g_GameRules:m_iNumConsecutiveTerroristLoses()
+print(t_loses)
 ```
 
 ## m_iRoundTime
@@ -85,6 +86,6 @@ print(m_iNumConsecutiveTerroristLoses)
 | value | int | Round time |
 
 ```lua
-local m_iRoundTime = g_GameRules:m_iRoundTime()
-print(m_iRoundTime)
+local round_time = g_GameRules:m_iRoundTime()
+print(round_time)
 ```
