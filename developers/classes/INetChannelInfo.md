@@ -20,8 +20,8 @@ Flows: 0. Outgoing 1. Incoming 2. Both
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetName = GetNetChannelInfo:GetName()
-print(GetName)
+local net_name = GetNetChannelInfo:GetName()
+print(net_name)
 ```
 
 ## GetAddress
@@ -34,8 +34,8 @@ print(GetName)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAddress = GetNetChannelInfo:GetAddress()
-print(GetAddress)
+local server_ip = GetNetChannelInfo:GetAddress()
+print(server_ip)
 ```
 
 ## IsPlayback
@@ -48,8 +48,8 @@ print(GetAddress)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local IsPlayback = GetNetChannelInfo:IsPlayback()
-print(IsPlayback)
+local playback = GetNetChannelInfo:IsPlayback()
+print(playback)
 ```
 
 ## GetLatency
@@ -68,8 +68,8 @@ print(IsPlayback)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetLatency = GetNetChannelInfo:GetLatency(0)
-print(GetLatency)
+local ping = GetNetChannelInfo:GetLatency(0)
+print(ping)
 ```
 
 ## GetAvgLatency
@@ -88,8 +88,8 @@ print(GetLatency)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAvgLatency = GetNetChannelInfo:GetAvgLatency(0)
-print(GetAvgLatency)
+local avg_ping = GetNetChannelInfo:GetAvgLatency(0)
+print(avg_ping)
 ```
 
 ## GetAvgLoss
@@ -108,8 +108,8 @@ print(GetAvgLatency)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAvgLoss = GetNetChannelInfo:GetAvgLoss(0)
-print(GetAvgLoss)
+local avg_loss = GetNetChannelInfo:GetAvgLoss(0)
+print(avg_loss)
 ```
 
 ## GetAvgChoke
@@ -128,8 +128,8 @@ print(GetAvgLoss)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAvgChoke = GetNetChannelInfo:GetAvgChoke(0)
-print(GetAvgChoke)
+local avg_choke = GetNetChannelInfo:GetAvgChoke(0)
+print(avg_choke)
 ```
 
 ## GetAvgData
@@ -148,8 +148,8 @@ print(GetAvgChoke)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAvgData = GetNetChannelInfo:GetAvgData(0)
-print(GetAvgData)
+local avg_data = GetNetChannelInfo:GetAvgData(0)
+print(avg_data)
 ```
 
 ## GetAvgPackets
@@ -168,8 +168,8 @@ print(GetAvgData)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetAvgPackets = GetNetChannelInfo:GetAvgPackets(0)
-print(GetAvgPackets)
+local avg_packets = GetNetChannelInfo:GetAvgPackets(0)
+print(avg_packets)
 ```
 
 ## GetTotalData
@@ -188,6 +188,6 @@ print(GetAvgPackets)
 
 ```lua
 local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-local GetTotalData = GetNetChannelInfo:GetTotalData(0)
-print(GetTotalData)
+local totaldata = GetNetChannelInfo:GetTotalData(0)
+print(totaldata)
 ```
