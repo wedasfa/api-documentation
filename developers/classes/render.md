@@ -331,13 +331,17 @@ local image_loaded = g_Render:LoadImage(bytes, image_size)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| path | string | Path to image |
+| size | Vector2 | Image Size |
 
 ### Usage:
 ```lua
+local size = Vector2.new(100, 100)
+local image = g_Render:LoadImageFromFile("C:\\Users\\Asuna\\Desktop\\Asuna.jpg", size)
 
+cheat.RegisterCallback("draw", function()
+    g_Render:Image(image, size, size)
+end)
 ```
 
 ## Image
