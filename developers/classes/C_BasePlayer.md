@@ -90,7 +90,7 @@ print(ent_index)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| from | vector | - |
+| from | Vector | - |
 
 ### Return value:
 
