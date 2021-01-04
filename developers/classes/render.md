@@ -285,23 +285,6 @@ g_Render:Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 g_Render:CircleFilled3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
-## Cylinder3DFilled
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| pos | Vector | 3-dimensional position |
-| seg | int | Amount of segments |
-| rad | float | Radius |
-| height | float | Cylinder height |
-| clr | Color | Cylinder color |
-
-### Usage:
-```lua
-g_Render:CylinderFilled3D(Vector.new(0, 0, 0), 58, 10.0, 30.0, Color.new(1.0, 1.0, 1.0))
-```
-
 ## GradientBoxFilled
 
 ### Parameters:
