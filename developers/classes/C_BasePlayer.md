@@ -68,8 +68,8 @@ print(GetClassId)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local EntIndex = getplayer:EntIndex()
-print(EntIndex)
+local ent_index = getplayer:EntIndex()
+print(ent_index)
 ```
 
 ## SetModelIndex
@@ -101,8 +101,8 @@ print(EntIndex)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local IsVisible = getplayer:IsVisible(Vector.new(0, 0, 0))
-print(IsVisible)
+local visible = getplayer:IsVisible(Vector.new(0, 0, 0))
+print(visible)
 ```
 
 ## GetEyePosition
@@ -116,8 +116,8 @@ print(IsVisible)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local GetEyePosition = getplayer:GetEyePosition()
-print(GetEyePosition.x, GetEyePosition.y, GetEyePosition.z)
+local eye_pos = getplayer:GetEyePosition()
+print(eye_pos.x, eye_pos.y, eye_pos.z)
 ```
 
 ## GetActiveWeapon
@@ -131,8 +131,8 @@ print(GetEyePosition.x, GetEyePosition.y, GetEyePosition.z)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local GetActiveWeapon = getplayer:GetActiveWeapon()
-print(GetActiveWeapon)
+local active_weapon = getplayer:GetActiveWeapon()
+print(active_weapon)
 ```
 
 ## GetHitboxCenter
@@ -146,8 +146,8 @@ print(GetActiveWeapon)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local GetHitboxCenter = getplayer:GetHitboxCenter(0)
-print(GetHitboxCenter.x, GetHitboxCenter.y, GetHitboxCenter.z)
+local hitbox_center = getplayer:GetHitboxCenter(0)
+print(hitbox_center.x, hitbox_center.y, hitbox_center.z)
 ```
 
 ## GetName
@@ -161,8 +161,8 @@ print(GetHitboxCenter.x, GetHitboxCenter.y, GetHitboxCenter.z)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local GetName = getplayer:GetName()
-print(GetName)
+local pl_name = getplayer:GetName()
+print(pl_name)
 ```
 
 ## IsDormant
@@ -176,8 +176,8 @@ print(GetName)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local IsDormant = getplayer:IsDormant()
-print(IsDormant)
+local dormant = getplayer:IsDormant()
+print(dormant)
 ```
 
 ## IsTeamMate
@@ -191,8 +191,8 @@ print(IsDormant)
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
-local IsTeamMate = getplayer:IsTeamMate()
-print(IsTeamMate)
+local is_teammate = getplayer:IsTeamMate()
+print(is_teammate)
 ```
 
 ## GetSequenceActivity
