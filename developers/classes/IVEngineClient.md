@@ -51,8 +51,8 @@ g_EngineClient:ExecuteClientCmd("say neverlose.cc")
 | value | int | App id|
 
 ```lua
-local GetAppId = g_EngineClient:GetAppId()
-print(GetAppId)
+local app_id = g_EngineClient:GetAppId()
+print(app_id)
 ```
 
 ## GetEngineBuildNumber
@@ -64,8 +64,8 @@ print(GetAppId)
 | value | int | Engine buildnumber |
 
 ```lua
-local GetEngineBuildNumber = g_EngineClient:GetEngineBuildNumber()
-print(GetEngineBuildNumber)
+local build = g_EngineClient:GetEngineBuildNumber()
+print(build)
 ```
 
 ## GetGameDirectory
@@ -77,8 +77,8 @@ print(GetEngineBuildNumber)
 | value | string | Current gamedirectory |
 
 ```lua
-local GetGameDirectory = g_EngineClient:GetGameDirectory()
-print(GetGameDirectory)
+local root_dir = g_EngineClient:GetGameDirectory()
+print(root_dir)
 ```
 
 ## GetLastTimestamp
@@ -90,8 +90,8 @@ print(GetGameDirectory)
 | value | float | Exact server-timestamp of the last received server message |
 
 ```lua
-local GetLastTimestamp = g_EngineClient:GetLastTimestamp()
-print(GetLastTimestamp)
+local timestamp = g_EngineClient:GetLastTimestamp()
+print(timestamp)
 ```
 
 ## GetLevelName
@@ -103,8 +103,8 @@ print(GetLastTimestamp)
 | value | string | Name of the current map |
 
 ```lua
-local GetLevelName = g_EngineClient:GetLevelName()
-print(GetLevelName)
+local mapname = g_EngineClient:GetLevelName()
+print(mapname)
 ```
 
 ## GetLevelNameShort
@@ -116,8 +116,8 @@ print(GetLevelName)
 | value | string | Short name of the current map |
 
 ```lua
-local GetLevelNameShort = g_EngineClient:GetLevelNameShort()
-print(GetLevelNameShort)
+local mapname_short = g_EngineClient:GetLevelNameShort()
+print(mapname_short)
 ```
 
 ## GetMapGroupName
@@ -129,8 +129,8 @@ print(GetLevelNameShort)
 | value | string | Map group name |
 
 ```lua
-local GetMapGroupName = g_EngineClient:GetMapGroupName()
-print(GetMapGroupName)
+local mapgroup = g_EngineClient:GetMapGroupName()
+print(mapgroup)
 ```
 
 ## GetLocalPlayer
@@ -142,8 +142,8 @@ print(GetMapGroupName)
 | value | int | Local player index |
 
 ```lua
-local GetLocalPlayer = g_EngineClient:GetLocalPlayer()
-print(GetLocalPlayer)
+local localplayer = g_EngineClient:GetLocalPlayer()
+print(localplayer)
 ```
 
 ## GetMaxClients
@@ -155,8 +155,8 @@ print(GetLocalPlayer)
 | value | int | Max amount of clients |
 
 ```lua
-local GetMaxClients = g_EngineClient:GetMaxClients()
-print(GetMaxClients)
+local max_players = g_EngineClient:GetMaxClients()
+print(max_players)
 ```
 
 ## GetNetChannelInfo
@@ -168,8 +168,8 @@ print(GetMaxClients)
 | value | INetChannelInfo* | INetChannelInfo pointer |
 
 ```lua
-local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
-print(GetNetChannelInfo)
+local net_chann = g_EngineClient:GetNetChannelInfo()
+print(net_chann)
 ```
 
 ## GetPlayerForUserId
@@ -187,8 +187,8 @@ print(GetNetChannelInfo)
 | value | int | Entity ID |
 
 ```lua
-local GetPlayerForUserId = g_EngineClient:GetPlayerForUserId(1)
-print(GetPlayerForUserId)
+local player = g_EngineClient:GetPlayerForUserId(1)
+print(player)
 ```
 
 ## GetPlayerInfo
@@ -206,8 +206,8 @@ print(GetPlayerForUserId)
 | value | player_info_t | Player info |
 
 ```lua
-local GetPlayerInfo = g_EngineClient:GetPlayerInfo(g_EngineClient:GetLocalPlayer())
-print(GetPlayerInfo.iSteamID)
+local player_info = g_EngineClient:GetPlayerInfo(g_EngineClient:GetLocalPlayer())
+print(player_info.iSteamID)
 ```
 
 ## GetProductVersionString
@@ -219,8 +219,8 @@ print(GetPlayerInfo.iSteamID)
 | value | string | CSGO version string |
 
 ```lua
-local GetProductVersionString = g_EngineClient:GetProductVersionString()
-print(GetProductVersionString)
+local csgo_version = g_EngineClient:GetProductVersionString()
+print(csgo_version)
 ```
 
 ## GetScreenSize
@@ -232,8 +232,8 @@ print(GetProductVersionString)
 | value | Vector2 | Size of game window |
 
 ```lua
-local GetScreenSize = g_EngineClient:GetScreenSize()
-print(GetScreenSize.x, GetScreenSize.y)
+local screen_size = g_EngineClient:GetScreenSize()
+print(screen_size.x, screen_size.y)
 ```
 
 ## GetTimeScale
@@ -245,8 +245,8 @@ print(GetScreenSize.x, GetScreenSize.y)
 | value | float | Timescale |
 
 ```lua
-local GetTimeScale = g_EngineClient:GetTimeScale()
-print(GetTimeScale)
+local time_scale = g_EngineClient:GetTimeScale()
+print(time_scale)
 ```
 
 ## GetViewAngles
@@ -258,8 +258,8 @@ print(GetTimeScale)
 | value | QAngle | View angles |
 
 ```lua
-local GetViewAngles = g_EngineClient:GetViewAngles()
-print(GetViewAngles.pitch, GetViewAngles.yaw, GetViewAngles.roll)
+local view_angles = g_EngineClient:GetViewAngles()
+print(view_angles.pitch, view_angles.yaw, view_angles.roll)
 ```
 
 ## IsConnected
@@ -381,8 +381,8 @@ print(IsRecordingDemo)
 | value | bool | Is game taking a screenshot |
 
 ```lua
-local IsTakingScreenshot = g_EngineClient:IsTakingScreenshot()
-print(IsTakingScreenshot)
+local is_screenshoting = g_EngineClient:IsTakingScreenshot()
+print(is_screenshoting)
 ```
 
 ## LevelLeafCount
@@ -394,8 +394,8 @@ print(IsTakingScreenshot)
 | value | int | Amount of leaves in the level |
 
 ```lua
-local LevelLeafCount = g_EngineClient:LevelLeafCount()
-print(LevelLeafCount)
+local leafs = g_EngineClient:LevelLeafCount()
+print(leafs)
 ```
 
 ## MapHasHdrLighting
@@ -407,8 +407,8 @@ print(LevelLeafCount)
 | value | bool | Was map loaded with HDR info |
 
 ```lua
-local MapHasHdrLighting = g_EngineClient:MapHasHdrLighting()
-print(MapHasHdrLighting)
+local hdr_loaded = g_EngineClient:MapHasHdrLighting()
+print(hdr_loaded)
 ```
 
 ## RemoveAllPaint
