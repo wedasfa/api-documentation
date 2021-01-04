@@ -10,7 +10,7 @@
 local speed        = menu.SliderInt("Doubletap", "Speed", 13, 10, 16)      --    Create a new slider in our script's tab
 local preserve     = menu.SliderInt("Doubletap", "Preserve", 1, 0, 4)      --    Create a new slider in our script's tab
 
-local ui_callback_speed       = function()    
+local ui_callback       = function()    
 
     exploits.OverrideDoubleTapSpeed(speed:GetInt()) -- Set new double tap speed
     exploits.OverrideDoubleTapPreserve(preserve:GetInt()) -- Set new double tap preserve
