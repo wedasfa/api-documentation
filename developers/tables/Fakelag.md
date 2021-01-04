@@ -43,5 +43,5 @@ local sent_packets_num = fakelag.SentPackets()
 | state | bool | Set packet state False - choke packet True - send packet |
 
 ```lua
-fakelag.SetState()
+fakelag.SetState(false)
 ```
