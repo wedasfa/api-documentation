@@ -20,7 +20,7 @@
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = menu.Switch("Debug", "Switch", false, "Tooltip")
+local switch = menu.Switch("Neverlose", "Switch", false, "Tooltip")
 ```
 
 ## SwitchColor
@@ -42,7 +42,7 @@ local switch = menu.Switch("Debug", "Switch", false, "Tooltip")
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = menu.SwitchColor("Debug", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local switch = menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderInt
@@ -65,7 +65,7 @@ local switch = menu.SwitchColor("Debug", "Switch", false, Color.new(1.0, 1.0, 1.
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, "Tooltip")
+local sliderint = menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
 ```
 
 ## SliderIntColor
@@ -89,7 +89,7 @@ local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, "Tooltip")
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderint = menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderFloat
@@ -112,7 +112,7 @@ local sliderint = menu.SliderInt("Debug", "Slider", 50, 0, 100, Color.new(1.0, 1
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, "Tooltip")
+local sliderfloat = menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "Tooltip")
 ```
 
 ## SliderFloatColor
@@ -136,7 +136,7 @@ local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, "Toolt
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderfloat = menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## Combo
@@ -158,7 +158,7 @@ local sliderfloat = menu.SliderFloat("Debug", "Slider", 50.0, 0.0, 100.0, Color.
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## ComboColor
@@ -181,7 +181,7 @@ local combo = menu.Combo("Debug", "Combo", {"Element 1", "Element 2", "Element 3
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = menu.ComboColor("Debug", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local combo = menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## MultiCombo
@@ -207,7 +207,7 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 {% endhint %}
 
 ```lua
-local combo = menu.MultiCombo("Debug", "MultiCombo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## TextBox
@@ -229,7 +229,7 @@ local combo = menu.MultiCombo("Debug", "MultiCombo", {"Element 1", "Element 2", 
 | value | CheatVar | Cheatvar for textbox |
 
 ```lua
-local textbox = menu.TextBox("Debug", "TextBox", 64, "Value", "Tooltip")
+local textbox = menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip")
 ```
 
 ## Text
@@ -241,14 +241,8 @@ local textbox = menu.TextBox("Debug", "TextBox", 64, "Value", "Tooltip")
 | group | string | Group | + |
 | name | string | Name | + |
 
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | CheatVar | Cheatvar for text |
-
 ```lua
-local text = menu.Text("Debug", "Text")
+menu.Text("Neverlose", "Text")
 ```
 
 ## Button
@@ -268,7 +262,7 @@ local text = menu.Text("Debug", "Text")
 | value | CheatVar | Cheatvar for button |
 
 ```lua
-local button = menu.Button("Debug", "Test")
+local button = menu.Button("Neverlose", "Test")
 ```
 
 ## ColorEdit
@@ -289,5 +283,5 @@ local button = menu.Button("Debug", "Test")
 | value | CheatVar | Cheatvar for coloredit |
 
 ```lua
-local coloredit = menu.ColorEdit("Debug", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local coloredit = menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```

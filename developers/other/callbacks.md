@@ -17,6 +17,8 @@ You can read about events [here](https://wiki.alliedmods.net%20Counter-Strike:_G
 {% endhint %}
 
 * **destroy** - called when script destroyed. 0 arguments passed to callback.
+* **frame_stage** - called when script destroyed. 0 arguments passed to callback.
+* **console** - called when script destroyed. 1 arguments passed to callback - input text.
 * **registered\_shot** - called when registered ragebot shot. 1 argument passed to callback - [registered\_shot](../types/registeredshot.md)
 * **ragebot\_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot\_shot](../types/ragebot_shot.md)
 * **fire\_bullet** - called when other players shooting. 1 argument passed to callback - [DT\_FireBullets](../types/dt_firebullets.md)
