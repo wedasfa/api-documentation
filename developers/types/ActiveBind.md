@@ -1,5 +1,9 @@
 # ActiveBind
 
+{% hint style="info" %}
+You can access `ActiveBind` instance through `GetBinds` [function](../classes/cheat.md)
+{% endhint %}
+
 ## Functions
 
 ## GetName
