@@ -25,3 +25,4 @@ Feel free to contact us:
 * [Pull Requests](https://github.com/neverlosecc/api-documentation/pulls)
 * Personal messages to any of documentation maintainer: 
 	* es3n1n#3579
+	* elleqt#9945
