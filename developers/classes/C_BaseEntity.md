@@ -169,8 +169,8 @@ end)
 
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local GetRenderOrigin = localplayer:GetRenderOrigin()
-print(GetRenderOrigin.x, GetRenderOrigin.y, GetRenderOrigin.z)
+local origin = localplayer:GetRenderOrigin()
+print(origin.x, origin.y, origin.z)
 ```
 
 ## GetRenderAngles
@@ -183,8 +183,8 @@ print(GetRenderOrigin.x, GetRenderOrigin.y, GetRenderOrigin.z)
 
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local GetRenderAngles = localplayer:GetRenderAngles()
-print(GetRenderAngles.pitch, GetRenderAngles.yaw, GetRenderAngles.roll)
+local render_angles = localplayer:GetRenderAngles()
+print(render_angles.pitch, render_angles.yaw, render_angles.roll)
 ```
 
 ## EntIndex
@@ -197,8 +197,8 @@ print(GetRenderAngles.pitch, GetRenderAngles.yaw, GetRenderAngles.roll)
 
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local EntIndex = localplayer:EntIndex()
-print(EntIndex)
+local ent_id = localplayer:EntIndex()
+print(ent_id)
 ```
 
 ## SetModelIndex
