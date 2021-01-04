@@ -12,10 +12,10 @@
 | value | int | New mindamage |
 
 ```lua
-
+ragebot.OverrideMinDamage(1, 10)
 ```
 
-## OverrideHitChance
+## OverrideHitchance
 
 ### Parameters:
 
@@ -25,7 +25,7 @@
 | value | int | New hitchance |
 
 ```lua
-
+ragebot.OverrideHitchance(1, 10)
 ```
 
 ## ForceSafety
@@ -37,7 +37,7 @@
 | index | int | Entity index |
 
 ```lua
-
+ragebot.ForceSafety(1)
 ```
 
 ## SetTargetPriority
@@ -50,7 +50,7 @@
 | priority | int | Arbitrary numerical priority value - higher value = higher priority |
 
 ```lua
-
+ragebot.SetTargetPriority(1, 100)
 ```
 
 {% hint style="info" %}
@@ -68,7 +68,7 @@ Hitboxes: 0. `head` 1. `neck` 2. `pelvis` 3. `stomach` 4. `lower chest` 5. `ches
 | priority | int | Arbitrary numerical priority value - higher value = higher priority |
 
 ```lua
-
+ragebot.SetHitboxPriority(1, 0, 100)
 ```
 
 ## ForceHitboxSafety
@@ -81,7 +81,7 @@ Hitboxes: 0. `head` 1. `neck` 2. `pelvis` 3. `stomach` 4. `lower chest` 5. `ches
 | hitbox | int | Hitbox index |
 
 ```lua
-
+ragebot.ForceHitboxSafety(1, 0)
 ```
 
 ## EnableHitbox
@@ -95,7 +95,7 @@ Hitboxes: 0. `head` 1. `neck` 2. `pelvis` 3. `stomach` 4. `lower chest` 5. `ches
 | state | bool | Hitbox state |
 
 ```lua
-
+ragebot.EnableHitbox(1, 0, false)
 ```
 
 ## EnableMultipoints
@@ -109,7 +109,7 @@ Hitboxes: 0. `head` 1. `neck` 2. `pelvis` 3. `stomach` 4. `lower chest` 5. `ches
 | state | bool | Multipoint state |
 
 ```lua
-
+ragebot.EnableMultipoints(1, 0, false)
 ```
 
 ## IgnoreTarget
@@ -121,5 +121,5 @@ Hitboxes: 0. `head` 1. `neck` 2. `pelvis` 3. `stomach` 4. `lower chest` 5. `ches
 | index | int | Entity index |
 
 ```lua
-
+ragebot.IgnoreTarget(1)
 ```

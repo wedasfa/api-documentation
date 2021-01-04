@@ -11,7 +11,7 @@
 | value | bool | A new value for inverter |
 
 ```lua
-AntiAim.OverrideInverter(false)
+antiaim.OverrideInverter(false)
 ```
 
 ## OverrideLimit
@@ -23,7 +23,7 @@ AntiAim.OverrideInverter(false)
 | value | float | A new desync limit value |
 
 ```lua
-AntiAim.OverrideLimit(1.0)
+antiaim.OverrideLimit(1.0)
 ```
 
 ## OverrideYawOffset
@@ -35,7 +35,7 @@ AntiAim.OverrideLimit(1.0)
 | value | float | A new yaw offset value |
 
 ```lua
-AntiAim.OverrideYawOffset(1.0)
+antiaim.OverrideYawOffset(1.0)
 ```
 
 ## OverrideLBYOffset
@@ -47,7 +47,7 @@ AntiAim.OverrideYawOffset(1.0)
 | value | float | A new lby offset value |
 
 ```lua
-AntiAim.OverrideLBYOffset(1.0)
+antiaim.OverrideLBYOffset(1.0)
 ```
 
 ## OverridePitch
@@ -59,7 +59,7 @@ AntiAim.OverrideLBYOffset(1.0)
 | value | float | A new pitch value |
 
 ```lua
-AntiAim.OverridePitch(1.0)
+antiaim.OverridePitch(1.0)
 ```
 
 ## GetInverterState
@@ -71,7 +71,7 @@ AntiAim.OverridePitch(1.0)
 | bool | Current inverter state |
 
 ```lua
-local inverter_state = AntiAim.GetInverterState()
+local inverter_state = antiaim.GetInverterState()
 ```
 
 ## GetMinDesyncDelta
@@ -83,7 +83,7 @@ local inverter_state = AntiAim.GetInverterState()
 | float | Minimal desync delta |
 
 ```lua
-local min_desync_delta = AntiAim.GetMinDesyncDelta()
+local min_desync_delta = antiaim.GetMinDesyncDelta()
 ```
 
 ## GetMaxDesyncDelta
@@ -95,7 +95,7 @@ local min_desync_delta = AntiAim.GetMinDesyncDelta()
 | float | Max desync delta |
 
 ```lua
-local max_desync_delta = AntiAim.GetMaxDesyncDelta()
+local max_desync_delta = antiaim.GetMaxDesyncDelta()
 ```
 
 ## GetFakeRotation
@@ -107,7 +107,7 @@ local max_desync_delta = AntiAim.GetMaxDesyncDelta()
 | float | Fake rotation |
 
 ```lua
-local desync_rotation = AntiAim.GetFakeRotation()
+local desync_rotation = antiaim.GetFakeRotation()
 ```
 
 ## GetCurrentRealRotation
@@ -119,5 +119,5 @@ local desync_rotation = AntiAim.GetFakeRotation()
 | float | Real rotation |
 
 ```lua
-local real_rotation = AntiAim.GetRealRotation()
+local real_rotation = antiaim.GetRealRotation()
 ```
