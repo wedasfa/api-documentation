@@ -1,10 +1,14 @@
 # IMaterial
 
-{% hint style="warning" %}
-In examples below all `material` is `IMaterial` instance
+{% hint style="info" %}
+You can access `IMaterial` instance through `IMaterialSystem` [class](../classes/IMaterialSystem.md)
 {% endhint %}
 
 ## Functions
+
+{% hint style="warning" %}
+In examples below all `material` is `IMaterial` instance
+{% endhint %}
 
 ## ColorModulate
 
