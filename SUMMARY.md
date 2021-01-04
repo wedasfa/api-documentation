@@ -44,7 +44,7 @@
     * [Trace](developers/types/trace_t.md)
     * [Vector](developers/types/vector.md)
     * [Vector2](developers/types/vector2.md)
-    * [PlayerInfo](developers/types/playerinfo.md)
+    * [PlayerInfo](developers/types/player_info_t.md)
   * [Other](developers/other/README.md)
     * [Callbacks](developers/other/callbacks.md)
     * [ESP API](developers/other/espapi.md)
