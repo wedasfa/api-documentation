@@ -92,7 +92,7 @@ local vec = cheat.AngleToForward(QAngle.new())
 | ang | QAngle | Output angle |
 
 ```lua
-local ang = cheat.VectorToAngle(Vector.new())
+local ang = cheat.VectorToAngle(Vector.new(100, 100, 100))
 ```
 
 ## IsMenuVisible
@@ -168,7 +168,8 @@ local username = cheat.GetCheatUserName()
 | ent | C_BaseEntity* | |
 
 ```lua
-
+local ents = cheat.GetEntitiesByClassID(40)
+print("Players: " .. #ents)
 ```
 
 ## GetEntitiesByName
@@ -186,7 +187,8 @@ local username = cheat.GetCheatUserName()
 | ent | C_BaseEntity* | |
 
 ```lua
-
+local ents = cheat.GetEntitiesByName("CCSPlayer")
+print("Players: " .. #ents)
 ```
 
 ## GetBinds
@@ -198,7 +200,11 @@ local username = cheat.GetCheatUserName()
 | bind | ActiveBind | Binds |
 
 ```lua
-
+local binds = cheat.GetBinds()
+print("Name", "isActive", "Value")
+for i = 1, #binds do
+    print(binds[i]:GetName(), binds[i]:IsActive(), binds[i]:GetValue())
+end
 ```
 
 ## AddEvent
@@ -210,7 +216,7 @@ local username = cheat.GetCheatUserName()
 | name | string | Event name |
 
 ```lua
-
+cheat.AddEvent("lenin is alive")
 ```
 
 ## AddNotify
@@ -223,5 +229,5 @@ local username = cheat.GetCheatUserName()
 | name | string | Event name |
 
 ```lua
-
+cheat.AddNotify("neverlose.cc", "elleqt is cute")
 ```

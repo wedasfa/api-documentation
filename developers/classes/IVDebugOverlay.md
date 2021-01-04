@@ -63,7 +63,7 @@ g_DebugOverlay:AddSphereOverlay(Vector.new(1, 2, 3), 1.0, 10, 10, 255, 255, 255,
 | duration | float |  |
 
 ```lua
-g_DebugOverlay:AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(7, 8, 9), 255, 255, 255, 255, true, 1.0)
+g_DebugOverlay:AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(7, 8, 9), 255, 255, 255, 255, 1.0)
 ```
 
 ## AddLineOverlay
@@ -81,7 +81,7 @@ g_DebugOverlay:AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vect
 | duration | float |  |
 
 ```lua
-g_DebugOverlay:AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255, 255, true, 1.0)
+g_DebugOverlay:AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255, 255, 1.0)
 ```
 
 ## AddCapsuleOverlay
@@ -101,5 +101,5 @@ g_DebugOverlay:AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255
 | duration | float |  |
 
 ```lua
-g_DebugOverlay:AddCapsuleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 15.0, 255, 255, 255, 255, true, 1.0)
+g_DebugOverlay:AddCapsuleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 15.0, 255, 255, 255, 255, 1.0)
 ```

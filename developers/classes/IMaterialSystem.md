@@ -110,26 +110,20 @@ local mat_ptr = g_MatSystem.GetMaterial(mat)
 | type | string | Material type |
 
 {% hint style="info" %}
-Types can be:
+Types can be (case sensetivity):
 
-* enemies
-* teammates
-* local
-* fake
-* backtrack
-* onshot
-* ragdolls
-* attachments
-* weapon
-* grenade
-* bomb
-* loot
-* localhands
-* localweapon
+* Enemies
+* Teammates 
+* Weapon
+* Grenades
+* Localplayer
+* LocalWeapon
+* LocalHands
+* Ragdolls
 {% endhint %}
 
 ```lua
-local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
+local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
     "$envmap" "editor/cube_vertigo"
@@ -137,7 +131,7 @@ local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
     "$basetexture" "dev"
   }  
 ]])
-g_MatSystem.OverrideMaterial(mat_ptr, "enemies")
+g_MatSystem:OverrideMaterial(mat_ptr, "Enemies")
 ```
 
 ## RemoveOverrideMaterial
@@ -150,5 +144,5 @@ g_MatSystem.OverrideMaterial(mat_ptr, "enemies")
 | type | string | Material type |
 
 ```lua
-
+g_MatSystem:RemoveOverrideMaterial(mat_ptr, "Enemies")
 ```

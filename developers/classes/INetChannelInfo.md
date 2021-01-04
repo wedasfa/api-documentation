@@ -19,7 +19,9 @@ Flows: 0. Outgoing 1. Incoming 2. Both
 | value | string | Channel name |
 
 ```lua
-local chan_name = net_chan:GetName()
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetName = GetNetChannelInfo:GetName()
+print(GetName)
 ```
 
 ## GetAddress
@@ -31,7 +33,9 @@ local chan_name = net_chan:GetName()
 | value | string | IP address |
 
 ```lua
-local chan_addr = net_chan:GetAddress()
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAddress = GetNetChannelInfo:GetAddress()
+print(GetAddress)
 ```
 
 ## IsPlayback
@@ -43,12 +47,14 @@ local chan_addr = net_chan:GetAddress()
 | value | bool | - |
 
 ```lua
-local chan_pb = net_chan:IsPlayback()
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local IsPlayback = GetNetChannelInfo:IsPlayback()
+print(IsPlayback)
 ```
 
 ## GetLatency
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -61,12 +67,14 @@ local chan_pb = net_chan:IsPlayback()
 | value | float | Current latency \(RTT\), more accurate but jittering |
 
 ```lua
-local latency = net_chan:GetLatency(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetLatency = GetNetChannelInfo:GetLatency(0)
+print(GetLatency)
 ```
 
 ## GetAvgLatency
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -79,12 +87,14 @@ local latency = net_chan:GetLatency(0)
 | value | float | Current average latency \(RTT\), more accurate but jittering |
 
 ```lua
-local avg_latency = net_chan:GetAvgLatency(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAvgLatency = GetNetChannelInfo:GetAvgLatency(0)
+print(GetAvgLatency)
 ```
 
 ## GetAvgLoss
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -97,12 +107,14 @@ local avg_latency = net_chan:GetAvgLatency(0)
 | value | float | Avg packet loss\[0..1\] |
 
 ```lua
-local avg_loss = net_chan:GetAvgLoss(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAvgLoss = GetNetChannelInfo:GetAvgLoss(0)
+print(GetAvgLoss)
 ```
 
 ## GetAvgChoke
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -115,12 +127,14 @@ local avg_loss = net_chan:GetAvgLoss(0)
 | value | float | Avg packet choke\[0..1\] |
 
 ```lua
-local avg_choke = net_chan:GetAvgChoke(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAvgChoke = GetNetChannelInfo:GetAvgChoke(0)
+print(GetAvgChoke)
 ```
 
 ## GetAvgData
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -133,12 +147,14 @@ local avg_choke = net_chan:GetAvgChoke(0)
 | value | float | Data flow in bytes/sec |
 
 ```lua
-local avg_data = net_chan:GetAvgData(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAvgData = GetNetChannelInfo:GetAvgData(0)
+print(GetAvgData)
 ```
 
 ## GetAvgPackets
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -151,12 +167,14 @@ local avg_data = net_chan:GetAvgData(0)
 | value | float | Avg packets/sec |
 
 ```lua
-local avg_packets = net_chan:GetAvgPackets(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetAvgPackets = GetNetChannelInfo:GetAvgPackets(0)
+print(GetAvgPackets)
 ```
 
 ## GetTotalData
 
-### Return value:
+### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -169,5 +187,7 @@ local avg_packets = net_chan:GetAvgPackets(0)
 | value | float | Total flow in/out in bytes |
 
 ```lua
-local total_data = net_chan:GetTotalData(0)
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+local GetTotalData = GetNetChannelInfo:GetTotalData(0)
+print(GetTotalData)
 ```

@@ -21,7 +21,7 @@ Instance of `IClientEntityList` is `g_EntityList`
 | ent | C_BaseEntity* | Pointer to entity |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 ```
 
 ## NumberOfEntities
@@ -39,7 +39,8 @@ Instance of `IClientEntityList` is `g_EntityList`
 | value | int | Number of entities currently in use |
 
 ```lua
---soonTM
+local NumberOfEntities = g_EntityList:NumberOfEntities(false)
+print(NumberOfEntities)
 ```
 
 ## GetHighestEntityIndex
@@ -51,7 +52,8 @@ Instance of `IClientEntityList` is `g_EntityList`
 | value | int | Highest entity index |
 
 ```lua
---soonTM
+local GetHighestEntityIndex = g_EntityList:GetHighestEntityIndex()
+print(GetHighestEntityIndex)
 ```
 
 ## GetClientEntityFromHandle
@@ -69,5 +71,7 @@ Instance of `IClientEntityList` is `g_EntityList`
 | ent | C_BaseEntity* | Pointer to entity |
 
 ```lua
---soonTM
+local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
+local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
 ```

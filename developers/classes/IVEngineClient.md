@@ -15,7 +15,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | cmd | string | Client cmd |
 
 ```lua
-
+g_EngineClient:ClientCmd("say neverlose.cc")
 ```
 
 ## ClientCmdUnrestricted
@@ -27,7 +27,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | szCommand | string | Command |
 
 ```lua
-
+g_EngineClient:ClientCmdUnrestricted("say neverlose.cc")
 ```
 
 ## ExecuteClientCmd
@@ -39,7 +39,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | Command |
 
 ```lua
-
+g_EngineClient:ExecuteClientCmd("say neverlose.cc")
 ```
 
 ## GetAppId
@@ -51,7 +51,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | App id|
 
 ```lua
-
+local GetAppId = g_EngineClient:GetAppId()
+print(GetAppId)
 ```
 
 ## GetEngineBuildNumber
@@ -63,7 +64,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | Engine buildnumber |
 
 ```lua
-
+local GetEngineBuildNumber = g_EngineClient:GetEngineBuildNumber()
+print(GetEngineBuildNumber)
 ```
 
 ## GetGameDirectory
@@ -75,7 +77,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | Current gamedirectory |
 
 ```lua
-
+local GetGameDirectory = g_EngineClient:GetGameDirectory()
+print(GetGameDirectory)
 ```
 
 ## GetLastTimestamp
@@ -87,7 +90,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | float | Exact server-timestamp of the last received server message |
 
 ```lua
-
+local GetLastTimestamp = g_EngineClient:GetLastTimestamp()
+print(GetLastTimestamp)
 ```
 
 ## GetLevelName
@@ -99,7 +103,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | Name of the current map |
 
 ```lua
-
+local GetLevelName = g_EngineClient:GetLevelName()
+print(GetLevelName)
 ```
 
 ## GetLevelNameShort
@@ -111,7 +116,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | Short name of the current map |
 
 ```lua
-
+local GetLevelNameShort = g_EngineClient:GetLevelNameShort()
+print(GetLevelNameShort)
 ```
 
 ## GetMapGroupName
@@ -123,7 +129,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | Map group name |
 
 ```lua
-
+local GetMapGroupName = g_EngineClient:GetMapGroupName()
+print(GetMapGroupName)
 ```
 
 ## GetLocalPlayer
@@ -135,7 +142,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | Local player index |
 
 ```lua
-
+local GetLocalPlayer = g_EngineClient:GetLocalPlayer()
+print(GetLocalPlayer)
 ```
 
 ## GetMaxClients
@@ -147,7 +155,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | Max amount of clients |
 
 ```lua
-
+local GetMaxClients = g_EngineClient:GetMaxClients()
+print(GetMaxClients)
 ```
 
 ## GetNetChannelInfo
@@ -159,7 +168,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | INetChannelInfo* | INetChannelInfo pointer |
 
 ```lua
-
+local GetNetChannelInfo = g_EngineClient:GetNetChannelInfo()
+print(GetNetChannelInfo)
 ```
 
 ## GetPlayerForUserId
@@ -177,7 +187,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | Entity ID |
 
 ```lua
-
+local GetPlayerForUserId = g_EngineClient:GetPlayerForUserId(1)
+print(GetPlayerForUserId)
 ```
 
 ## GetPlayerInfo
@@ -195,7 +206,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | player_info_t | Player info |
 
 ```lua
-
+local GetPlayerInfo = g_EngineClient:GetPlayerInfo(g_EngineClient:GetLocalPlayer())
+print(GetPlayerInfo.iSteamID)
 ```
 
 ## GetProductVersionString
@@ -207,7 +219,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | string | CSGO version string |
 
 ```lua
-
+local GetProductVersionString = g_EngineClient:GetProductVersionString()
+print(GetProductVersionString)
 ```
 
 ## GetScreenSize
@@ -219,7 +232,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | Vector2 | Size of game window |
 
 ```lua
-
+local GetScreenSize = g_EngineClient:GetScreenSize()
+print(GetScreenSize.x, GetScreenSize.y)
 ```
 
 ## GetTimeScale
@@ -231,7 +245,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | float | Timescale |
 
 ```lua
-
+local GetTimeScale = g_EngineClient:GetTimeScale()
+print(GetTimeScale)
 ```
 
 ## GetViewAngles
@@ -243,7 +258,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | QAngle | View angles |
 
 ```lua
-
+local GetViewAngles = g_EngineClient:GetViewAngles()
+print(GetViewAngles.pitch, GetViewAngles.yaw, GetViewAngles.roll)
 ```
 
 ## IsConnected
@@ -255,7 +271,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is player connected to any server |
 
 ```lua
-
+local IsConnected = g_EngineClient:IsConnected()
+print(IsConnected)
 ```
 
 ## IsHammerRunning
@@ -267,7 +284,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is Hammer editor running |
 
 ```lua
-
+local IsHammerRunning = g_EngineClient:IsHammerRunning()
+print(IsHammerRunning)
 ```
 
 ## IsHltv
@@ -279,10 +297,11 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is Hltv |
 
 ```lua
-
+local IsHltv = g_EngineClient:IsHltv()
+print(IsHltv)
 ```
 
-## IsIngame
+## IsInGame
 
 ### Return value:
 
@@ -291,7 +310,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is player ingame |
 
 ```lua
-
+local IsInGame = g_EngineClient:IsInGame()
+print(IsInGame)
 ```
 
 ## IsOccluded
@@ -322,7 +342,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is game paused |
 
 ```lua
-
+local IsPaused = g_EngineClient:IsPaused()
+print(IsPaused)
 ```
 
 ## IsPlayingDemo
@@ -334,7 +355,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is demo being played back |
 
 ```lua
-
+local IsPlayingDemo = g_EngineClient:IsPlayingDemo()
+print(IsPlayingDemo)
 ```
 
 ## IsRecordingDemo
@@ -346,7 +368,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is demo being recorded |
 
 ```lua
-
+local IsRecordingDemo = g_EngineClient:IsRecordingDemo()
+print(IsRecordingDemo)
 ```
 
 ## IsTakingScreenshot
@@ -358,7 +381,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Is game taking a screenshot |
 
 ```lua
-
+local IsTakingScreenshot = g_EngineClient:IsTakingScreenshot()
+print(IsTakingScreenshot)
 ```
 
 ## LevelLeafCount
@@ -370,7 +394,8 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | int | Amount of leaves in the level |
 
 ```lua
-
+local LevelLeafCount = g_EngineClient:LevelLeafCount()
+print(LevelLeafCount)
 ```
 
 ## MapHasHdrLighting
@@ -382,13 +407,14 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | Was map loaded with HDR info |
 
 ```lua
-
+local MapHasHdrLighting = g_EngineClient:MapHasHdrLighting()
+print(MapHasHdrLighting)
 ```
 
 ## RemoveAllPaint
 
 ```lua
-
+g_EngineClient:RemoveAllPaint()
 ```
 
 ## SetBlurFade
@@ -400,7 +426,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | float | scale |
 
 ```lua
-
+g_EngineClient:SetBlurFade(1.0)
 ```
 
 ## SetRestrictClientCommands
@@ -412,7 +438,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | bRestrict | bool | If true, ClientCmd can only execute things marked with `FCVAR_CLIENTCMD_CAN_EXECUTE` |
 
 ```lua
-
+g_EngineClient:SetRestrictClientCommands(true)
 ```
 
 ## SetTimescale
@@ -424,7 +450,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | flTimescale | float | Timescale |
 
 ```lua
-
+g_EngineClient:SetTimescale(1.0)
 ```
 
 ## SetViewAngles
@@ -436,7 +462,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | QAngle | Angles |
 
 ```lua
-
+g_EngineClient:SetViewAngles(QAngle.new(10, 10, 0))
 ```
 
 ## SupportsHdr
@@ -448,7 +474,7 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | value | bool | HDR support |
 
 ```lua
-
+g_EngineClient:SupportsHdr(true)
 ```
 
 ## WriteScreenshot
@@ -460,5 +486,5 @@ Instance of `IVEngineClient` is `g_EngineClient`
 | name | string | Filename |
 
 ```lua
-
+g_EngineClient:WriteScreenshot("neverlose_screenshot")
 ```

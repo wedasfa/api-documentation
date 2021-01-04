@@ -26,11 +26,11 @@ g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | clr | Color | Line color |
-| vec | Vector | Variadic vector |
+| vec | Vector | Variadic vector (there can be an infinite number of vectors) |
 
 ### Usage:
 ```lua
-
+g_Render:PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
 
 ## PolyFilled
@@ -40,11 +40,11 @@ g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | clr | Color | Line color |
-| vec | Vector | Variadic vector |
+| vec | Vector | Variadic vector (there can be an infinite number of vectors) |
 
 ### Usage:
 ```lua
-
+g_Render:PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
 
 ## Box
@@ -127,7 +127,7 @@ g_Render:CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1
 
 ### Usage:
 ```lua
-g_Render:CirclePart(Vector2.new(0.0, 0.0), 2.0, 50, Color.new(1.0, 1.0, 1.0, 1.0), 1.0, 40.0, 2.0)
+g_Render:CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 1.0), math.rad(0), math.rad(280), 5.0)
 ```
 
 ## Text
@@ -320,34 +320,26 @@ g_Render:CylinderFilled3D(Vector.new(0, 0, 0), 58, 10.0, 30.0, Color.new(1.0, 1.
 g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new(0, 0, 0, 1), Color.new(0, 0, 0, 1), Color.new(1, 1, 1, 1), Color.new(1, 1, 1, 1))
 ```
 
-## Image
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
-### Usage:
-```lua
-
-```
-
 ## LoadImage
 
 ### Parameters:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Image | bytes | Image |
+| Size | Vector2 | Size |
+
+### Return:
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Image | image* | - |
 
 ### Usage:
 ```lua
-
+local image_size = Vector2.new(746 / 5, 1070 / 5)
+local url = "https://anime.is-inside.me/EsXF20B5.png"
+local bytes = http.Get(url)
+local image_loaded = g_Render:LoadImage(bytes, image_size)
 ```
 
 ## LoadImageFromFile
@@ -365,6 +357,27 @@ g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.n
 
 ```
 
+## Image
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| img | Bytes | Images |
+| pos | Vector2 | Position |
+| size | Vector2 | Image Size |
+
+### Usage:
+```lua
+local image_size = Vector2.new(746 / 5, 1070 / 5)
+local url = "https://anime.is-inside.me/EsXF20B5.png"
+local bytes = http.Get(url)
+local image_loaded = g_Render:LoadImage(bytes, image_size)
+cheat.RegisterCallback("draw", function()
+    g_Render:Image(image_loaded, Vector2.new(100, 100), image_size)
+end)
+```
+
 ## GetMenuPos
 
 ### Return value:
@@ -376,7 +389,7 @@ g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.n
 ### Usage:
 ```lua
 local menu_pos = g_Render:GetMenuPos()
-print(menu_pos.x)
+print(menu_pos.x, menu_pos.y)
 ```
 
 ## GetMenuSize
@@ -390,5 +403,5 @@ print(menu_pos.x)
 ### Usage:
 ```lua
 local menu_sz = g_Render:GetMenuSize()
-print(menu_sz.y)
+print(menu_sz.x, menu_sz.y)
 ```

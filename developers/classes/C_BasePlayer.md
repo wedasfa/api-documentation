@@ -18,7 +18,10 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local player = localplayer:GetPlayer()
+local health = player:GetProp("DT_BasePlayer", "m_iHealth")
+print(health)
 ```
 
 ## SetProp
@@ -32,7 +35,11 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+cheat.RegisterCallback("draw", function() 
+    local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+    local getplayer = localplayer:GetPlayer()
+    getplayer:SetProp("DT_BasePlayer", "m_iHealth", 1) 
+end)
 ```
 
 ## GetClassId
@@ -44,43 +51,10 @@
 | id | int | Class id |
 
 ```lua
---soonTM
-```
-
-## IsPlayer
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | bool | Is entity a player |
-
-```lua
---soonTM
-```
-
-## GetPlayer
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | C_BasePlayer* | Pointer to player |
-
-```lua
---soonTM
-```
-
-## IsWeapon
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | bool | Is entity a weapon |
-
-```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local GetClassId = getplayer:GetClassId()
+print(GetClassId)
 ```
 
 ## EntIndex
@@ -92,7 +66,10 @@
 | value | int | Entity index |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local EntIndex = getplayer:EntIndex()
+print(EntIndex)
 ```
 
 ## SetModelIndex
@@ -109,6 +86,12 @@
 
 ## IsVisible
 
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| from | vector | - |
+
 ### Return value:
 
 | Name | Type | Description |
@@ -116,7 +99,10 @@
 | value | bool | Is player visible |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local IsVisible = getplayer:IsVisible(Vector.new(0, 0, 0))
+print(IsVisible)
 ```
 
 ## GetEyePosition
@@ -128,7 +114,10 @@
 | vec | Vector | Eye position in 3D space |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local GetEyePosition = getplayer:GetEyePosition()
+print(GetEyePosition.x, GetEyePosition.y, GetEyePosition.z)
 ```
 
 ## GetActiveWeapon
@@ -140,7 +129,10 @@
 | weapon | C_BaseCombatWeapon* | Pointer to active weapon |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local GetActiveWeapon = getplayer:GetActiveWeapon()
+print(GetActiveWeapon)
 ```
 
 ## GetHitboxCenter
@@ -152,7 +144,10 @@
 | vec | Vector | Hitbox center |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local GetHitboxCenter = getplayer:GetHitboxCenter(0)
+print(GetHitboxCenter.x, GetHitboxCenter.y, GetHitboxCenter.z)
 ```
 
 ## GetName
@@ -164,19 +159,10 @@
 | name | string | Name |
 
 ```lua
---soonTM
-```
-
-## IsTeammate
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | bool | Is player teammate |
-
-```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local GetName = getplayer:GetName()
+print(GetName)
 ```
 
 ## IsDormant
@@ -188,7 +174,25 @@
 | value | bool | Is player dormant |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local IsDormant = getplayer:IsDormant()
+print(IsDormant)
+```
+
+## IsTeamMate
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | bool | Is player teammate |
+
+```lua
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
+local IsTeamMate = getplayer:IsTeamMate()
+print(IsTeamMate)
 ```
 
 ## GetSequenceActivity
@@ -220,4 +224,9 @@
 | tick_n | int | Tick |
 
 ```lua
---soonTM
+cheat.RegisterCallback("draw", function()
+    local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+    local getplayer = localplayer:GetPlayer()
+    getplayer:DrawHitbox(3, Color.new(1, 1, 1, 1), g_GlobalVars.tickcount-1)
+end)
+```

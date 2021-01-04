@@ -11,7 +11,9 @@
 | id | int | Class id |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local classid = localplayer:GetClassId()
+print(classid)
 ```
 
 ## GetClassName
@@ -23,7 +25,9 @@
 | name | char | Class name |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local classname = localplayer:GetClassName()
+print(classname)
 ```
 
 ## GetProp
@@ -42,7 +46,9 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local origin = localplayer:GetProp("DT_BaseEntity", "m_vecOrigin")
+print(origin.x, origin.y, origin.z)
 ```
 
 ## SetProp
@@ -56,7 +62,11 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
---soonTM
+cheat.RegisterCallback("draw", function() 
+    local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+    local getplayer = localplayer:GetPlayer()
+    getplayer:SetProp("DT_BasePlayer", "m_iHealth", 1) 
+end)
 ```
 
 ## IsPlayer
@@ -68,7 +78,9 @@
 | value | bool | Is entity a player |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local isPlayer = localplayer:IsPlayer()
+print(isPlayer)
 ```
 
 ## GetPlayer
@@ -80,7 +92,8 @@
 | value | C_BasePlayer* | Pointer to player |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local getplayer = localplayer:GetPlayer()
 ```
 
 ## IsWeapon
@@ -92,7 +105,11 @@
 | value | bool | Is entity a weapon |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local weapon_handle = localplayer:GetWeapon()
+local weapon = g_EntityList:GetClientEntityFromHandle(weapon_handle)
+local isWeapon = weapon:IsWeapon()
+print(isWeapon)
 ```
 
 ## GetWeapon
@@ -104,7 +121,7 @@
 | value | C_BaseWeapon* | Pointer to weapon |
 
 ```lua
---soonTM
+local weapon = entity:GetWeapon()
 ```
 
 ## GetRenderBounds
@@ -117,7 +134,29 @@
 | max | Vector | - |
 
 ```lua
---soonTM
+cheat.RegisterCallback("draw", function()
+    local ents = cheat.GetEntitiesByName("CCSPlayer")
+
+    for i = 1, #ents do
+        local origin = ents[i]:GetRenderOrigin()
+        local min = Vector.new()
+        local max = Vector.new()
+        local bounds = ents[i]:GetRenderBounds(min, max)
+
+        -- upper bounds
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, max.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + max), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+
+        -- bottom bounds
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, min.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        g_Render:CircleFilled(g_Render:ScreenPosition(origin + min), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+      
+    end
+end)
 ```
 
 ## GetRenderOrigin
@@ -129,7 +168,9 @@
 | vec | Vector | Render origin |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local GetRenderOrigin = localplayer:GetRenderOrigin()
+print(GetRenderOrigin.x, GetRenderOrigin.y, GetRenderOrigin.z)
 ```
 
 ## GetRenderAngles
@@ -141,7 +182,9 @@
 | angle | QAngle | Render angles |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local GetRenderAngles = localplayer:GetRenderAngles()
+print(GetRenderAngles.pitch, GetRenderAngles.yaw, GetRenderAngles.roll)
 ```
 
 ## EntIndex
@@ -153,7 +196,9 @@
 | value | int | Entity index |
 
 ```lua
---soonTM
+local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local EntIndex = localplayer:EntIndex()
+print(EntIndex)
 ```
 
 ## SetModelIndex
