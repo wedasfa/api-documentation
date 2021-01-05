@@ -119,5 +119,5 @@ local desync_rotation = antiaim.GetFakeRotation()
 | float | Real rotation |
 
 ```lua
-local real_rotation = antiaim.GetRealRotation()
+local real_rotation = antiaim.GetCurrentRealRotation()
 ```
