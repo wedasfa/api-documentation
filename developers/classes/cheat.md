@@ -13,7 +13,7 @@ You can create your own ESP elements. More info can be found [here](../other/esp
 ## Menu API
 
 {% hint style="info" %}
-You can create your menu elements. More info can be found [here](../other/custommenu.md).
+You can create your menu elements. More info can be found [here](../other/menuapi.md).
 {% endhint %}
 
 ## Functions
