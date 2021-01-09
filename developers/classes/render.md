@@ -282,7 +282,7 @@ g_Render:Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 
 ### Usage:
 ```lua
-g_Render:CircleFilled3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
+g_Render:Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## GradientBoxFilled
