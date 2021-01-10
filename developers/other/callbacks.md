@@ -20,7 +20,7 @@ You can read about events [here](https://wiki.alliedmods.net%20Counter-Strike:_G
 * **frame_stage** - Called on every frame stage. 0 arguments passed to callback.
 * **console** - Called when the user enters something into the console. 1 arguments passed to callback - input text.
 * **registered\_shot** - called when registered ragebot shot. 1 argument passed to callback - [registered\_shot](../types/registeredshot.md)
-* **ragebot\_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot\_shot](../types/ragebot_shot.md)
+* **ragebot\_shot** - called when ragebot shooting. 1 argument passed to callback - [ragebot\_shot](../types/ragebot_shoot.md)
 * **fire\_bullet** - called when other players shooting. 1 argument passed to callback - [DT\_FireBullets](../types/dt_firebullets.md)
 * **override\_view** - called when game calculating view. 1 argument passed to callback - [CViewSetup](../types/cviewsetup.md)
 
