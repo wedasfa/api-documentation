@@ -138,7 +138,7 @@ You can find all virtual keys [here](https://docs.microsoft.com/en-us/windows/wi
 {% endhint %}
 
 ```lua
-local mouse_pos = cheat.IsKeyDown(0x1)
+local is_key_pressed = cheat.IsKeyDown(0x1)
 ```
 
 ## GetCheatUserName
