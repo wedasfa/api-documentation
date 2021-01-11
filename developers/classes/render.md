@@ -337,10 +337,11 @@ local image_loaded = g_Render:LoadImage(bytes, image_size)
 ### Usage:
 ```lua
 local size = Vector2.new(100, 100)
+local pos = Vector2.new(50, 50)
 local image = g_Render:LoadImageFromFile("C:\\Users\\Asuna\\Desktop\\Kirito.png", size)
 
 cheat.RegisterCallback("draw", function()
-    g_Render:Image(image, size, size)
+    g_Render:Image(image, pos, size)
 end)
 ```
 
