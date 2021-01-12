@@ -106,8 +106,8 @@ local mat_ptr = g_MatSystem.GetMaterial(mat)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| mat | IMaterial\* | Material pointer |
 | type | string | Material type |
+| mat | IMaterial\* | Material pointer |
 
 {% hint style="info" %}
 Types can be (case sensetivity):
@@ -131,7 +131,7 @@ local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
     "$basetexture" "dev"
   }  
 ]])
-g_MatSystem:OverrideMaterial(mat_ptr, "Enemies")
+g_MatSystem:OverrideMaterial("Enemies", mat_ptr)
 ```
 
 ## RemoveOverrideMaterial
@@ -140,9 +140,9 @@ g_MatSystem:OverrideMaterial(mat_ptr, "Enemies")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| mat | IMaterial\* | Material pointer |
 | type | string | Material type |
+| mat | IMaterial\* | Material pointer |
 
 ```lua
-g_MatSystem:RemoveOverrideMaterial(mat_ptr, "Enemies")
+g_MatSystem:RemoveOverrideMaterial("Enemies", mat_ptr)
 ```
