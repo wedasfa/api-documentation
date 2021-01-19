@@ -134,6 +134,7 @@ local weapon = entity:GetWeapon()
 | max | Vector | - |
 
 ```lua
+-- @summary: Render boxes on every player
 cheat.RegisterCallback("draw", function()
     local ents = cheat.GetEntitiesByName("CCSPlayer")
 
