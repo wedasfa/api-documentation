@@ -169,7 +169,7 @@ local username = cheat.GetCheatUserName()
 
 ```lua
 local ents = cheat.GetEntitiesByClassID(40)
-print("Players: " .. #ents)
+print("Found " .. tostring(#ents) .. " entities with id 40")
 ```
 
 ## GetEntitiesByName
@@ -188,7 +188,7 @@ print("Players: " .. #ents)
 
 ```lua
 local ents = cheat.GetEntitiesByName("CCSPlayer")
-print("Players: " .. #ents)
+print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
 ```
 
 ## GetBinds
@@ -229,5 +229,5 @@ cheat.AddEvent("lenin is alive")
 | name | string | Event name |
 
 ```lua
-cheat.AddNotify("neverlose.cc", "elleqt is cute")
+cheat.AddNotify("neverlose.cc", "elleqt isn't cute")
 ```
