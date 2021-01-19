@@ -36,9 +36,9 @@ print(health)
 
 ```lua
 cheat.RegisterCallback("draw", function() 
-    local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-    local getplayer = localplayer:GetPlayer()
-    getplayer:SetProp("DT_BasePlayer", "m_iHealth", 1) 
+    local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+    local player = entity:GetPlayer()
+    player:SetProp("DT_BasePlayer", "m_iHealth", 1) 
 end)
 ```
 
