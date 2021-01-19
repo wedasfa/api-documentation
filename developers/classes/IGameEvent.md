@@ -111,5 +111,5 @@ local x_axis = event:GetFloat("x", -1.0)
 | value | string | Event's string value |
 
 ```lua
-local x_axis = event:GetString("weapon", "unknown")
+local weapon_name = event:GetString("weapon", "unknown")
 ```
