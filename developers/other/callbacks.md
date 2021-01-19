@@ -13,7 +13,7 @@ To register a callback, you can call [cheat.RegisterCallback](../classes/cheat.m
 * **events** - game events. [IGameEvent](../classes/IGameEvent.md) pointer passed.
 
 {% hint style="info" %}
-You can read about events [here](https://wiki.alliedmods.net%20Counter-Strike:_Global_Offensive_Events).
+You can read about game events [here](https://wiki.alliedmods.net%20Counter-Strike:_Global_Offensive_Events).
 {% endhint %}
 
 * **destroy** - called when script destroyed. 0 arguments passed to callback.
