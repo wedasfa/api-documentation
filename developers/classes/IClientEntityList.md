@@ -71,6 +71,8 @@ print(highest_index)
 | ent | C_BaseEntity* | Pointer to entity |
 
 ```lua
+-- @summary: Get active weapon from weapon_handle
+-- @hint: You can use GetActiveWeapon instead
 local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
 local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
