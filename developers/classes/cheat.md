@@ -197,7 +197,7 @@ print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| bind | ActiveBind | Binds |
+| binds | table (`ActiveBind`s array)| Binds |
 
 ```lua
 local binds = cheat.GetBinds()
