@@ -7,10 +7,8 @@ In all examples below, `weap` is a C_BaseCombatWeapon instance
 
 ```lua
 -- @summary: Get active weapon
-
-local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
-local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
+local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer()):GetPlayer()
+local weap = me:GetActiveWeapon()
 ```
 {% endhint %}
 
@@ -169,6 +167,12 @@ weap:IsReloading()
 
 ## GetInaccuracy
 
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| weapon | C_BaseCombatWeapon | - |
+
 ### Return value:
 
 | Name | Type | Description |
@@ -176,11 +180,17 @@ weap:IsReloading()
 | value | float | Weapon inaccuarcy |
 
 ```lua
-local weapon_inaccuracy = weap:GetInaccuracy()
+local weapon_inaccuracy = weap:GetInaccuracy(weap)
 ```
 
 ## GetSpread
 
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| weapon | C_BaseCombatWeapon | - |
+
 ### Return value:
 
 | Name | Type | Description |
@@ -188,10 +198,10 @@ local weapon_inaccuracy = weap:GetInaccuracy()
 | value | float | Weapon inaccuarcy |
 
 ```lua
-weap:GetSpread()
+local weapon_spread = weap:GetSpread(weap)
 ```
 
-## GetFirerate
+## GetFireRate
 
 ### Return value:
 
@@ -200,7 +210,7 @@ weap:GetSpread()
 | value | float | Weapon fire rate |
 
 ```lua
-weap:GetFirerate()
+weap:GetFireRate()
 ```
 
 ## GetMaxSpeed
