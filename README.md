@@ -6,14 +6,13 @@
 * [FFI](https://luajit.org/ext_ffi.html)
 * [bit](https://bitop.luajit.org/api.html)
 
-## Official discord server
-* [Join](https://discord.gg/Av2HrNPMWb)
-
 ## Official extensions with snippets
 
 * [VSCode](https://marketplace.visualstudio.com/items?itemName=es3n1n.neverlose-lua-api)
 
 ## Other helpful information
+
+Official discord server: * [Join](https://discord.gg/Av2HrNPMWb)
 
 Scripts stored in (csgo folder)/nl (for example, "C:\\program files (x86)\\steam\\steamapps\\common\\Counter-Strike Global Offensive\\nl")
 You can edit them with any editor you want, cheat will sync scripts automatically
