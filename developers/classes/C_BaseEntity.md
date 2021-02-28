@@ -106,8 +106,7 @@ local getplayer = localplayer:GetPlayer()
 
 ```lua
 local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local weapon_handle = localplayer:GetWeapon()
-local weapon = g_EntityList:GetClientEntityFromHandle(weapon_handle)
+local weapon = g_EntityList:GetClientEntity(localplayer:GetWeapon():EntIndex())
 local isWeapon = weapon:IsWeapon()
 print(isWeapon)
 ```
