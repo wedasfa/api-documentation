@@ -104,10 +104,11 @@ local mat_ptr = g_MatSystem.GetMaterial(mat)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| type | string | Material type |
-| mat | IMaterial\* | Material pointer |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| type | string | Material type | + |
+| mat | IMaterial\* | Material pointer | + |
+| Color | color | Material Color | - |
 
 {% hint style="info" %}
 Types can be (case sensetivity):
