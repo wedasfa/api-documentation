@@ -94,3 +94,17 @@ for key, value in pairs(get_prop) do
 	print(key, value)
 end
 ```
+
+## GetGameRules
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Game Rules | CSGameRules* | - |
+
+```lua
+local game_rules = g_EntityList:GetGameRules()
+local get_prop = game_rules:GetProp("DT_CSGameRulesProxy", "m_bIsValveDS")
+print(get_prop)
+```
