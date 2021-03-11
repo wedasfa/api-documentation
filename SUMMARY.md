@@ -6,6 +6,7 @@
     * [C\_BaseCombatWeapon](developers/classes/C_BaseCombatWeapon.md)
     * [C\_BaseEntity](developers/classes/C_BaseEntity.md)
     * [C\_BasePlayer](developers/classes/C_BasePlayer.md)
+    * [IViewRenderBeams](developers/classes/g_RenderBeams.md)
     * [Config](developers/classes/Config.md)
     * [ConVar](developers/classes/ConVar.md)
     * [DebugOverlay](developers/classes/IVDebugOverlay.md)
