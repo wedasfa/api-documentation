@@ -22,6 +22,7 @@ local weap = me:GetActiveWeapon()
 | :--- | :--- | :--- |
 | table | string | Netvar table |
 | name | string | Netvar name |
+| array index | int | Index in array |
 
 ### Return value:
 
@@ -57,6 +58,7 @@ end
 | table | string | Netvar table |
 | name | string | Netvar name |
 | value | Netvar dependant | Netvar value |
+| array index | int | Index in array |
 
 ```lua
 weap:SetProp("DT_BaseCSGrenade", "m_bPinPulled", true)
