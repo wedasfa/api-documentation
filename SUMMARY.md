@@ -44,6 +44,7 @@
     * [Trace](developers/types/trace_t.md)
     * [Vector](developers/types/vector.md)
     * [Vector2](developers/types/vector2.md)
+    * [BeamInfo_t](developers/types/BeamInfo_t.md)
     * [PlayerInfo](developers/types/player_info_t.md)
   * [Other](developers/other/README.md)
     * [Callbacks](developers/other/callbacks.md)
