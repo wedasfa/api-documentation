@@ -38,7 +38,6 @@ print(classname)
 | :--- | :--- | :--- |
 | table | string | Netvar table |
 | name | string | Netvar name |
-| array index | int | Index in array |
 
 ### Return value:
 
