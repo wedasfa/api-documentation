@@ -77,3 +77,20 @@ local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
 local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
 local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
 ```
+
+## GetPlayerResource
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Player Resource | CSPlayerResource* | Highest entity index |
+
+```lua
+local player_resource = g_EntityList:GetPlayerResource()
+local get_prop = player_resource:GetProp("DT_CSPlayerResource", "m_szClan")
+
+for key, value in pairs(get_prop) do
+	print(key, value)
+end
+```
