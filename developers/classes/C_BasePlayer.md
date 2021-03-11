@@ -10,6 +10,7 @@
 | :--- | :--- | :--- |
 | table | string | Netvar table |
 | name | string | Netvar name |
+| array index | int | Index in array |
 
 ### Return value:
 
@@ -33,6 +34,7 @@ print(health)
 | table | string | Netvar table |
 | name | string | Netvar name |
 | value | Netvar dependant | Netvar value |
+| array index | int | Index in array |
 
 ```lua
 cheat.RegisterCallback("draw", function() 
