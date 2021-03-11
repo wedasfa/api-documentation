@@ -84,7 +84,7 @@ local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Player Resource | CSPlayerResource* | Highest entity index |
+| Player Resource | CSPlayerResource* | - |
 
 ```lua
 local player_resource = g_EntityList:GetPlayerResource()
