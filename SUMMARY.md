@@ -33,7 +33,7 @@
     * [utils](developers/tables/Utils.md)
   * [Types](developers/types/README.md)
     * [ActiveBind](developers/types/ActiveBind.md)
-    * [C\_UserCmd](developers/types/CUserCmd.md)
+    * [CUserCmd](developers/types/CUserCmd.md)
     * [CheatVar](developers/types/CheatVar.md)
     * [Color](developers/types/color.md)
     * [CViewSetup](developers/types/CViewSetup.md)
