@@ -7,9 +7,9 @@ To register a callback, you can call [cheat.RegisterCallback](../classes/cheat.m
 ## List of all callbacks:
 
 * **draw** - game thread, allows you do draw any primitives and has safe access to any game functions. 0 arguments passed to callback.
-* **createmove** - createmove after cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/CUserCmd.md)
-* **prediction** - createmove inside cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/CUserCmd.md)
-* **pre\_prediction** - createmove before cheat prediction. 1 argument passed to callback - [C\_UserCmd](../types/CUserCmd.md)
+* **createmove** - createmove after cheat prediction. 1 argument passed to callback - [CUserCmd](../types/CUserCmd.md)
+* **prediction** - createmove inside cheat prediction. 1 argument passed to callback - [CUserCmd](../types/CUserCmd.md)
+* **pre\_prediction** - createmove before cheat prediction. 1 argument passed to callback - [CUserCmd](../types/CUserCmd.md)
 * **events** - game events. [IGameEvent](../classes/IGameEvent.md) pointer passed.
 
 {% hint style="info" %}
