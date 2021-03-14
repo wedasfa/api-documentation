@@ -22,7 +22,7 @@ Instance of `IMaterialSystem` is `g_MatSystem`
 | value | IMaterial\* | Material |
 
 ```lua
-local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
+local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
     "$envmap" "editor/cube_vertigo"
@@ -47,7 +47,7 @@ local mat_ptr = g_MatSystem.CreateMaterial("testing_material",  [[
 | value | IMaterial\* | IMaterial pointer |
 
 ```lua
-local mat = g_MatSystem.FindMaterial("dev/glow_armsrace")
+local mat = g_MatSystem:FindMaterial("dev/glow_armsrace")
 ```
 
 ## FirstMaterial
@@ -59,7 +59,7 @@ local mat = g_MatSystem.FindMaterial("dev/glow_armsrace")
 | value | unsigned short | First material |
 
 ```lua
-local mat = g_MatSystem.FirstMaterial()
+local mat = g_MatSystem:FirstMaterial()
 ```
 
 ## NextMaterial
@@ -77,8 +77,8 @@ local mat = g_MatSystem.FirstMaterial()
 | value | unsigned short | Next material handle |
 
 ```lua
-local mat = g_MatSystem.FirstMaterial()
-local next_mat = g_MatSystem.NextMaterial(mat)
+local mat = g_MatSystem:FirstMaterial()
+local next_mat = g_MatSystem:NextMaterial(mat)
 ```
 
 ## GetMaterial
@@ -96,8 +96,8 @@ local next_mat = g_MatSystem.NextMaterial(mat)
 | value | IMaterial\* | Material |
 
 ```lua
-local mat = g_MatSystem.FirstMaterial()
-local mat_ptr = g_MatSystem.GetMaterial(mat)
+local mat = g_MatSystem:FirstMaterial()
+local mat_ptr = g_MatSystem:GetMaterial(mat)
 ```
 
 ## OverrideMaterial
