@@ -25,7 +25,7 @@ Possible class names:
 
 ### Callback:
 
-1 argument passed to callback - [C\_BaseEntity](../classes/c_baseentity.md).
+1 argument passed to callback - [C\_BaseEntity](../classes/C_BaseEntity.md).
 
 In callback you can return 1 argument.
 
@@ -61,7 +61,7 @@ Possible class names:
 
 ### Callback:
 
-1 argument passed to callback - [C\_BaseEntity](../classes/c_baseentity.md).
+1 argument passed to callback - [C\_BaseEntity](../classes/C_BaseEntity.md).
 
 In callback you can return 1 argument
 
