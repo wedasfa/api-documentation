@@ -39,6 +39,7 @@ local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Name of material |
+| group | string | Material Group |
 
 ### Return value:
 
@@ -47,7 +48,7 @@ local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
 | value | IMaterial\* | IMaterial pointer |
 
 ```lua
-local mat = g_MatSystem:FindMaterial("dev/glow_armsrace")
+local mat = g_MatSystem:FindMaterial("dev/glow_armsrace", "")
 ```
 
 ## FirstMaterial
