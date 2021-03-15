@@ -37,13 +37,13 @@ if not weap:IsGrenade() then
 end 
 
 local m_bPinPulled = weap:GetProp("DT_BaseCSGrenade", "m_bPinPulled") -- is grenade's pin is pulled on or not
-local m_flThrowTime = weap:GetProp("DT_BaseCSGrenade", "m_flThrowTime") -- get grenade throw time
+local m_fThrowTime = weap:GetProp("DT_BaseCSGrenade", "m_fThrowTime") -- get grenade throw time
 
 if m_bPinPulled then 
 	return 
 end
 
-if m_flThrowTime > 0 then
+if m_fThrowTime > 0 then
 	print("Throwing a grenade!")
 end
 ```
