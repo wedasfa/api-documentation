@@ -349,11 +349,12 @@ end)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| img | Bytes | Images |
-| pos | Vector2 | Position |
-| size | Vector2 | Image Size |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| img | Bytes | Images | + |
+| pos | Vector2 | Position | + |
+| size | Vector2 | Image Size | + |
+| Color | Color | Image Color modulation | - |
 
 ### Usage:
 ```lua
