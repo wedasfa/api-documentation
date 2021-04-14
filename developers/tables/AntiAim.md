@@ -110,6 +110,18 @@ local max_desync_delta = antiaim.GetMaxDesyncDelta()
 local desync_rotation = antiaim.GetFakeRotation()
 ```
 
+## OverrideDesyncOnShot
+
+### Return value:
+
+| Type | Description |
+| :--- | :--- |
+| int | 0 - disable override, 1 - left, 2 - right, 3 - overlap on shot with fake, 4 - opposite to fake |
+
+```lua
+antiaim.OverrideDesyncOnShot(4) 
+```
+
 ## GetCurrentRealRotation
 
 ### Return value:
