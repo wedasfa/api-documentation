@@ -14,6 +14,7 @@ Instance of `IMaterialSystem` is `g_MatSystem`
 | :--- | :--- | :--- |
 | name | string | Material name |
 | mat\_val | keyvalues | Material value |
+| callback | function | on Material Created callback |
 
 ### Return value:
 
@@ -22,14 +23,30 @@ Instance of `IMaterialSystem` is `g_MatSystem`
 | value | IMaterial\* | Material |
 
 ```lua
-local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
+local function onAnimatedWireFrameLoaded(mat)
+  g_MatSystem:OverrideMaterial("LocalHands", mat)
+end
+
+-- animated wireframe
+g_MatSystem:CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
-    "$envmap" "editor/cube_vertigo"
-    "$envmapcontrast" 1
-    "$basetexture" "dev"
+    "$basetexture" "nature/urban_puddle01a_ssbump"
+    "$additive" "1"
+    "$selfillum" "1"
+    "$nocull" "1"
+    "$wireframe" "1"
+    "Proxies"
+    {
+            "TextureScroll"
+            {
+                    "texturescrollvar" "$BasetextureTransform"
+                    "texturescrollrate" "0.5"
+                    "texturescrollangle" "90"
+            }
+    }
   }  
-]])
+]], onAnimatedWireFrameLoaded)
 ```
 
 ## FindMaterial
@@ -125,14 +142,6 @@ Types can be (case sensetivity):
 {% endhint %}
 
 ```lua
-local mat_ptr = g_MatSystem:CreateMaterial("testing_material",  [[
-  "VertexLitGeneric"
-  {
-    "$envmap" "editor/cube_vertigo"
-    "$envmapcontrast" 1
-    "$basetexture" "dev"
-  }  
-]])
 g_MatSystem:OverrideMaterial("Enemies", mat_ptr)
 ```
 
