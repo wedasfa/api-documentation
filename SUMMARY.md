@@ -20,7 +20,6 @@
     * [INetChannelInfo](developers/classes/INetChannelInfo.md)
     * [IRender](developers/classes/render.md)
     * [Panorama](developers/classes/panorama.md)
-    * [GameRulesProxy](developers/classes/GameRulesProxy.md)
   * [Tables](developers/tables/README.md)
     * [ClientState](developers/classes/CClientState.md)
     * [Cheat](developers/classes/cheat.md)
