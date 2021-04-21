@@ -230,3 +230,28 @@ cheat.RegisterCallback("draw", function()
     player:DrawHitbox(3, Color.new(1, 1, 1, 1), g_GlobalVars.tickcount-1)
 end)
 ```
+
+## GetPlayerData
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Player Data | dormant_player_t | Player info from dormant |
+
+```lua
+local screen_size = g_EngineClient:GetScreenSize()
+cheat.RegisterCallback("draw", function()
+    local players = cheat.GetEntitiesByName("CCSPlayer")
+    local local_index = g_EngineClient:GetLocalPlayer()
+    for i = 1, #players do
+        local player = players[i];
+        if player:EntIndex() ~= local_index then
+            player = player:GetPlayer()
+            local data = player:GetPlayerData()
+            print(player:GetName(), "health:" .. data.health)
+        end
+    end
+end)
+
+```
