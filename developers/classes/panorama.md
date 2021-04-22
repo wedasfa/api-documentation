@@ -8,9 +8,10 @@
 
 #### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| code | string | Javascript code |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| code | string | Javascript code | + |
+| Panel | string | Panorama Panel | - |
 
 #### Return:
 
@@ -21,7 +22,7 @@
 g_Panorama:Exec([[
     $.Msg("Stopping matchmaking");
     LobbyAPI.StopMatchmaking();
-]])
+]], "CSGOMainMenu")
 ```
 
 ```lua
