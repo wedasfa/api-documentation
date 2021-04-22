@@ -9,7 +9,7 @@ You can access `dormant_player_t` instance through `GetPlayerData` [function](..
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | valid | bool | - |
-| Origin | 3D Vector | - |
+| origin | 3D Vector | - |
 | health | int | - |
 | weapon_index | int | - |
 
