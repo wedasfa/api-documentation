@@ -239,3 +239,24 @@ local active_weapon = local_player_ptr:GetProp("DT_BaseCombatCharacter", "m_hAct
 local weapon_from_handle = g_EntityList:GetWeaponFromHandle(active_weapon)
 print(weapon_from_handle)
 ```
+
+## GetPlayers
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| players | table | Table with players (C_BasePlayer*)  |
+
+```lua
+cheat.RegisterCallback("createmove", function()
+    local players = g_EntityList:GetPlayers()
+    local local_player = g_EntityList:GetLocalPlayer()
+    for table_index, player_pointer in pairs(players) do
+        if player_pointer == local_player then goto skip end
+        local player_name = player_pointer:GetName()
+        print("Name:", player_name)
+        ::skip::
+    end
+end)
+```
