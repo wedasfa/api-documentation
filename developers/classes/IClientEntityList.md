@@ -108,3 +108,54 @@ local game_rules = g_EntityList:GetGameRules()
 local get_prop = game_rules:GetProp("DT_CSGameRulesProxy", "m_bIsValveDS")
 print(get_prop)
 ```
+
+## GetEntitiesByClassID
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| id | int | Class id |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BaseEntity* | |
+
+```lua
+local ents = cheat.GetEntitiesByClassID(40)
+print("Found " .. tostring(#ents) .. " entities with id 40")
+```
+
+## GetEntitiesByName
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| name | string | Entity name |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BaseEntity* | |
+
+```lua
+local ents = cheat.GetEntitiesByName("CCSPlayer")
+print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
+```
+
+## GetLocalPlayer()
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BaseEntity* | Local Player entity |
+
+```lua
+local currentLocal = g_EntityList:GetLocalPlayer()
+```
+
