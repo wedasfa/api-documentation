@@ -46,6 +46,7 @@
     * [Vector2](developers/types/vector2.md)
     * [BeamInfo_t](developers/types/BeamInfo_t.md)
     * [PlayerInfo](developers/types/player_info_t.md)
+    * [firebullet_t](developers/types/firebullet_t.md)
   * [Other](developers/other/README.md)
     * [Callbacks](developers/other/callbacks.md)
     * [ESP API](developers/other/espapi.md)
