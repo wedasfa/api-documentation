@@ -231,27 +231,28 @@ cheat.RegisterCallback("draw", function()
 end)
 ```
 
-## GetPlayerData
+## GetNetworkState
 
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Player Data | dormant_player_t | Player info from dormant |
+| Network State | int |   returns -1 if player is dormant and data is not available or too old,
+   returns 0 if player is not dormant,
+   returns 1 if player is dormant but cheat has 100% info where is player,
+   returns 2 if player is dormant but we've received info from shared esp,
+   returns 3 if player is dormant but updated by sounds |
 
 ```lua
-local screen_size = g_EngineClient:GetScreenSize()
-cheat.RegisterCallback("draw", function()
-    local players = cheat.GetEntitiesByName("CCSPlayer")
-    local local_index = g_EngineClient:GetLocalPlayer()
-    for i = 1, #players do
-        local player = players[i];
-        if player:EntIndex() ~= local_index then
-            player = player:GetPlayer()
-            local data = player:GetPlayerData()
-            print(player:GetName(), "health:" .. data.health)
-        end
+cheat.RegisterCallback("createmove", function()
+    local players = g_EntityList:GetPlayers()
+    local local_player = g_EntityList:GetLocalPlayer()
+    for table_index, player_pointer in pairs(players) do
+        if player_pointer == local_player then goto skip end
+        local get_network_state = player_pointer:GetNetworkState()
+        local player_name = player_pointer:GetName()
+        print("Name:", player_name, "Network State:", get_network_state)
+        ::skip::
     end
 end)
-
 ```
