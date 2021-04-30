@@ -8,7 +8,6 @@
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| table | string | Netvar table |
 | name | string | Netvar name |
 
 ### Return value:
@@ -18,10 +17,9 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local player = localplayer:GetPlayer()
-local health = player:GetProp("DT_BasePlayer", "m_iHealth")
-print(health)
+local player = g_EntityList:GetLocalPlayer()
+local health = player:GetProp("m_iHealth")
+print("Local player health: ", health)
 ```
 
 ## SetProp
@@ -30,16 +28,14 @@ print(health)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| table | string | Netvar table |
 | name | string | Netvar name |
 | value | Netvar dependant | Netvar value |
 | array index | int | Index in array |
 
 ```lua
 cheat.RegisterCallback("draw", function() 
-    local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-    local player = entity:GetPlayer()
-    player:SetProp("DT_BasePlayer", "m_iHealth", 1) 
+    local player = g_EntityList:GetLocalPlayer()
+    player:SetProp("m_iHealth", 1) 
 end)
 ```
 
