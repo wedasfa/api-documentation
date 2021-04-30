@@ -147,15 +147,95 @@ local ents = cheat.GetEntitiesByName("CCSPlayer")
 print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
 ```
 
-## GetLocalPlayer()
+## GetLocalPlayer
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Index | int | Entity index |
 
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseEntity* | Local Player entity |
+| ent | C_BasePlayer* | Local Player entity |
 
 ```lua
-local currentLocal = g_EntityList:GetLocalPlayer()
+local player = g_EntityList:GetPlayer(2)
 ```
 
+## GetWeapon
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Index | int | Weapon Entity index |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BaseCombatWeapon* | Weapon entity |
+
+```lua
+local player = g_EntityList:GetWeapon(100)
+```
+
+## GetPlayer
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Index | int | Weapon Entity index |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BasePlayer* | Player entity |
+
+```lua
+local player = g_EntityList:GetPlayer(100)
+```
+
+## GetPlayerFromHandle
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| handle | handle | Player Handle |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BasePlayer* | Player entity |
+
+```lua
+local player = g_EntityList:GetPlayerFromHandle(handle)
+```
+
+## GetWeaponFromHandle
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| handle | handle | Weapon Handle |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| ent | C_BaseCombatWeapon* | Weapon |
+
+```lua
+local local_player_ptr = g_EntityList:GetLocalPlayer()
+local active_weapon = local_player_ptr:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
+local weapon_from_handle = g_EntityList:GetWeaponFromHandle(active_weapon)
+print(weapon_from_handle)
+```
