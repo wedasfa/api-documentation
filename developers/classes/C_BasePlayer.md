@@ -253,3 +253,25 @@ cheat.RegisterCallback("createmove", function()
     end
 end)
 ```
+
+## GetESPAlpha
+
+### Return value:
+
+| Name | Type |
+| :--- | :--- |
+| ESP Alpha | float |
+
+```lua
+cheat.RegisterCallback("createmove", function()
+    local players = g_EntityList:GetPlayers()
+    local local_player = g_EntityList:GetLocalPlayer()
+    for table_index, player_pointer in pairs(players) do
+        if player_pointer == local_player then goto skip end
+        local esp_alpha = player_pointer:GetESPAlpha()
+        local player_name = player_pointer:GetName()
+        print("Name:", player_name, "ESP Alpha:", esp_alpha)
+        ::skip::
+    end
+end)
+```
