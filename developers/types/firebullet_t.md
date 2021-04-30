@@ -9,4 +9,4 @@ You can access `firebullet_t` instance through `FireBullet` [function](../classe
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | damage | int | Damage to player |
-| Trace | trace_t | Trace Info |
+| trace | trace_t | Trace Info |
