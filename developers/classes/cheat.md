@@ -153,44 +153,6 @@ local is_key_pressed = cheat.IsKeyDown(0x1)
 local username = cheat.GetCheatUserName()
 ```
 
-## GetEntitiesByClassID
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| id | int | Class id |
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity* | |
-
-```lua
-local ents = cheat.GetEntitiesByClassID(40)
-print("Found " .. tostring(#ents) .. " entities with id 40")
-```
-
-## GetEntitiesByName
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| name | string | Entity name |
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity* | |
-
-```lua
-local ents = cheat.GetEntitiesByName("CCSPlayer")
-print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
-```
-
 ## GetBinds
 
 ### Return value:
