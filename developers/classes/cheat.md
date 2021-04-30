@@ -51,12 +51,13 @@ end)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| damage | float | Simulated damage |
+| Name | Type | 
+| :--- | :--- |
+| Fire BUllet Info | firebullet_t | 
 
 ```lua
-local damage = cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
+local trace = cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
+print(trace.damage)
 ```
 
 ## AngleToForward
