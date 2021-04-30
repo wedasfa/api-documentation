@@ -124,7 +124,7 @@ print(get_prop)
 | ent | C_BaseEntity* | |
 
 ```lua
-local ents = cheat.GetEntitiesByClassID(40)
+local ents = g_EntityList:GetEntitiesByClassID(40)
 print("Found " .. tostring(#ents) .. " entities with id 40")
 ```
 
@@ -143,8 +143,8 @@ print("Found " .. tostring(#ents) .. " entities with id 40")
 | ent | C_BaseEntity* | |
 
 ```lua
-local ents = cheat.GetEntitiesByName("CCSPlayer")
-print("Found " .. tostring(#ents) .. " entities with classid CCSPlayer")
+local ents = g_EntityList:GetEntitiesByName("CCSPlayer")
+print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 ```
 
 ## GetLocalPlayer
