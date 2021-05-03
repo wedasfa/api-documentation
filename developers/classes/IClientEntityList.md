@@ -149,12 +149,6 @@ print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 
 ## GetLocalPlayer
 
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| Index | int | Entity index |
-
 ### Return value:
 
 | Name | Type | Description |
@@ -162,7 +156,7 @@ print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 | ent | C_BasePlayer* | Local Player entity |
 
 ```lua
-local player = g_EntityList:GetPlayer(2)
+local player = g_EntityList:GetLocalPlayer()
 ```
 
 ## GetWeapon
@@ -198,7 +192,7 @@ local player = g_EntityList:GetWeapon(100)
 | ent | C_BasePlayer* | Player entity |
 
 ```lua
-local player = g_EntityList:GetPlayer(100)
+local player = g_EntityList:GetPlayer(1)
 ```
 
 ## GetPlayerFromHandle
