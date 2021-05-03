@@ -285,3 +285,61 @@ local button = menu.Button("Neverlose", "Test")
 ```lua
 local coloredit = menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
+
+## GetRageHitboxState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Hitbox status | int | 0 = disabled, 1 = enabled |
+
+```lua
+local isHeadEnabled = menu.GetRageHitboxState(0)
+print(isHeadEnabled)
+```
+
+## GetRageMultipointState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Multipoint status | int | 0 = disabled, 1 = enabled |
+
+```lua
+local isHeadEnabled = menu.GetRageMultipointState(0)
+print(isHeadEnabled)
+```
+
+## GetLegitHitboxState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Hitbox priority | int | 0 = disabled, 1 = low priority, 2 = medium priority, 3 = high priority |
+
+```lua
+local headPriority = menu.GetLegitHitboxState(0)
+print(headPriority)
+```
+
