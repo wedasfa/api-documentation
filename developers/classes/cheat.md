@@ -179,7 +179,7 @@ end
 | name | string | Event name |
 
 ```lua
-cheat.AddEvent("lenin is alive")
+cheat.AddEvent("Greetings from neverlose.cc!")
 ```
 
 ## AddNotify
@@ -192,5 +192,5 @@ cheat.AddEvent("lenin is alive")
 | name | string | Event name |
 
 ```lua
-cheat.AddNotify("neverlose.cc", "elleqt is super cute")
+cheat.AddNotify("neverlose.cc", "Greetings from elleqt!")
 ```
