@@ -201,3 +201,14 @@ menu.Button("neverlose", "update"):RegisterCallback(function()
 	combo:UpdateList({"el1", "el2"})	
 end)
 ```
+
+## UpdateList
+
+```lua
+local bodyAim = g_Config:FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
+local list = bodyAim:GetList()
+
+for _, item in ipairs(list) do
+  print(item)
+end
+```
