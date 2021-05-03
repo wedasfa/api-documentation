@@ -53,7 +53,7 @@ end)
 
 | Name | Type | 
 | :--- | :--- |
-| Fire BUllet Info | firebullet_t | 
+| Fire Bullet Info | firebullet_t | 
 
 ```lua
 local trace = cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
