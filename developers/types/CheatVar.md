@@ -78,11 +78,12 @@ local val = var:GetString()
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| value | bool | New bool value | + |
 | el\_index | int | Element index for multicombo cheatvar | - |
+| value | bool | New bool value | + |
 
 ```lua
-var:SetBool(true)
+local ref_fake_options = g_Config:FindVar("Aimbot", "Anti Aim", "Fake Angle", "Fake Options")
+ref_fake_options:SetBool(3, true)
 ```
 
 ## SetInt
