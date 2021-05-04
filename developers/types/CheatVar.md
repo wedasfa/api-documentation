@@ -204,6 +204,12 @@ end)
 
 ## GetList
 
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Combo elements | table | Returns all elements in combo |
+
 ```lua
 local bodyAim = g_Config:FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
 local list = bodyAim:GetList()
