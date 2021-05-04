@@ -202,7 +202,7 @@ menu.Button("neverlose", "update"):RegisterCallback(function()
 end)
 ```
 
-## UpdateList
+## GetList
 
 ```lua
 local bodyAim = g_Config:FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
