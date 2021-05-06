@@ -3,8 +3,8 @@
 {% hint style="info" %}
 Hitboxes:
 ```
-    0. head
-    1. neck 
+	0. head
+	1. neck 
 	2. pelvis 
 	3. stomach 
 	4. lower chest 
