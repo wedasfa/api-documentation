@@ -12,7 +12,7 @@
 
 ## Other helpful information
 
-Official discord server: * [Join](https://discord.gg/Av2HrNPMWb)
+Official discord server: [Join](https://discord.gg/Av2HrNPMWb)
 
 Scripts stored in (csgo folder)/nl (for example, "C:\\program files (x86)\\steam\\steamapps\\common\\Counter-Strike Global Offensive\\nl")
 You can edit them with any editor you want, cheat will sync scripts automatically
