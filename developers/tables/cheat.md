@@ -1,8 +1,4 @@
-# Cheat
-
-{% hint style="info" %}
-Instance of `Cheat` is `cheat`
-{% endhint %}
+# cheat
 
 ## ESP API
 
