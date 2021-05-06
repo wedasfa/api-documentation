@@ -23,7 +23,7 @@
     * [IRender](developers/classes/render.md)
     * [Panorama](developers/classes/panorama.md)
   * [Tables](developers/tables/README.md)
-    * [Cheat](developers/classes/cheat.md)
+    * [cheat](developers/tables/cheat.md)
     * [AntiAim](developers/tables/AntiAim.md)
     * [exploits](developers/tables/Exploits.md)
     * [fakelag](developers/tables/Fakelag.md)
