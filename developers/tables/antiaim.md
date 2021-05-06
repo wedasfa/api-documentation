@@ -1,4 +1,4 @@
-# AntiAim
+# antiaim
 
 ## Functions
 
