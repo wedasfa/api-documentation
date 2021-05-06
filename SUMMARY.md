@@ -24,7 +24,6 @@
     * [Panorama](developers/classes/panorama.md)
   * [Tables](developers/tables/README.md)
     * [antiaim](developers/tables/antiaim.md)
-    * [beams](developers/tables/beams.md)
     * [cheat](developers/tables/cheat.md)
     * [exploits](developers/tables/exploits.md)
     * [fakelag](developers/tables/fakelag.md)
