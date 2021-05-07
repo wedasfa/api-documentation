@@ -1,7 +1,7 @@
 # C_BaseCombatWeapon
 
 {% hint style="warn" %}
-C_BaseCombatWeapon class is derived from C_BaseEntity, so all methods from the C_BaseEntity can be called from rthe C_BaseCombatWeapon
+C_BaseCombatWeapon class is derived from C_BaseEntity, so every method you can find in C_BaseEntity can be called from the C_BaseCombatWeapon instance
 
 In all examples below, `weap` is a C_BaseCombatWeapon instance
 
