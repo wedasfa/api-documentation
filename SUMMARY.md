@@ -53,7 +53,7 @@
     * [Menu API](developers/other/menuapi.md)
 * [Examples](examples/README.md)
   * [Chicken ESP](examples/chicken_esp.md)
-  * [Clantag Changer](examples/clantagchanger.md)
+  * [Synced Clantag Changer](examples/clantag.md)
   * [DTap Speed](examples/doubletapspeed.md)
   * [Indicators](examples/indicators.md)
   * [Menu Elements](examples/menu_elements.md)
