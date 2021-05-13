@@ -184,8 +184,8 @@ cheat.AddEvent("Greetings from neverlose.cc!")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| title | string | Event name |
-| name | string | Event name |
+| title | string | Notification title |
+| name | string | Notification name |
 
 ```lua
 cheat.AddNotify("neverlose.cc", "Greetings from elleqt!")
