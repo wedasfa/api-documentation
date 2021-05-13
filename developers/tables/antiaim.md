@@ -112,7 +112,7 @@ local desync_rotation = antiaim.GetFakeRotation()
 
 ## OverrideDesyncOnShot
 
-### Return value:
+### Parameters:
 
 | Type | Description |
 | :--- | :--- |
