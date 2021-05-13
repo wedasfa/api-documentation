@@ -90,6 +90,54 @@ local rnd_int = utils.RandomInt(0, 20)
 utils.RandomSeed(cmd.random_seed)
 ```
 
+## RegisterConVar
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| name | string | Console var name |
+| value | string | Console var default value |
+| flags | int | [Convar flags](https://gist.github.com/es3n1n/fe2051a24ffef32a8219823e7ef69b05#file-e_cvar_flags-lua-L3) |
+| description | string | Console var description |
+| callback | function | Callback |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | ConVar | Registered console var instance |
+
+```lua
+local cvar = utils.RegisterConVar('meme_var', '1', 8, 'Testing stuff', function(cvar, old, new)
+	print('meme_var value was changed from ' .. old .. ' to ' .. new)
+end)
+print(cvar:GetString())
+```
+
+## RegisterConCommand
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| name | string | Console command name |
+| flags | int | [Convar flags](https://gist.github.com/es3n1n/fe2051a24ffef32a8219823e7ef69b05#file-e_cvar_flags-lua-L3) |
+| description | string | Console command description |
+| callback | function | Callback |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | ConVar | Registered console command instance |
+
+```lua
+local cmd = utils.RegisterConCommand('meme_cmd', 8, 'Testing stuff', function(cvar)
+	print("it's wednesday, my dudes")
+end)
+```
+
 ## UnixTime
 
 ### Parameters:
