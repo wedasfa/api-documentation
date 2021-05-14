@@ -23,8 +23,8 @@ local beam_info = BeamInfo_t.new()
 | m_nStartAttachment | int | - |
 | m_pEndEnt | IClientEntity* | - |
 | m_nEndAttachment | int | - |
-| Vector | Vector | - |
-| Vector | Vector | - |
+| m_vecStart | Vector | - |
+| m_vecEnd | Vector | - |
 | m_nModelIndex | int | - |
 | m_pszModelName | const char* | - |
 | m_nHaloIndex | int | - |
