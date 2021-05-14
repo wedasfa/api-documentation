@@ -160,6 +160,13 @@ end)
 var:SetVisible(false)
 ```
 
+## DestroyItem
+
+{% hint style="warning" %}
+DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../other/menuapi.md#destroyitem)
+{% endhint %}
+
+
 ## SetTooltip
 
 ### Parameters:
@@ -170,22 +177,6 @@ var:SetVisible(false)
 
 ```lua
 var:SetTooltip("Tooltip")
-```
-
-## DestroyItem
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| element | CheatVar* | Menu Item | + |
-
-```lua
-local button = menu.Button("neverlose.cc", "Button")
-menu.Button("neverlose.cc", "Delete 1st button"):RegisterCallback( function()
-  print("Deleted")
-  menu.DestroyItem(button)
-end)
 ```
 
 ## UpdateList

@@ -343,3 +343,18 @@ local headPriority = menu.GetLegitHitboxState(0)
 print(headPriority)
 ```
 
+## DestroyItem
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| element | CheatVar* | Menu Item |
+
+```lua
+local button = menu.Button("neverlose.cc", "Button")
+menu.Button("neverlose.cc", "Delete 1st button"):RegisterCallback(function()
+  print("Deleted")
+  menu.DestroyItem(button)
+end)
+```
