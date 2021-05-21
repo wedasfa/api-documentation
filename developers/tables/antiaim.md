@@ -1,5 +1,9 @@
 # antiaim
 
+{% hint style="info" %}
+Override* functions can be called only from pre-createmove [callbacks](../other/callbacks.md) (`pre_prediction`, `prediction`).
+{% endhint %}
+
 ## Functions
 
 ## OverrideInverter
@@ -20,10 +24,10 @@ antiaim.OverrideInverter(false)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | A new desync limit value |
+| value | float | A new desync limit value (0 - 58) |
 
 ```lua
-antiaim.OverrideLimit(1.0)
+antiaim.OverrideLimit(30)
 ```
 
 ## OverrideYawOffset
@@ -32,10 +36,10 @@ antiaim.OverrideLimit(1.0)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | A new yaw offset value |
+| value | float | A new yaw offset value (-180 - 180) |
 
 ```lua
-antiaim.OverrideYawOffset(1.0)
+antiaim.OverrideYawOffset(90)
 ```
 
 ## OverrideLBYOffset
@@ -44,10 +48,10 @@ antiaim.OverrideYawOffset(1.0)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | A new lby offset value |
+| value | float | A new lby offset value (-58 - 58) |
 
 ```lua
-antiaim.OverrideLBYOffset(1.0)
+antiaim.OverrideLBYOffset(58)
 ```
 
 ## OverridePitch
@@ -59,7 +63,7 @@ antiaim.OverrideLBYOffset(1.0)
 | value | float | A new pitch value |
 
 ```lua
-antiaim.OverridePitch(1.0)
+antiaim.OverridePitch(90) -- UP
 ```
 
 ## GetInverterState
