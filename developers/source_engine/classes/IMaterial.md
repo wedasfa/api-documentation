@@ -1,7 +1,7 @@
 # IMaterial
 
 {% hint style="info" %}
-You can access `IMaterial` instance through `IMaterialSystem` [class](../classes/IMaterialSystem.md)
+You can access `IMaterial` instance through `MatSystem` [table](../MatSystem.md)
 {% endhint %}
 
 ## Functions
