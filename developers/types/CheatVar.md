@@ -6,46 +6,28 @@ You can access `CheatVar` instance through [Menu.FindVar](../neverlose/Menu.md)
 
 ## Functions
 
-## GetBool
+## Get
 
 ### Return value:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | bool | CheatVar value as a bool |
+| value | depends on menu item | CheatVar value |
+
+```lua
+local val = var:Get()
+```
+
+## Set
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| el\_index | int | Element index for multicombo cheatvar | - |
-
-```lua
-local val = var:GetBool()
-```
-
-## GetFloat
-
-### Return value:
-
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | CheatVar value as a float |
+| value | depends on menu item | CheatVar value |
 
 ```lua
-local val = var:GetFloat()
-```
-
-## GetInt
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | int | CheatVar value as int |
-
-```lua
-local val = var:GetInt()
+local val = var:Set(Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## GetColor
@@ -60,56 +42,6 @@ local val = var:GetInt()
 local val = var:GetColor()
 ```
 
-## GetString
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | string | CheatVar value as string |
-
-```lua
-local val = var:GetString()
-```
-
-## SetBool
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| el\_index | int | Element index for multicombo cheatvar | - |
-| value | bool | New bool value | + |
-
-```lua
-local ref_fake_options = Menu.FindVar("Aimbot", "Anti Aim", "Fake Angle", "Fake Options")
-ref_fake_options:SetBool(3, true)
-```
-
-## SetInt
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| value | int | New int value | + |
-
-```lua
-var:SetInt(1)
-```
-
-## SetFloat
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| value | float | New float value | + |
-
-```lua
-var:SetFloat(1.5)
-```
-
 ## SetColor
 
 ### Parameters:
@@ -120,18 +52,6 @@ var:SetFloat(1.5)
 
 ```lua
 var:SetColor(Color.new(1, 1, 1, 1))
-```
-
-## SetString
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| value | string | New string value | + |
-
-```lua
-var:SetString("Hello")
 ```
 
 ## RegisterCallback
