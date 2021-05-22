@@ -18,8 +18,10 @@ ignore = [
 ]
 
 remap = {
+	'_t': '',
 	'_': ' ',
-	'api': 'API'
+	'api': 'API',
+	'esp': 'ESP',
 }
 
 markdown_list = '* '
@@ -60,11 +62,10 @@ def _iterdir(dir: Path, parents: List[Path] = list()) -> None:
 
 		if item.is_dir():
 			_iterdir(item, parents=[*parents, dir])
-			continue
-
-		# print(item, parents)
 
 
 if __name__ == '__main__':
 	_iterdir(root_path)
-	print(result)
+	
+	with open(summary_path, 'w') as f:
+		f.write(result)
