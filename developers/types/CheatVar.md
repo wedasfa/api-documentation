@@ -82,7 +82,7 @@ local val = var:GetString()
 | value | bool | New bool value | + |
 
 ```lua
-local ref_fake_options = g_Config:FindVar("Aimbot", "Anti Aim", "Fake Angle", "Fake Options")
+local ref_fake_options = Menu.FindVar("Aimbot", "Anti Aim", "Fake Angle", "Fake Options")
 ref_fake_options:SetBool(3, true)
 ```
 
@@ -203,7 +203,7 @@ end)
 | Combo elements | table | Returns all elements in combo |
 
 ```lua
-local bodyAim = g_Config:FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
+local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
 local list = bodyAim:GetList()
 
 for _, item in ipairs(list) do

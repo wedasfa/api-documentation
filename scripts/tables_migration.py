@@ -41,6 +41,7 @@ remap = {
 	'g_Panorama:': 'Panorama.',
 	'g_CVar:': 'CVar.',
 	'Utils..': 'Utils.',  # @note: es3n1n: ugh just cz it was broken
+	'g_Config:': 'Menu.',
 }
 
 
