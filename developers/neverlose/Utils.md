@@ -98,7 +98,7 @@ Utils.RandomSeed(cmd.random_seed)
 | :--- | :--- | :--- |
 | name | string | Console var name |
 | value | string | Console var default value |
-| flags | int | [Convar flags](https://gist.github.com/es3n1n/fe2051a24ffef32a8219823e7ef69b05#file-e_cvar_flags-lua-L3) |
+| flags | int | [Convar flags](../other/source_engine_enums.md#cvar-flags) |
 | description | string | Console var description |
 | callback | function | Callback |
 
@@ -122,7 +122,7 @@ print(cvar:GetString())
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Console command name |
-| flags | int | [Convar flags](https://gist.github.com/es3n1n/fe2051a24ffef32a8219823e7ef69b05#file-e_cvar_flags-lua-L3) |
+| flags | int | [Convar flags](../other/source_engine_enums.md#cvar-flags) |
 | description | string | Console command description |
 | callback | function | Callback |
 
