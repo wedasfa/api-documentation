@@ -1,8 +1,4 @@
-# IViewRenderBeams
-
-{% hint style="info" %}
-Instance of `IViewRenderBeams` is `g_RenderBeams`
-{% endhint %}
+# RenderBeams
 
 ## Functions
 
@@ -38,7 +34,7 @@ beam_info.m_flRed = 255.0
 beam_info.m_flGreen = 55.0
 beam_info.m_flBlue = 5.0
 
-g_RenderBeams:CreateBeamPoints(beam_info)
+RenderBeams.CreateBeamPoints(beam_info)
 ```
 ## DrawBeam
 
