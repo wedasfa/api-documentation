@@ -3,7 +3,6 @@
 * [Useful information](README.md)
 * [Developers](developers/README.md)
 	* [Neverlose](developers/neverlose/README.md)
-		* [Config](developers/neverlose/config.md)
 		* [Esp](developers/neverlose/esp.md)
 		* [Menu](developers/neverlose/menu.md)
 		* [Render](developers/neverlose/render.md)

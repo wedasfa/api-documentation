@@ -327,6 +327,45 @@ local isHeadEnabled = Menu.GetRageHitboxState(0)
 print(isHeadEnabled)
 ```
 
+## SetRageHitboxState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+| state | bool |
+
+```lua
+Menu.SetRageHitboxState(0, true)
+```
+
+## SetRageMultipointState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+| state | bool |
+
+```lua
+Menu.SetRageMultipointState(0, true)
+```
+
+## SetLegitHitboxState
+
+### Parameters:
+
+| Name | Type |
+| :--- | :--- |
+| hitbox | int |
+| state | bool |
+
+```lua
+Menu.SetLegitHitboxState(0, true)
+```
+
 ## GetRageMultipointState
 
 ### Parameters:

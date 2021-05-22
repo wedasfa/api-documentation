@@ -1,7 +1,5 @@
 # Render
 
-{% hint style="info" %} Instance of `Render` is `g_Render` {% endhint %}
-
 ## Functions
 
 ## Line
