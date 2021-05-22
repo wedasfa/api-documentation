@@ -14,7 +14,7 @@ local phrases = {
 }
 
 local function get_phrase()
-	return phrases[Utils..RandomInt(1, #phrases)]:gsub('\"', '')
+	return phrases[Utils.RandomInt(1, #phrases)]:gsub('\"', '')
 end
 
 Cheat.RegisterCallback("events", function(event)

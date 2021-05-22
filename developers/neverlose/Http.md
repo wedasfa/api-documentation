@@ -1,4 +1,4 @@
-# http
+# Http
 
 ## Functions
 

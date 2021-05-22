@@ -8,7 +8,7 @@
 
 ```lua
 -- @region: engine stuff
-local _set_clantag = ffi.cast('int(__fastcall*)(const char*, const char*)', Utils..PatternScan('engine.dll', '53 56 57 8B DA 8B F9 FF 15'))
+local _set_clantag = ffi.cast('int(__fastcall*)(const char*, const char*)', Utils.PatternScan('engine.dll', '53 56 57 8B DA 8B F9 FF 15'))
 local _last_clantag = nil
 local set_clantag = function(v)
   if v == _last_clantag then return end

@@ -1,4 +1,4 @@
-# antiaim
+# AntiAim
 
 {% hint style="info" %}
 Override* functions can be called only from pre-createmove [callbacks](../other/callbacks.md) (`pre_prediction`, `prediction`).

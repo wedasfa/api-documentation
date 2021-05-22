@@ -1,4 +1,4 @@
-# ragebot
+# RageBot
 
 {% hint style="info" %}
 Hitboxes:

@@ -1,4 +1,4 @@
-# fakelag
+# FakeLag
 
 ## Functions
 

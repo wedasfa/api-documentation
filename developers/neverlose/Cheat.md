@@ -1,15 +1,15 @@
-# cheat
+# Cheat
 
 ## ESP API
 
 {% hint style="info" %}
-You can create your own ESP elements. More info can be found [here](../other/espapi.md).
+You can create your own ESP elements. More info can be found [here](ESP.md).
 {% endhint %}
 
 ## Menu API
 
 {% hint style="info" %}
-You can create your menu elements. More info can be found [here](../other/menuapi.md).
+You can create your menu elements. More info can be found [here](Menu.md).
 {% endhint %}
 
 ## Functions
