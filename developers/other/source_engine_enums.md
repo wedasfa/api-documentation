@@ -2,7 +2,7 @@
 
 ## CVar flags
 
-```
+```lua
 local e_cvar_flags = {
     none = 0,
     unregistered = bit.lshift(1, 0), -- If this is set, don't add to linked list, etc.
