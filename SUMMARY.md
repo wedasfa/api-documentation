@@ -15,6 +15,7 @@
 		* [Utils](developers/neverlose/Utils.md)
 	* [Other](developers/other/README.md)
 		* [Callbacks](developers/other/callbacks.md)
+		* [Source engine enums](developers/other/Source engine enums.md)
 	* [Source engine](developers/source_engine/README.md)
 		* [Classes](developers/source_engine/classes/README.md)
 			* [CGameRules](developers/source_engine/classes/CGameRules.md)
