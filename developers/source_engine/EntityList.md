@@ -1,8 +1,4 @@
-# IClientEntityList
-
-{% hint style="info" %}
-Instance of `IClientEntityList` is `g_EntityList`
-{% endhint %}
+# EntityList
 
 ## Functions
 
@@ -21,7 +17,7 @@ Instance of `IClientEntityList` is `g_EntityList`
 | ent | C_BaseEntity* | Pointer to entity |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(g_EngineClient:GetLocalPlayer())
 ```
 
 ## NumberOfEntities
@@ -39,7 +35,7 @@ local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer()
 | value | int | Number of entities currently in use |
 
 ```lua
-local num_ents = g_EntityList:NumberOfEntities(false)
+local num_ents = EntityList.NumberOfEntities(false)
 print(num_ents)
 ```
 
@@ -52,7 +48,7 @@ print(num_ents)
 | value | int | Highest entity index |
 
 ```lua
-local highest_index = g_EntityList:GetHighestEntityIndex()
+local highest_index = EntityList.GetHighestEntityIndex()
 print(highest_index)
 ```
 
@@ -73,9 +69,9 @@ print(highest_index)
 ```lua
 -- @summary: Get active weapon from weapon_handle
 -- @hint: You can use GetActiveWeapon instead
-local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local me = EntityList.GetClientEntity(g_EngineClient:GetLocalPlayer())
 local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
-local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
+local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 ```
 
 ## GetPlayerResource
@@ -87,7 +83,7 @@ local weap = g_EntityList:GetClientEntityFromHandle(weapon_handle)
 | Player Resource | CSPlayerResource* | - |
 
 ```lua
-local player_resource = g_EntityList:GetPlayerResource()
+local player_resource = EntityList.GetPlayerResource()
 local get_prop = player_resource:GetProp("DT_CSPlayerResource", "m_szClan")
 
 for key, value in pairs(get_prop) do
@@ -104,7 +100,7 @@ end
 | Game Rules | CSGameRules* | - |
 
 ```lua
-local game_rules = g_EntityList:GetGameRules()
+local game_rules = EntityList.GetGameRules()
 local get_prop = game_rules:GetProp("DT_CSGameRulesProxy", "m_bIsValveDS")
 print(get_prop)
 ```
@@ -124,7 +120,7 @@ print(get_prop)
 | ent | C_BaseEntity* | |
 
 ```lua
-local ents = g_EntityList:GetEntitiesByClassID(40)
+local ents = EntityList.GetEntitiesByClassID(40)
 print("Found " .. tostring(#ents) .. " entities with id 40")
 ```
 
@@ -143,7 +139,7 @@ print("Found " .. tostring(#ents) .. " entities with id 40")
 | ent | C_BaseEntity* | |
 
 ```lua
-local ents = g_EntityList:GetEntitiesByName("CCSPlayer")
+local ents = EntityList.GetEntitiesByName("CCSPlayer")
 print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 ```
 
@@ -156,7 +152,7 @@ print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 | ent | C_BasePlayer* | Local Player entity |
 
 ```lua
-local player = g_EntityList:GetLocalPlayer()
+local player = EntityList.GetLocalPlayer()
 ```
 
 ## GetWeapon
@@ -174,7 +170,7 @@ local player = g_EntityList:GetLocalPlayer()
 | ent | C_BaseCombatWeapon* | Weapon entity |
 
 ```lua
-local player = g_EntityList:GetWeapon(100)
+local player = EntityList.GetWeapon(100)
 ```
 
 ## GetPlayer
@@ -192,7 +188,7 @@ local player = g_EntityList:GetWeapon(100)
 | ent | C_BasePlayer* | Player entity |
 
 ```lua
-local player = g_EntityList:GetPlayer(1)
+local player = EntityList.GetPlayer(1)
 ```
 
 ## GetPlayerFromHandle
@@ -210,7 +206,7 @@ local player = g_EntityList:GetPlayer(1)
 | ent | C_BasePlayer* | Player entity |
 
 ```lua
-local player = g_EntityList:GetPlayerFromHandle(handle)
+local player = EntityList.GetPlayerFromHandle(handle)
 ```
 
 ## GetWeaponFromHandle
@@ -228,9 +224,9 @@ local player = g_EntityList:GetPlayerFromHandle(handle)
 | ent | C_BaseCombatWeapon* | Weapon |
 
 ```lua
-local local_player_ptr = g_EntityList:GetLocalPlayer()
+local local_player_ptr = EntityList.GetLocalPlayer()
 local active_weapon = local_player_ptr:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
-local weapon_from_handle = g_EntityList:GetWeaponFromHandle(active_weapon)
+local weapon_from_handle = EntityList.GetWeaponFromHandle(active_weapon)
 print(weapon_from_handle)
 ```
 
@@ -244,8 +240,8 @@ print(weapon_from_handle)
 
 ```lua
 cheat.RegisterCallback("createmove", function()
-    local players = g_EntityList:GetPlayers()
-    local local_player = g_EntityList:GetLocalPlayer()
+    local players = EntityList.GetPlayers()
+    local local_player = EntityList.GetLocalPlayer()
     for table_index, player_pointer in pairs(players) do
         if player_pointer == local_player then goto skip end
         local player_name = player_pointer:GetName()
