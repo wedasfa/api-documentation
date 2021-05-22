@@ -1,4 +1,4 @@
-# CGameRules
+# GameRulesProxy
 
 {% hint style="info" %}
 You can access GameRules class through [EntityList.GetGameRules](EntityList.md)
