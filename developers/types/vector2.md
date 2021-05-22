@@ -1,4 +1,4 @@
-# Vector
+# Vector2
 
 {% hint style="info" %}
 `Vector2` is a two-dimensional vector. For standard three-dimensional vectors refer to `Vector`.
