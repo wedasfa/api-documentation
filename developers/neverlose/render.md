@@ -215,10 +215,11 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| name | string | Font name |
-| size | int | Font size |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| name | string | Font name | + |
+| size | int | Font size | + |
+| flags | FontFlags | Font flags| - |
 
 ### Return value:
 
@@ -228,8 +229,16 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 ### Usage:
 ```lua
-local font = Render.InitFont("Arial", 16)
-Render.Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), 16, font)
+local flags = FontFlags.new()
+flags.antialiasing = false
+flags.bold = false
+flags.italic = false
+
+verdana = Render.InitFont("Verdana", 11, flags)
+
+Cheat.RegisterCallback("draw", function()
+    Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 11, verdana)
+end)
 ```
 
 ## ScreenPosition
