@@ -1,8 +1,4 @@
-# IMaterialSystem
-
-{% hint style="info" %}
-Instance of `IMaterialSystem` is `g_MatSystem`
-{% endhint %}
+# MatSystem
 
 ## Functions
 
@@ -24,11 +20,11 @@ Instance of `IMaterialSystem` is `g_MatSystem`
 
 ```lua
 local function onAnimatedWireFrameLoaded(mat)
-  g_MatSystem:OverrideMaterial("LocalHands", mat)
+  MatSystem.OverrideMaterial("LocalHands", mat)
 end
 
 -- animated wireframe
-g_MatSystem:CreateMaterial("testing_material",  [[
+MatSystem.CreateMaterial("testing_material",  [[
   "VertexLitGeneric"
   {
     "$basetexture" "nature/urban_puddle01a_ssbump"
@@ -65,7 +61,7 @@ g_MatSystem:CreateMaterial("testing_material",  [[
 | value | IMaterial\* | IMaterial pointer |
 
 ```lua
-local mat = g_MatSystem:FindMaterial("dev/glow_armsrace", "")
+local mat = MatSystem.FindMaterial("dev/glow_armsrace", "")
 ```
 
 ## FirstMaterial
@@ -77,7 +73,7 @@ local mat = g_MatSystem:FindMaterial("dev/glow_armsrace", "")
 | value | unsigned short | First material |
 
 ```lua
-local mat = g_MatSystem:FirstMaterial()
+local mat = MatSystem.FirstMaterial()
 ```
 
 ## NextMaterial
@@ -95,8 +91,8 @@ local mat = g_MatSystem:FirstMaterial()
 | value | unsigned short | Next material handle |
 
 ```lua
-local mat = g_MatSystem:FirstMaterial()
-local next_mat = g_MatSystem:NextMaterial(mat)
+local mat = MatSystem.FirstMaterial()
+local next_mat = MatSystem.NextMaterial(mat)
 ```
 
 ## GetMaterial
@@ -114,8 +110,8 @@ local next_mat = g_MatSystem:NextMaterial(mat)
 | value | IMaterial\* | Material |
 
 ```lua
-local mat = g_MatSystem:FirstMaterial()
-local mat_ptr = g_MatSystem:GetMaterial(mat)
+local mat = MatSystem.FirstMaterial()
+local mat_ptr = MatSystem.GetMaterial(mat)
 ```
 
 ## OverrideMaterial
@@ -142,7 +138,7 @@ Types can be (case sensetivity):
 {% endhint %}
 
 ```lua
-g_MatSystem:OverrideMaterial("Enemies", mat_ptr)
+MatSystem.OverrideMaterial("Enemies", mat_ptr)
 ```
 
 ## RemoveOverrideMaterial
@@ -155,5 +151,5 @@ g_MatSystem:OverrideMaterial("Enemies", mat_ptr)
 | mat | IMaterial\* | Material pointer |
 
 ```lua
-g_MatSystem:RemoveOverrideMaterial("Enemies", mat_ptr)
+MatSystem.RemoveOverrideMaterial("Enemies", mat_ptr)
 ```
