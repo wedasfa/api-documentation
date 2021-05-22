@@ -63,5 +63,4 @@ end
 
 
 Cheat.RegisterCallback("draw", clantag_animation)
-
 ```
