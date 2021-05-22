@@ -1,8 +1,4 @@
-# CGlobalVarsBase
-
-{% hint style="info" %}
-Instance of `CGlobalVarsBase` is `g_GlobalVars`
-{% endhint %}
+# GlobalVars
 
 ## Fields:
 
