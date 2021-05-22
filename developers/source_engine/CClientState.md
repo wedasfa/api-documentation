@@ -1,9 +1,5 @@
 # ClientState
 
-{% hint style="info" %}
-Instance of `ClientState` is `g_ClientState`
-{% endhint %}
-
 ## Fields:
 
 | Name | Type | Description |

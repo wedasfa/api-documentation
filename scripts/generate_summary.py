@@ -22,6 +22,7 @@ remap = {
 	'_': ' ',
 	'api': 'API',
 	'esp': 'ESP',
+	'C Base': 'C_Base',  # @note: es3n1n: 300iq move
 }
 
 markdown_list = '* '
