@@ -1,4 +1,4 @@
-# GameRulesProxy
+# CGameRules
 
 {% hint style="info" %}
 You can access GameRules class through [EntityList.GetGameRules](EntityList.md)
@@ -14,7 +14,7 @@ You can access GameRules class through [EntityList.GetGameRules](EntityList.md)
 | value | bool | Is timeout active |
 
 ```lua
-local is_freezed = g_GameRules:m_bFreezePeriod()
+local is_freezed = EntityList.GetGameRules():m_bFreezePeriod()
 print(is_freezed)
 ```
 
@@ -26,7 +26,7 @@ print(is_freezed)
 | value | bool | Is player on a valve server |
 
 ```lua
-local valve_ds = g_GameRules:m_bIsValveDS()
+local valve_ds = EntityList.GetGameRules():m_bIsValveDS()
 print(valve_ds)
 ```
 
@@ -38,7 +38,7 @@ print(valve_ds)
 | value | float | Round start time |
 
 ```lua
-local round_start_time = g_GameRules:m_fRoundStartTime()
+local round_start_time = EntityList.GetGameRules():m_fRoundStartTime()
 print(round_start_time)
 ```
 
@@ -50,7 +50,7 @@ print(round_start_time)
 | value | int | Game phase |
 
 ```lua
-local game_phase = g_GameRules:m_gamePhase()
+local game_phase = EntityList.GetGameRules():m_gamePhase()
 print(game_phase)
 ```
 
@@ -62,7 +62,7 @@ print(game_phase)
 | value | int | Number of consecutive CT loses |
 
 ```lua
-local ct_loses = g_GameRules:m_iNumConsecutiveCTLoses()
+local ct_loses = EntityList.GetGameRules():m_iNumConsecutiveCTLoses()
 print(ct_loses)
 ```
 
@@ -74,7 +74,7 @@ print(ct_loses)
 | value | int | Number of consecutive T loses |
 
 ```lua
-local t_loses = g_GameRules:m_iNumConsecutiveTerroristLoses()
+local t_loses = EntityList.GetGameRules():m_iNumConsecutiveTerroristLoses()
 print(t_loses)
 ```
 
@@ -86,6 +86,6 @@ print(t_loses)
 | value | int | Round time |
 
 ```lua
-local round_time = g_GameRules:m_iRoundTime()
+local round_time = EntityList.GetGameRules():m_iRoundTime()
 print(round_time)
 ```
