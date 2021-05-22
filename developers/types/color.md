@@ -59,54 +59,11 @@ local my_clr = Color.new(1.0, 1.0, 1.0)
 local my_clr = Color.new(1.0, 1.0, 1.0, 1.0)
 ```
 
-## r
-
-### Return value:
+## Fields:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | Fraction from 0.0 to 1.0 |
-
-```lua
-local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local red = my_clr:r()
-```
-
-## g
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | float | Fraction from 0.0 to 1.0 |
-
-```lua
-local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local green = my_clr:g()
-```
-
-## b
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | float | Fraction from 0.0 to 1.0 |
-
-```lua
-local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local blue = my_clr:b()
-```
-
-## a
-
-### Return value:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | float | Fraction from 0.0 to 1.0 |
-
-```lua
-local my_clr = Color.new(255 / 255, 100 / 255, 100 / 255, 255 / 255)
-local alpha = my_clr:a()
-```
+| r | float | Fraction from 0.0 to 1.0 |
+| g | float | Fraction from 0.0 to 1.0 |
+| b | float | Fraction from 0.0 to 1.0 |
+| a | float | Fraction from 0.0 to 1.0 |
