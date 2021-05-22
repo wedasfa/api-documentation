@@ -1,7 +1,7 @@
 # ConVar
 
 {% hint style="info" %}
-You can access `ConVar` instance through [ICVar](../classes/ICVar.md) global instance
+You can access `ConVar` instance through [CVar](../CVar.md)
 {% endhint %}
 
 ## Functions
