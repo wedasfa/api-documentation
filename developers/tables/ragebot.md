@@ -37,7 +37,7 @@ Hitboxes:
 | value | int | New mindamage |
 
 ```lua
-ragebot.OverrideMinDamage(1, 10)
+RageBot.OverrideMinDamage(1, 10)
 ```
 
 ## OverrideHitchance
@@ -50,7 +50,7 @@ ragebot.OverrideMinDamage(1, 10)
 | value | int | New hitchance |
 
 ```lua
-ragebot.OverrideHitchance(1, 10)
+RageBot.OverrideHitchance(1, 10)
 ```
 
 ## ForceSafety
@@ -62,7 +62,7 @@ ragebot.OverrideHitchance(1, 10)
 | index | int | Entity index |
 
 ```lua
-ragebot.ForceSafety(1)
+RageBot.ForceSafety(1)
 ```
 
 ## SetTargetPriority
@@ -75,7 +75,7 @@ ragebot.ForceSafety(1)
 | priority | int | Arbitrary numerical priority value - higher value = higher priority |
 
 ```lua
-ragebot.SetTargetPriority(1, 100)
+RageBot.SetTargetPriority(1, 100)
 ```
 
 ## SetHitboxPriority
@@ -89,7 +89,7 @@ ragebot.SetTargetPriority(1, 100)
 | priority | int | Arbitrary numerical priority value - higher value = higher priority |
 
 ```lua
-ragebot.SetHitboxPriority(1, 0, 100)
+RageBot.SetHitboxPriority(1, 0, 100)
 ```
 
 ## ForceHitboxSafety
@@ -102,7 +102,7 @@ ragebot.SetHitboxPriority(1, 0, 100)
 | hitbox | int | Hitbox index |
 
 ```lua
-ragebot.ForceHitboxSafety(1, 0)
+RageBot.ForceHitboxSafety(1, 0)
 ```
 
 ## EnableHitbox
@@ -116,7 +116,7 @@ ragebot.ForceHitboxSafety(1, 0)
 | state | bool | Hitbox state |
 
 ```lua
-ragebot.EnableHitbox(1, 0, false)
+RageBot.EnableHitbox(1, 0, false)
 ```
 
 ## EnableMultipoints
@@ -130,7 +130,7 @@ ragebot.EnableHitbox(1, 0, false)
 | state | bool | Multipoint state |
 
 ```lua
-ragebot.EnableMultipoints(1, 0, false)
+RageBot.EnableMultipoints(1, 0, false)
 ```
 
 ## IgnoreTarget
@@ -142,5 +142,5 @@ ragebot.EnableMultipoints(1, 0, false)
 | index | int | Entity index |
 
 ```lua
-ragebot.IgnoreTarget(1)
+RageBot.IgnoreTarget(1)
 ```

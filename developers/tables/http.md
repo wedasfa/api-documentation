@@ -17,7 +17,7 @@
 | content | string | Content of provided URL |
 
 ```lua
-local google_content = http.Get("https://google.com")
+local google_content = Http.Get("https://google.com")
 ```
 
 ## Post
@@ -36,7 +36,7 @@ local google_content = http.Get("https://google.com")
 | content | string | Content of provided URL |
 
 ```lua
-local google_content = http.Post("https://google.com", "somedata=somevalue")
+local google_content = Http.Post("https://google.com", "somedata=somevalue")
 ```
 
 ## GetAsync
@@ -55,7 +55,7 @@ local google_content = http.Post("https://google.com", "somedata=somevalue")
 | content | string | Content of provided URL |
 
 ```lua
-http.GetAsync("https://google.com", function(url_content)
+Http.GetAsync("https://google.com", function(url_content)
   print(url_content)
 end)
 ```
@@ -77,7 +77,7 @@ end)
 | content | string | Content of provided URL |
 
 ```lua
-http.PostAsync("https://google.com", "somedata=somevalue", function(url_content)
+Http.PostAsync("https://google.com", "somedata=somevalue", function(url_content)
   print(url_content)
 end)
 ```

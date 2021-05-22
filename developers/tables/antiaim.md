@@ -15,7 +15,7 @@ Override* functions can be called only from pre-createmove [callbacks](../other/
 | value | bool | A new value for inverter |
 
 ```lua
-antiaim.OverrideInverter(false)
+AntiAim.OverrideInverter(false)
 ```
 
 ## OverrideLimit
@@ -27,7 +27,7 @@ antiaim.OverrideInverter(false)
 | value | float | A new desync limit value (0 - 58) |
 
 ```lua
-antiaim.OverrideLimit(30)
+AntiAim.OverrideLimit(30)
 ```
 
 ## OverrideYawOffset
@@ -39,7 +39,7 @@ antiaim.OverrideLimit(30)
 | value | float | A new yaw offset value (-180 - 180) |
 
 ```lua
-antiaim.OverrideYawOffset(90)
+AntiAim.OverrideYawOffset(90)
 ```
 
 ## OverrideLBYOffset
@@ -51,7 +51,7 @@ antiaim.OverrideYawOffset(90)
 | value | float | A new lby offset value (-58 - 58) |
 
 ```lua
-antiaim.OverrideLBYOffset(58)
+AntiAim.OverrideLBYOffset(58)
 ```
 
 ## OverridePitch
@@ -63,7 +63,7 @@ antiaim.OverrideLBYOffset(58)
 | value | float | A new pitch value |
 
 ```lua
-antiaim.OverridePitch(90) -- UP
+AntiAim.OverridePitch(90) -- UP
 ```
 
 ## GetInverterState
@@ -75,7 +75,7 @@ antiaim.OverridePitch(90) -- UP
 | bool | Current inverter state |
 
 ```lua
-local inverter_state = antiaim.GetInverterState()
+local inverter_state = AntiAim.GetInverterState()
 ```
 
 ## GetMinDesyncDelta
@@ -87,7 +87,7 @@ local inverter_state = antiaim.GetInverterState()
 | float | Minimal desync delta |
 
 ```lua
-local min_desync_delta = antiaim.GetMinDesyncDelta()
+local min_desync_delta = AntiAim.GetMinDesyncDelta()
 ```
 
 ## GetMaxDesyncDelta
@@ -99,7 +99,7 @@ local min_desync_delta = antiaim.GetMinDesyncDelta()
 | float | Max desync delta |
 
 ```lua
-local max_desync_delta = antiaim.GetMaxDesyncDelta()
+local max_desync_delta = AntiAim.GetMaxDesyncDelta()
 ```
 
 ## GetFakeRotation
@@ -111,7 +111,7 @@ local max_desync_delta = antiaim.GetMaxDesyncDelta()
 | float | Fake rotation |
 
 ```lua
-local desync_rotation = antiaim.GetFakeRotation()
+local desync_rotation = AntiAim.GetFakeRotation()
 ```
 
 ## OverrideDesyncOnShot
@@ -123,7 +123,7 @@ local desync_rotation = antiaim.GetFakeRotation()
 | int | 0 - disable override, 1 - left, 2 - right, 3 - overlap on shot with fake, 4 - opposite to fake |
 
 ```lua
-antiaim.OverrideDesyncOnShot(4) 
+AntiAim.OverrideDesyncOnShot(4) 
 ```
 
 ## GetCurrentRealRotation
@@ -135,5 +135,5 @@ antiaim.OverrideDesyncOnShot(4)
 | float | Real rotation |
 
 ```lua
-local real_rotation = antiaim.GetCurrentRealRotation()
+local real_rotation = AntiAim.GetCurrentRealRotation()
 ```

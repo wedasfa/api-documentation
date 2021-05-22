@@ -34,7 +34,7 @@ In callback you can return 1 argument.
 | text | string | Text to draw | + |
 
 ```lua
-esp.CustomText("Test", "enemies", "preview", function(ent)
+ESP.CustomText("Test", "enemies", "preview", function(ent)
     return "Testing"
 end) 
 ```
@@ -70,7 +70,7 @@ In callback you can return 1 argument
 | value | int | Bar amount \(0-100\) | + |
 
 ```lua
-esp.CustomBar("Test", "enemies", function(ent)
+ESP.CustomBar("Test", "enemies", function(ent)
     return 90
 end)
 ```

@@ -17,7 +17,7 @@
 | ent | C_BaseEntity* | Pointer to entity |
 
 ```lua
-local localplayer = EntityList.GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 ```
 
 ## NumberOfEntities
@@ -69,7 +69,7 @@ print(highest_index)
 ```lua
 -- @summary: Get active weapon from weapon_handle
 -- @hint: You can use GetActiveWeapon instead
-local me = EntityList.GetClientEntity(g_EngineClient:GetLocalPlayer())
+local me = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
 local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 ```
@@ -239,7 +239,7 @@ print(weapon_from_handle)
 | players | table | Table with players (C_BasePlayer*)  |
 
 ```lua
-cheat.RegisterCallback("createmove", function()
+Cheat.RegisterCallback("createmove", function()
     local players = EntityList.GetPlayers()
     local local_player = EntityList.GetLocalPlayer()
     for table_index, player_pointer in pairs(players) do

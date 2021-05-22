@@ -1,7 +1,7 @@
 # firebullet_t
 
 {% hint style="info" %}
-You can access `firebullet_t` instance through `FireBullet` [function](../classes/cheat.md)
+You can access `firebullet_t` instance through `FireBullet` [function](../classes/Cheat.md)
 {% endhint %}
 
 ## Fields

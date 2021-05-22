@@ -11,7 +11,7 @@
 | value | bool | Is chocking packet |
 
 ```lua
-local chocking = fakelag.Choking()
+local chocking = FakeLag.Choking()
 ```
 
 ## ForceSend
@@ -19,7 +19,7 @@ local chocking = fakelag.Choking()
 ### Choke this tick, and send packet on next tick.
 
 ```lua
-fakelag.ForceSend()
+FakeLag.ForceSend()
 ```
 
 ## SentPackets
@@ -31,7 +31,7 @@ fakelag.ForceSend()
 | value | int | How many packets sent in row. |
 
 ```lua
-local sent_packets_num = fakelag.SentPackets()
+local sent_packets_num = FakeLag.SentPackets()
 ```
 
 ## SetState
@@ -43,5 +43,5 @@ local sent_packets_num = fakelag.SentPackets()
 | state | bool | Set packet state False - choke packet True - send packet |
 
 ```lua
-fakelag.SetState(false)
+FakeLag.SetState(false)
 ```

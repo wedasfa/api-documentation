@@ -28,8 +28,8 @@ You can view callbacks list [here](../other/callbacks.md).
 {% endhint %}
 
 ```lua
-cheat.RegisterCallback("draw", function()
-    g_Render:Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)
+Cheat.RegisterCallback("draw", function()
+    Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)
 end)
 ```
 
@@ -52,7 +52,7 @@ end)
 | Fire Bullet Info | firebullet_t | 
 
 ```lua
-local trace = cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
+local trace = Cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
 print(trace.damage)
 ```
 
@@ -71,7 +71,7 @@ print(trace.damage)
 | vec | Vector | Output vector |
 
 ```lua
-local vec = cheat.AngleToForward(QAngle.new())
+local vec = Cheat.AngleToForward(QAngle.new())
 ```
 
 ## VectorToAngle
@@ -89,7 +89,7 @@ local vec = cheat.AngleToForward(QAngle.new())
 | ang | QAngle | Output angle |
 
 ```lua
-local ang = cheat.VectorToAngle(Vector.new(100, 100, 100))
+local ang = Cheat.VectorToAngle(Vector.new(100, 100, 100))
 ```
 
 ## IsMenuVisible
@@ -101,7 +101,7 @@ local ang = cheat.VectorToAngle(Vector.new(100, 100, 100))
 | value | bool | Is menu opened or not |
 
 ```lua
-local is_visible = cheat.IsMenuVisible()
+local is_visible = Cheat.IsMenuVisible()
 ```
 
 ## GetMousePos
@@ -113,7 +113,7 @@ local is_visible = cheat.IsMenuVisible()
 | value | Vector2 | Mouse position on screen |
 
 ```lua
-local mouse_pos = cheat.GetMousePos()
+local mouse_pos = Cheat.GetMousePos()
 ```
 
 ## IsKeyDown
@@ -135,7 +135,7 @@ You can find all virtual keys [here](https://docs.microsoft.com/en-us/windows/wi
 {% endhint %}
 
 ```lua
-local is_key_pressed = cheat.IsKeyDown(0x1)
+local is_key_pressed = Cheat.IsKeyDown(0x1)
 ```
 
 ## GetCheatUserName
@@ -147,7 +147,7 @@ local is_key_pressed = cheat.IsKeyDown(0x1)
 | name | string | Neverlose's account username |
 
 ```lua
-local username = cheat.GetCheatUserName()
+local username = Cheat.GetCheatUserName()
 ```
 
 ## GetBinds
@@ -159,7 +159,7 @@ local username = cheat.GetCheatUserName()
 | binds | table (`ActiveBind`s array)| Binds |
 
 ```lua
-local binds = cheat.GetBinds()
+local binds = Cheat.GetBinds()
 print("Name", "isActive", "Value")
 for i = 1, #binds do
     print(binds[i]:GetName(), binds[i]:IsActive(), binds[i]:GetValue())
@@ -175,7 +175,7 @@ end
 | name | string | Event name |
 
 ```lua
-cheat.AddEvent("Greetings from neverlose.cc!")
+Cheat.AddEvent("Greetings from neverlose.cc!")
 ```
 
 ## AddNotify
@@ -188,5 +188,5 @@ cheat.AddEvent("Greetings from neverlose.cc!")
 | name | string | Notification name |
 
 ```lua
-cheat.AddNotify("neverlose.cc", "Greetings from elleqt!")
+Cheat.AddNotify("neverlose.cc", "Greetings from elleqt!")
 ```

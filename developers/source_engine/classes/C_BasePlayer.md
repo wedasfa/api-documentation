@@ -17,7 +17,7 @@
 | value | Netvar dependant | Netvar value |
 
 ```lua
-local player = g_EntityList:GetLocalPlayer()
+local player = EntityList.GetLocalPlayer()
 local health = player:GetProp("m_iHealth")
 print("Local player health: ", health)
 ```
@@ -33,8 +33,8 @@ print("Local player health: ", health)
 | array index | int | Index in array |
 
 ```lua
-cheat.RegisterCallback("draw", function() 
-    local player = g_EntityList:GetLocalPlayer()
+Cheat.RegisterCallback("draw", function() 
+    local player = EntityList.GetLocalPlayer()
     player:SetProp("m_iHealth", 1) 
 end)
 ```
@@ -48,7 +48,7 @@ end)
 | id | int | Class id |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local class_id = player:GetClassId()
 print(GetClassId)
@@ -63,7 +63,7 @@ print(GetClassId)
 | value | int | Entity index |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local ent_index = player:EntIndex()
 print(ent_index)
@@ -96,7 +96,7 @@ print(ent_index)
 | value | bool | Is player visible |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local is_visible = player:IsVisible(Vector.new(0, 0, 0))
 print(is_visible)
@@ -111,7 +111,7 @@ print(is_visible)
 | vec | Vector | Eye position in 3D space |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local eye_pos = player:GetEyePosition()
 print(eye_pos.x, eye_pos.y, eye_pos.z)
@@ -126,7 +126,7 @@ print(eye_pos.x, eye_pos.y, eye_pos.z)
 | weapon | C_BaseCombatWeapon* | Pointer to active weapon |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local active_weapon = player:GetActiveWeapon()
 ```
@@ -140,7 +140,7 @@ local active_weapon = player:GetActiveWeapon()
 | vec | Vector | Hitbox center |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local hitbox_center = player:GetHitboxCenter(0)
 print(hitbox_center.x, hitbox_center.y, hitbox_center.z)
@@ -155,7 +155,7 @@ print(hitbox_center.x, hitbox_center.y, hitbox_center.z)
 | name | string | Name |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local pl_name = player:GetName()
 print(pl_name)
@@ -170,7 +170,7 @@ print(pl_name)
 | value | bool | Is player dormant |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local is_dormant = player:IsDormant()
 print(is_dormant)
@@ -185,7 +185,7 @@ print(is_dormant)
 | value | bool | Is player teammate |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
 local is_teammate = player:IsTeamMate()
 print(is_teammate)
@@ -220,8 +220,8 @@ print(is_teammate)
 | tick_n | int | Tick |
 
 ```lua
-cheat.RegisterCallback("draw", function()
-	local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+Cheat.RegisterCallback("draw", function()
+	local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 	local player = entity:GetPlayer()
     player:DrawHitbox(3, Color.new(1, 1, 1, 1), g_GlobalVars.tickcount-1)
 end)
@@ -241,9 +241,9 @@ returns 2 if player is dormant but we've received info from shared esp,
 returns 3 if player is dormant but updated by sounds,
 returns 4 if player is dormant and is not updated
 ```lua
-cheat.RegisterCallback("createmove", function()
-    local players = g_EntityList:GetPlayers()
-    local local_player = g_EntityList:GetLocalPlayer()
+Cheat.RegisterCallback("createmove", function()
+    local players = EntityList.GetPlayers()
+    local local_player = EntityList.GetLocalPlayer()
     for table_index, player_pointer in pairs(players) do
         if player_pointer == local_player then goto skip end
         local get_network_state = player_pointer:GetNetworkState()
@@ -263,9 +263,9 @@ end)
 | ESP Alpha | float |
 
 ```lua
-cheat.RegisterCallback("createmove", function()
-    local players = g_EntityList:GetPlayers()
-    local local_player = g_EntityList:GetLocalPlayer()
+Cheat.RegisterCallback("createmove", function()
+    local players = EntityList.GetPlayers()
+    local local_player = EntityList.GetLocalPlayer()
     for table_index, player_pointer in pairs(players) do
         if player_pointer == local_player then goto skip end
         local esp_alpha = player_pointer:GetESPAlpha()

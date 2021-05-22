@@ -16,7 +16,7 @@
 
 ### Usage:
 ```lua
-g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 1.0, 1.0))
+Render.Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## PolyLine
@@ -30,7 +30,7 @@ g_Render:Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 
 
 ### Usage:
 ```lua
-g_Render:PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
+Render.PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
 
 ## PolyFilled
@@ -44,7 +44,7 @@ g_Render:PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.
 
 ### Usage:
 ```lua
-g_Render:PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
+Render.PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
 
 ## Box
@@ -59,7 +59,7 @@ g_Render:PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector
 
 ### Usage:
 ```lua
-g_Render:Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
+Render.Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## BoxFilled
@@ -74,7 +74,7 @@ g_Render:Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1
 
 ### Usage:
 ```lua
-g_Render:BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
+Render.BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## Circle
@@ -91,7 +91,7 @@ g_Render:BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 
 
 ### Usage:
 ```lua
-g_Render:Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+Render.Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## CircleFilled
@@ -107,7 +107,7 @@ g_Render:Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 
 ### Usage:
 ```lua
-g_Render:CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+Render.CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 
@@ -127,7 +127,7 @@ g_Render:CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1
 
 ### Usage:
 ```lua
-g_Render:CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 1.0), math.rad(0), math.rad(280), 5.0)
+Render.CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 1.0), math.rad(0), math.rad(280), 5.0)
 ```
 
 ## Text
@@ -145,7 +145,7 @@ g_Render:CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0
 
 ### Usage:
 ```lua
-g_Render:Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.0, 1.0), 20)
+Render.Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.0, 1.0), 20)
 ```
 
 ## WeaponIcon
@@ -162,7 +162,7 @@ g_Render:Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.
 
 ### Usage:
 ```lua
-g_Render:WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
+Render.WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 ```
 
 ## CalcTextSize
@@ -184,11 +184,11 @@ g_Render:WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 
 ### Usage:
 ```lua
-local text_size = g_Render:CalcTextSize("Hello world, it's me", 16)
+local text_size = Render.CalcTextSize("Hello world, it's me", 16)
 print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
 
-local font = g_Render:InitFont("Arial", 16)
-text_size = g_Render:CalcTextSize("Hello world, it's me", 16, font)
+local font = Render.InitFont("Arial", 16)
+text_size = Render.CalcTextSize("Hello world, it's me", 16, font)
 print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
 ```
 
@@ -209,7 +209,7 @@ print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
 
 ### Usage:
 ```lua
-local icon_size = g_Render:CalcWeaponIconSize(7, 16)
+local icon_size = Render.CalcWeaponIconSize(7, 16)
 print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 ```
 
@@ -230,8 +230,8 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 ### Usage:
 ```lua
-local font = g_Render:InitFont("Arial", 16)
-g_Render:Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), 16, font)
+local font = Render.InitFont("Arial", 16)
+Render.Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0, 1.0, 1.0), 16, font)
 ```
 
 ## ScreenPosition
@@ -250,7 +250,7 @@ g_Render:Text("Hello world, it's me", Vector2.new(250, 250), Color.new(1.0, 1.0,
 
 ### Usage:
 ```lua
-local screen_pos = g_Render:ScreenPosition(Vector.new(0, 0, 0))
+local screen_pos = Render.ScreenPosition(Vector.new(0, 0, 0))
 ```
 
 ## Circle3D
@@ -266,7 +266,7 @@ local screen_pos = g_Render:ScreenPosition(Vector.new(0, 0, 0))
 
 ### Usage:
 ```lua
-g_Render:Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
+Render.Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## Circle3DFilled
@@ -282,7 +282,7 @@ g_Render:Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 
 ### Usage:
 ```lua
-g_Render:Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
+Render.Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
 
 ## GradientBoxFilled
@@ -300,7 +300,7 @@ g_Render:Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 
 ### Usage:
 ```lua
-g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new(0, 0, 0, 1), Color.new(0, 0, 0, 1), Color.new(1, 1, 1, 1), Color.new(1, 1, 1, 1))
+Render.GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new(0, 0, 0, 1), Color.new(0, 0, 0, 1), Color.new(1, 1, 1, 1), Color.new(1, 1, 1, 1))
 ```
 
 ## LoadImage
@@ -321,8 +321,8 @@ g_Render:GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.n
 ```lua
 local image_size = Vector2.new(746 / 5, 1070 / 5)
 local url = "https://anime.is-inside.me/EsXF20B5.png"
-local bytes = http.Get(url)
-local image_loaded = g_Render:LoadImage(bytes, image_size)
+local bytes = Http.Get(url)
+local image_loaded = Render.LoadImage(bytes, image_size)
 ```
 
 ## LoadImageFromFile
@@ -338,10 +338,10 @@ local image_loaded = g_Render:LoadImage(bytes, image_size)
 ```lua
 local size = Vector2.new(100, 100)
 local pos = Vector2.new(50, 50)
-local image = g_Render:LoadImageFromFile("C:\\Users\\Asuna\\Desktop\\Kirito.png", size)
+local image = Render.LoadImageFromFile("C:\\Users\\Asuna\\Desktop\\Kirito.png", size)
 
-cheat.RegisterCallback("draw", function()
-    g_Render:Image(image, pos, size)
+Cheat.RegisterCallback("draw", function()
+    Render.Image(image, pos, size)
 end)
 ```
 
@@ -360,10 +360,10 @@ end)
 ```lua
 local image_size = Vector2.new(746 / 5, 1070 / 5)
 local url = "https://anime.is-inside.me/EsXF20B5.png"
-local bytes = http.Get(url)
-local image_loaded = g_Render:LoadImage(bytes, image_size)
-cheat.RegisterCallback("draw", function()
-    g_Render:Image(image_loaded, Vector2.new(100, 100), image_size)
+local bytes = Http.Get(url)
+local image_loaded = Render.LoadImage(bytes, image_size)
+Cheat.RegisterCallback("draw", function()
+    Render.Image(image_loaded, Vector2.new(100, 100), image_size)
 end)
 ```
 
@@ -377,7 +377,7 @@ end)
 
 ### Usage:
 ```lua
-local menu_pos = g_Render:GetMenuPos()
+local menu_pos = Render.GetMenuPos()
 print(menu_pos.x, menu_pos.y)
 ```
 
@@ -391,6 +391,6 @@ print(menu_pos.x, menu_pos.y)
 
 ### Usage:
 ```lua
-local menu_sz = g_Render:GetMenuSize()
+local menu_sz = Render.GetMenuSize()
 print(menu_sz.x, menu_sz.y)
 ```

@@ -7,8 +7,8 @@
 > Description: `Custom menu element creation`
 
 ```lua
-local our_checkbox      = menu.Switch("neverlose.cc", "Toggle me!", false)           --    Create a new checkbox in our script's tab
-local our_slider        = menu.SliderInt("neverlose.cc", "Slide me!", 50, 0, 100)      --    Create a new slider in our script's tab
+local our_checkbox      = Menu.Switch("neverlose.cc", "Toggle me!", false)           --    Create a new checkbox in our script's tab
+local our_slider        = Menu.SliderInt("neverlose.cc", "Slide me!", 50, 0, 100)      --    Create a new slider in our script's tab
 
 local ui_callback       = function()    
     local new_state     = our_checkbox:GetBool()    --  The new value of our checkbox

@@ -11,7 +11,7 @@
 | id | int | Class id |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local classid = localplayer:GetClassId()
 print(classid)
 ```
@@ -25,7 +25,7 @@ print(classid)
 | name | char | Class name |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local classname = localplayer:GetClassName()
 print(classname)
 ```
@@ -45,7 +45,7 @@ print(classname)
 | value | Netvar dependant | Netvar value |
 
 ```lua
-local player = g_EntityList:GetLocalPlayer()
+local player = EntityList.GetLocalPlayer()
 local health = player:GetProp("m_iHealth")
 print("Local player health: ", health)
 ```
@@ -61,8 +61,8 @@ print("Local player health: ", health)
 | array index | int | Index in array |
 
 ```lua
-cheat.RegisterCallback("draw", function() 
-    local player = g_EntityList:GetLocalPlayer()
+Cheat.RegisterCallback("draw", function() 
+    local player = EntityList.GetLocalPlayer()
     player:SetProp("m_iHealth", 1) 
 end)
 ```
@@ -76,7 +76,7 @@ end)
 | value | bool | Is entity a player |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local isPlayer = localplayer:IsPlayer()
 print(isPlayer)
 ```
@@ -90,7 +90,7 @@ print(isPlayer)
 | value | C_BasePlayer* | Pointer to player |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local getplayer = localplayer:GetPlayer()
 ```
 
@@ -103,8 +103,8 @@ local getplayer = localplayer:GetPlayer()
 | value | bool | Is entity a weapon |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local weapon = g_EntityList:GetClientEntity(localplayer:GetWeapon():EntIndex())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
+local weapon = EntityList.GetClientEntity(localplayer:GetWeapon():EntIndex())
 local isWeapon = weapon:IsWeapon()
 print(isWeapon)
 ```
@@ -132,8 +132,8 @@ local weapon = entity:GetWeapon()
 
 ```lua
 -- @summary: Render boxes on every player
-cheat.RegisterCallback("draw", function()
-    local ents = cheat.GetEntitiesByName("CCSPlayer")
+Cheat.RegisterCallback("draw", function()
+    local ents = Cheat.GetEntitiesByName("CCSPlayer")
 
     for i = 1, #ents do
         local origin = ents[i]:GetRenderOrigin()
@@ -142,16 +142,16 @@ cheat.RegisterCallback("draw", function()
         local bounds = ents[i]:GetRenderBounds(min, max)
 
         -- upper bounds
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, max.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + max), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(min.x, max.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(max.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(min.x, min.y, max.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + max), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 
         -- bottom bounds
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, min.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(min.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + Vector.new(max.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-        g_Render:CircleFilled(g_Render:ScreenPosition(origin + min), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(max.x, min.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(min.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(max.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
+        Render.CircleFilled(Render.ScreenPosition(origin + min), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
       
     end
 end)
@@ -166,7 +166,7 @@ end)
 | vec | Vector | Render origin |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local origin = localplayer:GetRenderOrigin()
 print(origin.x, origin.y, origin.z)
 ```
@@ -180,7 +180,7 @@ print(origin.x, origin.y, origin.z)
 | angle | QAngle | Render angles |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local render_angles = localplayer:GetRenderAngles()
 print(render_angles.pitch, render_angles.yaw, render_angles.roll)
 ```
@@ -194,7 +194,7 @@ print(render_angles.pitch, render_angles.yaw, render_angles.roll)
 | value | int | Entity index |
 
 ```lua
-local localplayer = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
+local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local ent_id = localplayer:EntIndex()
 print(ent_id)
 ```

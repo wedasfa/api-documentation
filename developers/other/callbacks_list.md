@@ -1,7 +1,7 @@
 # Callbacks
 
 {% hint style="info" %}
-To register a callback, you can call [cheat.RegisterCallback](../classes/cheat.md#registercallback) function.
+To register a callback, you can call [Cheat.RegisterCallback](../classes/Cheat.md#registercallback) function.
 {% endhint %}
 
 ## List of all callbacks:

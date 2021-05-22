@@ -20,7 +20,7 @@
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = menu.Switch("Neverlose", "Switch", false, "Tooltip")
+local switch = Menu.Switch("Neverlose", "Switch", false, "Tooltip")
 ```
 
 ## SwitchColor
@@ -42,7 +42,7 @@ local switch = menu.Switch("Neverlose", "Switch", false, "Tooltip")
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local switch = Menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderInt
@@ -65,7 +65,7 @@ local switch = menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
+local sliderint = Menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
 ```
 
 ## SliderIntColor
@@ -89,7 +89,7 @@ local sliderint = menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderint = Menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## SliderFloat
@@ -112,7 +112,7 @@ local sliderint = menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.n
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "Tooltip")
+local sliderfloat = Menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "Tooltip")
 ```
 
 ## SliderFloatColor
@@ -136,7 +136,7 @@ local sliderfloat = menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "T
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## Combo
@@ -158,7 +158,7 @@ local sliderfloat = menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## ComboColor
@@ -181,7 +181,7 @@ local combo = menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Eleme
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## MultiCombo
@@ -207,7 +207,7 @@ To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(in
 {% endhint %}
 
 ```lua
-local combo = menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
 ```
 
 ## TextBox
@@ -229,7 +229,7 @@ local combo = menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 
 | value | CheatVar | Cheatvar for textbox |
 
 ```lua
-local textbox = menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip")
+local textbox = Menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip")
 ```
 
 ## Text
@@ -242,7 +242,7 @@ local textbox = menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip")
 | name | string | Name | + |
 
 ```lua
-menu.Text("Neverlose", "Text")
+Menu.Text("Neverlose", "Text")
 ```
 
 ## Button
@@ -262,7 +262,7 @@ menu.Text("Neverlose", "Text")
 | value | CheatVar | Cheatvar for button |
 
 ```lua
-local button = menu.Button("Neverlose", "Test")
+local button = Menu.Button("Neverlose", "Test")
 ```
 
 ## ColorEdit
@@ -283,7 +283,7 @@ local button = menu.Button("Neverlose", "Test")
 | value | CheatVar | Cheatvar for coloredit |
 
 ```lua
-local coloredit = menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local coloredit = Menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
 ```
 
 ## GetRageHitboxState
@@ -301,7 +301,7 @@ local coloredit = menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1
 | Hitbox status | int | 0 = disabled, 1 = enabled |
 
 ```lua
-local isHeadEnabled = menu.GetRageHitboxState(0)
+local isHeadEnabled = Menu.GetRageHitboxState(0)
 print(isHeadEnabled)
 ```
 
@@ -320,7 +320,7 @@ print(isHeadEnabled)
 | Multipoint status | int | 0 = disabled, 1 = enabled |
 
 ```lua
-local isHeadEnabled = menu.GetRageMultipointState(0)
+local isHeadEnabled = Menu.GetRageMultipointState(0)
 print(isHeadEnabled)
 ```
 
@@ -339,7 +339,7 @@ print(isHeadEnabled)
 | Hitbox priority | int | 0 = disabled, 1 = low priority, 2 = medium priority, 3 = high priority |
 
 ```lua
-local headPriority = menu.GetLegitHitboxState(0)
+local headPriority = Menu.GetLegitHitboxState(0)
 print(headPriority)
 ```
 
@@ -352,9 +352,9 @@ print(headPriority)
 | element | CheatVar* | Menu Item |
 
 ```lua
-local button = menu.Button("neverlose.cc", "Button")
-menu.Button("neverlose.cc", "Delete 1st button"):RegisterCallback(function()
+local button = Menu.Button("neverlose.cc", "Button")
+Menu.Button("neverlose.cc", "Delete 1st button"):RegisterCallback(function()
   print("Deleted")
-  menu.DestroyItem(button)
+  Menu.DestroyItem(button)
 end)
 ```

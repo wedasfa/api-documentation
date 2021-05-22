@@ -188,8 +188,8 @@ var:SetTooltip("Tooltip")
 | new combo items | table | Combo Items | + |
 
 ```lua
-local combo = menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
-menu.Button("neverlose", "update"):RegisterCallback(function()	
+local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+Menu.Button("neverlose", "update"):RegisterCallback(function()	
 	combo:UpdateList({"el1", "el2"})	
 end)
 ```
