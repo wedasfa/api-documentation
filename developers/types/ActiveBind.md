@@ -1,7 +1,7 @@
 # ActiveBind
 
 {% hint style="info" %}
-You can access `ActiveBind` instance through `GetBinds` [function](../classes/Cheat.md)
+You can access `ActiveBind` instance through `GetBinds` [function](../neverlose/Cheat.md)
 {% endhint %}
 
 ## Functions
