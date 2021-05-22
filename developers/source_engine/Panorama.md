@@ -1,7 +1,5 @@
 # Panorama
 
-{% hint style="info" %} Instance of `Panorama` is `g_Panorama` {% endhint %}
-
 ## Functions
 
 ## Exec
@@ -18,14 +16,26 @@
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | result | string | Javascript code result |
+
 ```lua
-g_Panorama:Exec([[
+Panorama.Exec([[
     $.Msg("Stopping matchmaking");
     LobbyAPI.StopMatchmaking();
 ]], "CSGOMainMenu")
-```
-
-```lua
-local exec = g_Panorama:Exec( [[ MyPersonaAPI.GetXuid() ]])
+local exec = Panorama.Exec("MyPersonaAPI.GetXuid()")
 print(exec)
 ```
+
+## Open
+
+#### Return:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| result | PanoramaHandle | Panorama opened handle |
+
+```lua
+local handle = Panorama.Open()
+print(handle.GameStateAPI.GetLocalPlayerXuid())
+```
+
