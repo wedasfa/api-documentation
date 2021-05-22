@@ -7,7 +7,7 @@ In all examples below, `weap` is a C_BaseCombatWeapon instance
 
 ```lua
 -- @summary: Get active weapon
-local me = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer()):GetPlayer()
+local me = EntityList.GetClientEntity(EngineClient.GetLocalPlayer()):GetPlayer()
 local weap = me:GetActiveWeapon()
 ```
 {% endhint %}
