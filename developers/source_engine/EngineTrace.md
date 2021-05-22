@@ -1,8 +1,4 @@
-# IEngineTrace
-
-{% hint style="info" %}
-Instance of `IEngineTrace` is `g_EngineTrace`
-{% endhint %}
+# EngineTrace
 
 ## Functions
 
@@ -27,5 +23,5 @@ Instance of `IEngineTrace` is `g_EngineTrace`
 local lp_idx = g_EngineClient:GetLocalPlayer()
 local lp_ent = g_EntityList:GetClientEntity(lp_idx)
 
-local traced = g_EngineTrace:TraceRay(Vector.new(0, 0, 0), Vector.new(100, 100, 100), lp_ent, 0xFFFFFFFF)
+local traced = EngineTrace.TraceRay(Vector.new(0, 0, 0), Vector.new(100, 100, 100), lp_ent, 0xFFFFFFFF)
 ```
