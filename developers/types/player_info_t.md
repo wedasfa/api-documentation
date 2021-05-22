@@ -1,7 +1,7 @@
 # player_info_t
 
 {% hint style="info" %}
-You can access `player_info_t` instance through `GetPlayerInfo` [function](../classes/IVEngineClient.md)
+You can access `player_info_t` instance through `GetPlayerInfo` [function](../neverlose/EngineClient.md)
 {% endhint %}
 
 ## Fields
