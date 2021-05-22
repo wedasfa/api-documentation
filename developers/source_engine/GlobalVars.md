@@ -7,7 +7,6 @@
 | realtime | float | Absolute Time |
 | framecount | int | Absolute frame counter - continues to increase even if game is paused |
 | absoluteframetime | float | Non-paused frametime |
-| absoluteframestarttimesddev |  |  |
 | curtime | float | Current time |
 | frametime | float | Time spent on last server or client frame |
 | maxClients | int | Current maxplayers setting |
