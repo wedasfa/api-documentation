@@ -1,8 +1,4 @@
-# ICVar
-
-{% hint style="info" %}
-Instance of `ICVar` is `g_CVar`
-{% endhint %}
+# CVar
 
 ## Functions
 
@@ -21,5 +17,5 @@ Instance of `ICVar` is `g_CVar`
 | value | ConVar\* | ConVar pointer |
 
 ```lua
-local cheats = g_CVar:FindVar("sv_cheats")
+local cheats = CVar.FindVar("sv_cheats")
 ```
