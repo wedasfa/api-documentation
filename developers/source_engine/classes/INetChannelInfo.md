@@ -5,7 +5,12 @@ In examples below all `net_chan` is `INetChannelInfo` instance
 {% endhint %}
 
 {% hint style="info" %}
-Flows: 0. Outgoing 1. Incoming 2. Both
+Flows:
+| Value | Outgoing | Incoming |
+| :--- | :--- | :--- |
+| 0 | + | - |
+| 1 | - | + |
+| 2 | + | + |
 {% endhint %}
 
 ## Functions
