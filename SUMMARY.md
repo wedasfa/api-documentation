@@ -48,7 +48,7 @@
 		* [FontFlags](developers/types/FontFlags.md)
 		* [Player info](developers/types/player_info_t.md)
 		* [QAngle](developers/types/QAngle.md)
-		* [Ragebot shoot](developers/types/ragebot_shoot.md)
+		* [RagebotShot](developers/types/RagebotShot.md)
 		* [Rect](developers/types/Rect.md)
 		* [RegisteredShot](developers/types/RegisteredShot.md)
 		* [Trace](developers/types/Trace.md)
