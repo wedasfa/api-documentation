@@ -1,7 +1,7 @@
-# ragebot\_shot
+# RagebotShot
 
 {% hint style="info" %}
-You can access `ragebot_shot` instance through `ragebot_shot` [callback](../other/callbacks.md)
+You can access `RagebotShot` instance through `ragebot_shot` [callback](../other/callbacks.md)
 {% endhint %}
 
 ## Fields:

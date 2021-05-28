@@ -1,7 +1,7 @@
-# DT\_FireBullets
+# DT\_FireBullet
 
 {% hint style="info" %}
-You can access `DT_TEFireBullets` instance through `fire_bullet` [callback](../other/callbacks.md)
+You can access `DT_FireBullet` instance through `fire_bullet` [callback](../other/callbacks.md)
 {% endhint %}
 
 ## Fields:

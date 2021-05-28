@@ -1,7 +1,7 @@
 # CheatVar
 
 {% hint style="info" %}
-You can access `CheatVar` instance through [Menu.FindVar](../neverlose/Menu.md)
+You can access `CheatVar` instance through [Menu.FindVar](../Menu.md)
 {% endhint %}
 
 ## Functions

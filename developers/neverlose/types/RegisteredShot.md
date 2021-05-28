@@ -5,7 +5,14 @@ You can access `RegisteredShot` instance through `ragebot_shot` [callback](../ot
 {% endhint %}
 
 {% hint style="info" %}
-Miss reasons: 0. Hit 1. Resolver 2. Spread 3. Occlusion 4. Prediction error
+Miss reasons:
+| Value | Description |
+| :--- | :--- |
+| 0 | Hit |
+| 1 | Resolver |
+| 2 | Spread |
+| 3 | Occlusion |
+| 4 | Prediction error |
 {% endhint %}
 
 ## Fields:

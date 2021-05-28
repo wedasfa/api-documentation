@@ -1,7 +1,7 @@
-# firebullet_t
+# FireBullet
 
 {% hint style="info" %}
-You can access `firebullet_t` instance through `FireBullet` [function](../neverlose/Cheat.md)
+You can access `FireBullet` instance through `FireBullet` [function](../neverlose/Cheat.md)
 {% endhint %}
 
 ## Fields
