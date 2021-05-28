@@ -234,12 +234,14 @@ end)
 | Name | Type |
 | :--- | :--- |
 | Network State | int |
+
 returns -1 if player is dormant and data is not available or too old,
 returns 0 if player is not dormant,
 returns 1 if player is dormant but cheat has 100% info where is player,
 returns 2 if player is dormant but we've received info from shared esp,
 returns 3 if player is dormant but updated by sounds,
 returns 4 if player is dormant and is not updated
+
 ```lua
 Cheat.RegisterCallback("createmove", function()
     local players = EntityList.GetPlayers()
