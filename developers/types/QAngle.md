@@ -56,9 +56,8 @@ assert angle.pitch == -1 and angle.pitch == -1 and angle.roll == -1
 
 #### Usage:
 ```lua
-local angle1 = QAngle.new(1.0, 2.0, 3.0)
-local angle2 = QAngle.new(1.0, 2.0, 3.0)
-local angle3 = angle1 * angle2
+local angle = QAngle.new(1, 1, 1) * QAngle.new(2, 2, 2)
+assert angle.pitch == 2 and angle.yaw == 2 and angle.roll == 2
 ```
 
 ### div
