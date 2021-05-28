@@ -37,3 +37,17 @@ local e_cvar_flags = {
     accessible_from_threads = bit.lshift(1, 25), -- used as a debugging tool necessary to check material system thread convars
 }
 ```
+
+## Stages
+````lua
+local stages = {
+    undefined = -1,
+    start = 0,
+    net_update_start = 1,
+    net_update_postdataupdate_start = 2,
+    net_update_postdataupdate_end = 3,
+    net_update_end = 4,
+    render_start = 5,
+    render_end = 6,
+}
+```
