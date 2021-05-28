@@ -73,9 +73,8 @@ local angle3 = angle1 / angle2
 
 #### Usage:
 ```lua
-local angle = QAngle.new(1.0, 2.0, 3.0)
-local length = #angle
-print(length)
+local angle = QAngle.new(1, 1, 1)
+assert #angle == 1.7320508076
 ```
 
 ## Fields:
