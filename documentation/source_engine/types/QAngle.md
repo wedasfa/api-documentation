@@ -39,6 +39,7 @@ local my_angle = QAngle.new(1.0, 2.0, 3.0)
 ### add
 
 #### Usage:
+
 ```lua
 local angle = QAngle.new(1, 1, 1) + QAngle.new(2, 2, 2)
 assert angle.pitch == 3 and angle.yaw == 3 and angle.roll == 3
@@ -47,6 +48,7 @@ assert angle.pitch == 3 and angle.yaw == 3 and angle.roll == 3
 ### sub
 
 #### Usage:
+
 ```lua
 local angle = QAngle.new(1, 1, 1) - QAngle.new(2, 2, 2)
 assert angle.pitch == -1 and angle.yaw == -1 and angle.roll == -1
@@ -55,6 +57,7 @@ assert angle.pitch == -1 and angle.yaw == -1 and angle.roll == -1
 ### mul
 
 #### Usage:
+
 ```lua
 local angle = QAngle.new(1, 1, 1) * QAngle.new(2, 2, 2)
 assert angle.pitch == 2 and angle.yaw == 2 and angle.roll == 2
@@ -63,6 +66,7 @@ assert angle.pitch == 2 and angle.yaw == 2 and angle.roll == 2
 ### div
 
 #### Usage:
+
 ```lua
 local angle1 = QAngle.new(1.0, 2.0, 3.0)
 local angle2 = QAngle.new(1.0, 2.0, 3.0)
@@ -72,6 +76,7 @@ local angle3 = angle1 / angle2
 ### len
 
 #### Usage:
+
 ```lua
 local angle = QAngle.new(1, 1, 1)
 assert #angle == 1.7320508076

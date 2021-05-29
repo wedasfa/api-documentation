@@ -5,7 +5,11 @@ Instance of `IGameEvent` is passed to `events` [callback](../../other/callbacks.
 {% endhint %}
 
 {% hint style="info" %}
-Events are networked to connected clients and invoked there to. Therefore you have to specify all data fields and there data types in an public resource file which is parsed by server and broadcasted to it's clients. A typical game event is defined like this:
+Events are networked to connected clients and invoked there to.
+Therefore you have to specify all data fields and there data types
+in an public resource file which is parsed by server and broadcasted
+to it's clients.
+A typical game event is defined like this:
 
 ```text
     "game_start"                // a new game starts
@@ -17,7 +21,13 @@ Events are networked to connected clients and invoked there to. Therefore you ha
     }
 ```
 
-All events must have unique names \(case sensitive\) and may have a list of data fields. each data field must specify a data type, so the engine knows how to serialize/unserialize that event for network transmission. Valid data types are string, float, long, short, byte & bool. If a data field should not be broadcasted to clients, use the type "local".
+All events must have unique names (case sensitive) and may have
+a list of data fields.
+
+Each data field must specify a data type, so the engine knows
+how to serialize/unserialize that event for network transmission.
+Valid data types are string, float, long, short, byte & bool.
+
 {% endhint %}
 
 {% hint style="warning" %}

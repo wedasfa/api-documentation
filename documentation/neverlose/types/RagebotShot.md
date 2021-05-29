@@ -13,5 +13,5 @@ You can access `RagebotShot` instance through `ragebot_shot` [callback](../other
 | hitchance | int | Chance to hit target |
 | damage | int | Estimated damage |
 | hitgroup | int | Hitgroup |
-| shoot\_pos | Vector | Shot position |
+| shoot_pos | Vector | Shot position |
 | angle | QAngle | Aim angle |

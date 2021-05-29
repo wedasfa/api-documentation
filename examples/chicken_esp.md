@@ -1,8 +1,8 @@
 # Chicken ESP
 
-> Author: [@elleqt](https://github.com/elleqt)  
+> Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Chicken esp`  
+> Name: `Chicken esp`
 >
 > Description: `Render circle around chickens`
 

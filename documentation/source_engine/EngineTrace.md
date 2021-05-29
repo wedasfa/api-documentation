@@ -10,7 +10,7 @@
 | :--- | :--- | :--- |
 | start | Vector | Start position |
 | end | Vector | End position |
-| skip | C\_BaseEntity* | Entity, which will be skipped while tracing |
+| skip | C_BaseEntity\* | Entity, which will be skipped while tracing |
 | mask | int | Mask |
 
 ### Return value:

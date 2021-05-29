@@ -12,13 +12,14 @@ This callback will be executed in game thread, it allows you do draw any primiti
 
 ```lua
 Cheat.RegisterCallback("draw", function()
-	Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)
+    Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)
 end)
 ```
 
 ## `pre_prediction`
 
-CreateMove callback before cheat prediction, if you need to modify something before prediction and/or ragebot/antiaims/etc, you can do it there
+CreateMove callback before cheat prediction, if you need to modify something before prediction
+and/or ragebot/antiaims/etc, you can do it there
 
 ### Parameters passed in callback:
 
@@ -28,13 +29,14 @@ CreateMove callback before cheat prediction, if you need to modify something bef
 
 ```lua
 Cheat.RegisterCallback("pre_prediction", function(cmd)
-	cmd.forwardmove = 120
+    cmd.forwardmove = 120
 end)
 ```
 
 ## `prediction`
 
-CreateMove callback inside cheat prediction, if you need to modify something inside prediction and/or before ragebot/antiaims/etc, you can do it there
+CreateMove callback inside cheat prediction, if you need to modify something inside prediction
+and/or before ragebot/antiaims/etc, you can do it there
 
 ### Parameters passed in callback:
 
@@ -44,7 +46,7 @@ CreateMove callback inside cheat prediction, if you need to modify something ins
 
 ```lua
 Cheat.RegisterCallback("pre_prediction", function(cmd)
-	AntiAim.OverridePitch(90) -- UP
+    AntiAim.OverridePitch(90) -- UP
 end)
 ```
 
@@ -60,7 +62,7 @@ CreateMove callback after cheat prediction
 
 ```lua
 Cheat.RegisterCallback("pre_prediction", function(cmd)
-	print("My forwardmove is " .. tostring(cmd.forwardmove))
+    print("My forwardmove is " .. tostring(cmd.forwardmove))
 end)
 ```
 
@@ -80,9 +82,9 @@ A list of events can be found [here](https://wiki.alliedmods.net%20Counter-Strik
 
 ```lua
 cheat.RegisterCallback("events", function(event)
-	if event:GetName() ~= "player_death" then return end
+    if event:GetName() ~= "player_death" then return end
 
-	print(tostring(event:GetInt("userid")) .. " was killed by " .. tostring(event:GetInt("attacker")))
+    print(tostring(event:GetInt("userid")) .. " was killed by " .. tostring(event:GetInt("attacker")))
 end)
 ```
 
@@ -92,7 +94,7 @@ This callback will be called before script unload, so you can revert changes ins
 
 ```lua
 Cheat.RegisterCallback("destroy", function()
-	print("Bye-bye")
+    print("Bye-bye")
 end)
 ```
 
@@ -112,8 +114,8 @@ A list of stages can be found [here](source_engine_enums.md#stages).
 
 ```lua
 Cheat.RegisterCallback("frame_stage", function(stage)
-	if stage ~= 5 then return end
-	print("render_start")
+    if stage ~= 5 then return end
+    print("render_start")
 end)
 ```
 
@@ -129,7 +131,7 @@ This callback will be executed whenever the user enters something into the conso
 
 ```lua
 Cheat.RegisterCallback("console", function(text)
-	print("Input text was: '" .. text .. "'")
+    print("Input text was: '" .. text .. "'")
 end)
 ```
 
@@ -145,7 +147,7 @@ This callback will be executed whenever server registers ragebot shot
 
 ```lua
 Cheat.RegisterCallback("registered_shot", function(shot)
-	print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
+    print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
 end)
 ```
 
@@ -161,7 +163,7 @@ This callback will be executed whenever ragebot shoot
 
 ```lua
 Cheat.RegisterCallback("ragebot_shot", function(shot)
-	print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
+    print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
 end)
 ```
 
@@ -177,7 +179,7 @@ This callback will be executed when other players shooting
 
 ```lua
 Cheat.RegisterCallback("fire_bullet", function(bullet)
-	print(tostring(bullet.m_iPlayer) .. " is shooting")
+    print(tostring(bullet.m_iPlayer) .. " is shooting")
 end)
 ```
 
@@ -193,7 +195,6 @@ This callback will be executed when game is calculating view
 
 ```lua
 Cheat.RegisterCallback("override_view", function(setup)
-	print("field of view is " .. tostring(setup.fov))
+    print("field of view is " .. tostring(setup.fov))
 end)
 ```
-

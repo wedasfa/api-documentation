@@ -170,7 +170,7 @@ local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Elements | + |
-| def\_value | int | Default value index | + |
+| def_value | int | Default value index | + |
 | tooltip | string | Tooltip | - |
 
 ### Return value:
@@ -192,7 +192,7 @@ local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Eleme
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Elements | + |
-| def\_value | int | Default value index | + |
+| def_value | int | Default value index | + |
 | def_clr | Color | Color | + |
 | tooltip | string | Tooltip | - |
 
@@ -215,7 +215,7 @@ local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Values | + |
-| def\_value | int | Default values | + |
+| def_value | int | Default values | + |
 | tooltip | string | Tooltip | - |
 
 ### Return value:
@@ -225,7 +225,7 @@ local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "
 | value | CheatVar | Cheatvar for MultiCombo |
 
 {% hint style="info" %}
-To retrieve/set values use CheatVar:GetBool\(int el\_idx\), CheatVar:SetBool\(int el\_idx, bool value\)
+To retrieve/set values use CheatVar:GetBool(int el_idx), CheatVar:SetBool(int el_idx, bool value)
 {% endhint %}
 
 ```lua
@@ -241,7 +241,7 @@ local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 
 | group | string | Group | + |
 | name | string | Name | + |
 | max_size | size_t | Max size | + |
-| def\_value | string | Default value  | + |
+| def_value | string | Default value  | + |
 | tooltip | string | Tooltip | - |
 
 ### Return value:
@@ -295,7 +295,7 @@ local button = Menu.Button("Neverlose", "Test")
 | :--- | :--- | :--- | :--- |
 | group | string | Group | + |
 | name | string | Name | + |
-| def\_value | Color | Default value  | + |
+| def_value | Color | Default value  | + |
 | tooltip | string | Tooltip | - |
 
 ### Return value:
@@ -410,7 +410,7 @@ print(headPriority)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| element | CheatVar* | Menu Item |
+| element | CheatVar\* | Menu Item |
 
 ```lua
 local button = Menu.Button("neverlose.cc", "Button")

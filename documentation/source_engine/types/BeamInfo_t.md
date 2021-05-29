@@ -19,16 +19,16 @@ local beam_info = BeamInfo_t.new()
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | m_nType | int | - |
-| m_pStartEnt | IClientEntity* | - |
+| m_pStartEnt | IClientEntity\* | - |
 | m_nStartAttachment | int | - |
-| m_pEndEnt | IClientEntity* | - |
+| m_pEndEnt | IClientEntity\* | - |
 | m_nEndAttachment | int | - |
 | m_vecStart | Vector | - |
 | m_vecEnd | Vector | - |
 | m_nModelIndex | int | - |
-| m_pszModelName | const char* | - |
+| m_pszModelName | const char\* | - |
 | m_nHaloIndex | int | - |
-| m_pszHaloName | const char* | - |
+| m_pszHaloName | const char\* | - |
 | m_flHaloScale | float | - |
 | m_flLife | float | - |
 | m_flWidth | float | - |

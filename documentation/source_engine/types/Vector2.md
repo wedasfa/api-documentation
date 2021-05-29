@@ -27,7 +27,6 @@ local my_vec2 = Vector2.new()
 | x | float | x value |
 | y | float | y value |
 
-
 ### Return value:
 
 | Name | Type | Description |
@@ -43,6 +42,7 @@ local my_vec2 = Vector2.new(1.0, 2.0)
 ### add
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0)
 local vec2 = Vector.new(3.0, 2.0)
@@ -53,6 +53,7 @@ local add = vec1 + vec2
 ### sub
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(4.0, 2.0)
 local vec2 = Vector.new(2.0, 1.0)
@@ -63,6 +64,7 @@ local sub = vec1 - vec2
 ### mul
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0)
 local vec2 = Vector.new(3.0, 2.0)
@@ -73,6 +75,7 @@ local mul = vec1 * vec2
 ### div
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(6.0, 2.0)
 local vec2 = Vector.new(3.0, 2.0)
@@ -83,6 +86,7 @@ local div = vec1 / vec2
 ### len
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0)
 local len = #vec1
@@ -98,6 +102,7 @@ local len = #vec1
 | length | float | Vector length|
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0)
 local length = my_vec:Length()

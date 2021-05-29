@@ -43,6 +43,7 @@ local my_vec = Vector.new(2.0, 3.0, 9.0)
 ### add
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0, 3.0)
 local vec2 = Vector.new(3.0, 2.0, 1.0)
@@ -53,6 +54,7 @@ local add = vec1 + vec2
 ### sub
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(4.0, 2.0, 6.0)
 local vec2 = Vector.new(2.0, 1.0, 2.0)
@@ -63,6 +65,7 @@ local sub = vec1 - vec2
 ### mul
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0, 3.0)
 local vec2 = Vector.new(3.0, 2.0, 1.0)
@@ -73,6 +76,7 @@ local mul = vec1 * vec2
 ### div
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(6.0, 2.0, 3.0)
 local vec2 = Vector.new(3.0, 2.0, 1.0)
@@ -83,6 +87,7 @@ local div = vec1 / vec2
 ### len
 
 #### Usage:
+
 ```lua
 local vec1 = Vector.new(1.0, 2.0, 3.0)
 local len = #vec1
@@ -98,6 +103,7 @@ local len = #vec1
 | length | float | Vector length|
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0, 8.0)
 local length = my_vec:Length()
@@ -112,6 +118,7 @@ local length = my_vec:Length()
 | length | float | Vector length|
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0, 8.0)
 local length = my_vec:Length2D()
@@ -127,6 +134,7 @@ local length = my_vec:Length2D()
 | dist | float | Distance between self and another vector|
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0, 8.0)
 local dest = Vector.new(6.0, 4.0, 16.0)
@@ -142,6 +150,7 @@ local length = my_vec:DistTo(dest)
 | dot | float | Dot product of two vectors |
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0, 8.0)
 local my_vec2 = Vector.new(4.0, 3.0, 1.0)
@@ -158,6 +167,7 @@ local dot = my_vec:Dot(my_vec2)
 | cross | Vector | Cross product of two vectors |
 
 #### Usage:
+
 ```lua
 local my_vec = Vector.new(3.0, 2.0, 8.0)
 local my_vec2 = Vector.new(4.0, 3.0, 1.0)

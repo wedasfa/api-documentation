@@ -9,7 +9,7 @@
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | name | string | Material name |
-| mat\_val | keyvalues | Material value |
+| mat_val | keyvalues | Material value |
 | callback | function | on Material Created callback |
 
 ### Return value:
@@ -41,7 +41,7 @@ MatSystem.CreateMaterial("testing_material",  [[
                     "texturescrollangle" "90"
             }
     }
-  }  
+  }
 ]], onAnimatedWireFrameLoaded)
 ```
 
@@ -127,15 +127,15 @@ local mat_ptr = MatSystem.GetMaterial(mat)
 {% hint style="info" %}
 Types can be (case sensetivity):
 
-* Enemies
-* Teammates 
-* Weapon
-* Grenades
-* Localplayer
-* LocalWeapon
-* LocalHands
-* Ragdolls
-{% endhint %}
+- Enemies
+- Teammates
+- Weapon
+- Grenades
+- Localplayer
+- LocalWeapon
+- LocalHands
+- Ragdolls
+  {% endhint %}
 
 ```lua
 MatSystem.OverrideMaterial("Enemies", mat_ptr)

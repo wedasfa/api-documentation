@@ -1,8 +1,8 @@
 # Synced animated clantag changer
 
-> Author: [@es3n1n](https://github.com/es3n1n)  
+> Author: [@es3n1n](https://github.com/es3n1n)
 >
-> Name: `Synced animated clantag changer`  
+> Name: `Synced animated clantag changer`
 >
 > Description: `Changes your clantag`
 
@@ -50,7 +50,7 @@ local tag = build_tag('BoberHook')
 -- @note: es3n1n: you can change from draw to whatever you want
 local clantag_animation = function()
     if not EngineClient.IsConnected() then return end
-    
+
     local netchann_info = EngineClient.GetNetChannelInfo()
     if netchann_info == nil then return end
 

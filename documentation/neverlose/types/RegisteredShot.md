@@ -23,6 +23,6 @@ Miss reasons:
 | backtrack | int | How many ticks was backtracked |
 | hitgroup | int | HitGroup |
 | damage | int | Damage |
-| target\_index | int | Target ent index |
+| target_index | int | Target ent index |
 | reason | int | Miss reason |
-| spread\_degree | float | Spread angle |
+| spread_degree | float | Spread angle |

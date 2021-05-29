@@ -1,8 +1,8 @@
 # Watermark
 
-> Author: [@elleqt](https://github.com/elleqt)  
+> Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Neverlose Watermark`  
+> Name: `Neverlose Watermark`
 >
 > Description: `Watermark`
 

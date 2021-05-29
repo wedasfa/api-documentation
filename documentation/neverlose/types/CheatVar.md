@@ -64,7 +64,7 @@ var:SetColor(Color.new(1, 1, 1, 1))
 
 ```lua
 var:RegisterCallback(function()
-	print("callback!")
+    print("callback!")
 end)
 ```
 
@@ -85,7 +85,6 @@ var:SetVisible(false)
 {% hint style="warning" %}
 DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../other/menuapi.md#destroyitem)
 {% endhint %}
-
 
 ## SetTooltip
 
@@ -109,8 +108,8 @@ var:SetTooltip("Tooltip")
 
 ```lua
 local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
-Menu.Button("neverlose", "update"):RegisterCallback(function()	
-	combo:UpdateList({"el1", "el2"})	
+Menu.Button("neverlose", "update"):RegisterCallback(function()
+    combo:UpdateList({"el1", "el2"})
 end)
 ```
 

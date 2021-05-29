@@ -16,16 +16,16 @@
 {% hint style="info" %}
 Possible class names:
 
-* **enemies**
-* **mates**
-* **local**
-* **weapon**
-* **grenade**
-{% endhint %}
+- **enemies**
+- **mates**
+- **local**
+- **weapon**
+- **grenade**
+  {% endhint %}
 
 ### Callback:
 
-1 argument passed to callback - [C\_BaseEntity](../classes/C_BaseEntity.md).
+1 argument passed to callback - [C_BaseEntity](../classes/C_BaseEntity.md).
 
 In callback you can return 1 argument.
 
@@ -36,7 +36,7 @@ In callback you can return 1 argument.
 ```lua
 ESP.CustomText("Test", "enemies", "preview", function(ent)
     return "Testing"
-end) 
+end)
 ```
 
 ## CustomBar
@@ -52,22 +52,22 @@ end)
 {% hint style="info" %}
 Possible class names:
 
-* **enemies**
-* **mates**
-* **local**
-* **weapon**
-* **grenade**
-{% endhint %}
+- **enemies**
+- **mates**
+- **local**
+- **weapon**
+- **grenade**
+  {% endhint %}
 
 ### Callback:
 
-1 argument passed to callback - [C\_BaseEntity](../classes/C_BaseEntity.md).
+1 argument passed to callback - [C_BaseEntity](../classes/C_BaseEntity.md).
 
 In callback you can return 1 argument
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| value | int | Bar amount \(0-100\) | + |
+| value | int | Bar amount (0-100) | + |
 
 ```lua
 ESP.CustomBar("Test", "enemies", function(ent)

@@ -1,8 +1,8 @@
 # Snaplines
 
-> Author: [@elleqt](https://github.com/elleqt)  
+> Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Snapline esp`  
+> Name: `Snapline esp`
 >
 > Description: `Render snaplines`
 

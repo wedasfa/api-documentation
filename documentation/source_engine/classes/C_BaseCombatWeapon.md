@@ -1,7 +1,8 @@
 # C_BaseCombatWeapon
 
 {% hint style="warn" %}
-C_BaseCombatWeapon class is derived from C_BaseEntity, so every method you can find in C_BaseEntity can be called from the C_BaseCombatWeapon instance
+C_BaseCombatWeapon class is derived from C_BaseEntity, so
+every method you can find in C_BaseEntity can be called from the C_BaseCombatWeapon instance
 
 In all examples below, `weap` is a C_BaseCombatWeapon instance
 
@@ -10,6 +11,7 @@ In all examples below, `weap` is a C_BaseCombatWeapon instance
 local me = EntityList.GetClientEntity(EngineClient.GetLocalPlayer()):GetPlayer()
 local weap = me:GetActiveWeapon()
 ```
+
 {% endhint %}
 
 ## Functions
@@ -33,18 +35,18 @@ local weap = me:GetActiveWeapon()
 -- @summary: Detect when grenade is throwing
 
 if not weap:IsGrenade() then
-	return -- filter out the entities which is not a grenade
-end 
+    return -- filter out the entities which is not a grenade
+end
 
 local m_bPinPulled = weap:GetProp("DT_BaseCSGrenade", "m_bPinPulled") -- is grenade's pin is pulled on or not
 local m_fThrowTime = weap:GetProp("DT_BaseCSGrenade", "m_fThrowTime") -- get grenade throw time
 
-if m_bPinPulled then 
-	return 
+if m_bPinPulled then
+    return
 end
 
 if m_fThrowTime > 0 then
-	print("Throwing a grenade!")
+    print("Throwing a grenade!")
 end
 ```
 
@@ -78,7 +80,7 @@ local ClassId_CAK47 = 1 -- https://github.com/spirthack/CSGOSimple/blob/master/C
 
 local weapon_classid = weap:GetClassId()
 if weapon_classid == ClassId_CAK47 then
-	print("Active weapon is AK-47")
+    print("Active weapon is AK-47")
 end
 ```
 
@@ -282,6 +284,6 @@ local WEAPON_AK47 = 7 -- https://github.com/spirthack/CSGOSimple/blob/master/CSG
 local weapon_id = weap:GetWeaponID()
 
 if weapon_id == WEAPON_AK47 then
-	print("Your active weapon is AK-47")
+    print("Your active weapon is AK-47")
 end
 ```

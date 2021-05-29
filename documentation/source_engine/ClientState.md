@@ -4,7 +4,7 @@
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| m\_last\_outgoing\_command | int | Last outgoing command |
-| m\_choked\_commands | int | Amount of chocked commands |
-| m\_last\_command\_ack | int | Last command ack |
-| m\_command\_ack | int | Command ack |
+| m_last_outgoing_command | int | Last outgoing command |
+| m_choked_commands | int | Amount of chocked commands |
+| m_last_command_ack | int | Last command ack |
+| m_command_ack | int | Command ack |

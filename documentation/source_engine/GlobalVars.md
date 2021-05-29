@@ -15,6 +15,6 @@
 | interpolation_amount | float | Interpolation amount based on fraction of next tick |
 | simTicksThisFrame | int | Simulation ticks this frame |
 | network_protocol | int | Current saverestore data |
-| pSaveData | void* | Current saverestore data |
+| pSaveData | void\* | Current saverestore data |
 | m_bClient | bool | Set to true in client code |
 | m_bRemoteClient | bool | True if we are a remote client |

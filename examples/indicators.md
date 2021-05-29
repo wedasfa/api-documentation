@@ -1,8 +1,8 @@
 # Keybind Indicators
 
-> Author: [@elleqt](https://github.com/elleqt)  
+> Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Indicators`  
+> Name: `Indicators`
 >
 > Description: `Bind indicator`
 

@@ -20,7 +20,7 @@ You can create your menu elements. More info can be found [here](Menu.md).
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| event\_name | string | Event names |
+| event_name | string | Event names |
 | callback | function | Callback |
 
 {% hint style="info" %}
@@ -41,15 +41,15 @@ end)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| attacker | C\_BasePlayer | Attacker |
+| attacker | C_BasePlayer | Attacker |
 | start | Vector | Simluation start pos |
 | end | Vector | Simluation end pos |
 
 ### Return value:
 
-| Name | Type | 
+| Name | Type |
 | :--- | :--- |
-| Fire Bullet Info | firebullet_t | 
+| Fire Bullet Info | firebullet_t |
 
 ```lua
 local trace = Cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))

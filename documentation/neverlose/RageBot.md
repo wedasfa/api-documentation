@@ -2,27 +2,29 @@
 
 {% hint style="info" %}
 Hitboxes:
+
+```text
+    0. head
+    1. neck
+    2. pelvis
+    3. stomach
+    4. lower chest
+    5. chest
+    6. upper chest
+    7. right thigh
+    8. left thigh
+    9. right calf
+    10. left calf
+    11. right foot
+    12. left foot
+    13. right hand
+    14. left hand
+    15. right upper arm
+    16. right forearm
+    17. left upper arm
+    18. left forearm
 ```
-	0. head
-	1. neck 
-	2. pelvis 
-	3. stomach 
-	4. lower chest 
-	5. chest 
-	6. upper chest 
-	7. right thigh 
-	8. left thigh 
-	9. right calf 
-	10. left calf 
-	11. right foot 
-	12. left foot 
-	13. right hand 
-	14. left hand 
-	15. right upper arm 
-	16. right forearm 
-	17. left upper arm 
-	18. left forearm
-```
+
 {% endhint %}
 
 ## Functions

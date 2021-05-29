@@ -36,6 +36,7 @@ beam_info.m_flBlue = 5.0
 
 RenderBeams.CreateBeamPoints(beam_info)
 ```
+
 ## DrawBeam
 
 ### Parameters:

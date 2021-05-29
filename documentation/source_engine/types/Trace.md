@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | startpos | Vector | start position |
 | endpos | Vector | final position |
-| plane | cplane\_t | surface normal at impact |
+| plane | cplane_t | surface normal at impact |
 | fraction | float | time completed, 1.0 = didn't hit anything |
 | contents | int | contents on other side of surface hit |
 | dispFlags | unsigned short | displacement flags for marking surfaces with data |
@@ -15,6 +15,6 @@
 | fractionleftsolid | float | time we left a solid, only valid if we started in solid |
 | hitgroup | int | 0 == generic, non-zero is specific body part |
 | physicsbone | short | Physics bone hit by trace in studio |
-| worldSurfaceIndex | unsigned short | Index of the msurface2\_t, if applicable |
-| hit\_entity | IClientEntity\* | Enitty |
+| worldSurfaceIndex | unsigned short | Index of the msurface2_t, if applicable |
+| hit_entity | IClientEntity\* | Enitty |
 | hitbox | int | Box hit by trace in studio |

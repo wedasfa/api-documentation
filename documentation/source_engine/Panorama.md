@@ -4,14 +4,14 @@
 
 ## Exec
 
-#### Parameters:
+### Parameters:
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | code | string | Javascript code | + |
 | Panel | string | Panorama Panel | - |
 
-#### Return:
+### Return:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ print(exec)
 
 ## Open
 
-#### Return:
+### Return:
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -38,4 +38,3 @@ print(exec)
 local handle = Panorama.Open()
 print(handle.GameStateAPI.GetLocalPlayerXuid())
 ```
-

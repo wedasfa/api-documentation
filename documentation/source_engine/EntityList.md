@@ -14,7 +14,7 @@
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseEntity* | Pointer to entity |
+| ent | C_BaseEntity\* | Pointer to entity |
 
 ```lua
 local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
@@ -64,7 +64,7 @@ print(highest_index)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseEntity* | Pointer to entity |
+| ent | C_BaseEntity\* | Pointer to entity |
 
 ```lua
 -- @summary: Get active weapon from weapon_handle
@@ -80,14 +80,14 @@ local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Player Resource | CSPlayerResource* | - |
+| Player Resource | CSPlayerResource\* | - |
 
 ```lua
 local player_resource = EntityList.GetPlayerResource()
 local get_prop = player_resource:GetProp("DT_CSPlayerResource", "m_szClan")
 
 for key, value in pairs(get_prop) do
-	print(key, value)
+    print(key, value)
 end
 ```
 
@@ -97,7 +97,7 @@ end
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Game Rules | CSGameRules* | - |
+| Game Rules | CSGameRules\* | - |
 
 ```lua
 local game_rules = EntityList.GetGameRules()
@@ -117,7 +117,7 @@ print(get_prop)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseEntity* | |
+| ent | C_BaseEntity\* | |
 
 ```lua
 local ents = EntityList.GetEntitiesByClassID(40)
@@ -136,7 +136,7 @@ print("Found " .. tostring(#ents) .. " entities with id 40")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseEntity* | |
+| ent | C_BaseEntity\* | |
 
 ```lua
 local ents = EntityList.GetEntitiesByName("CCSPlayer")
@@ -149,7 +149,7 @@ print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BasePlayer* | Local Player entity |
+| ent | C_BasePlayer\* | Local Player entity |
 
 ```lua
 local player = EntityList.GetLocalPlayer()
@@ -167,7 +167,7 @@ local player = EntityList.GetLocalPlayer()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseCombatWeapon* | Weapon entity |
+| ent | C_BaseCombatWeapon\* | Weapon entity |
 
 ```lua
 local player = EntityList.GetWeapon(100)
@@ -185,7 +185,7 @@ local player = EntityList.GetWeapon(100)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BasePlayer* | Player entity |
+| ent | C_BasePlayer\* | Player entity |
 
 ```lua
 local player = EntityList.GetPlayer(1)
@@ -203,7 +203,7 @@ local player = EntityList.GetPlayer(1)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BasePlayer* | Player entity |
+| ent | C_BasePlayer\* | Player entity |
 
 ```lua
 local player = EntityList.GetPlayerFromHandle(handle)
@@ -221,7 +221,7 @@ local player = EntityList.GetPlayerFromHandle(handle)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| ent | C_BaseCombatWeapon* | Weapon |
+| ent | C_BaseCombatWeapon\* | Weapon |
 
 ```lua
 local local_player_ptr = EntityList.GetLocalPlayer()
@@ -236,7 +236,7 @@ print(weapon_from_handle)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| players | table | Table with players (C_BasePlayer*)  |
+| players | table | Table with players (C_BasePlayer\*)  |
 
 ```lua
 Cheat.RegisterCallback("createmove", function()

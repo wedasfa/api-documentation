@@ -69,7 +69,7 @@ print(playback)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | Current latency \(RTT\), more accurate but jittering |
+| value | float | Current latency (RTT), more accurate but jittering |
 
 ```lua
 local GetNetChannelInfo = EngineClient.GetNetChannelInfo()
@@ -89,7 +89,7 @@ print(ping)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | float | Current average latency \(RTT\), more accurate but jittering |
+| value | float | Current average latency (RTT), more accurate but jittering |
 
 ```lua
 local GetNetChannelInfo = EngineClient.GetNetChannelInfo()

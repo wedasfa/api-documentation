@@ -9,6 +9,7 @@ You can access GameRules class through [EntityList.GetGameRules](EntityList.md)
 ## m_bFreezePeriod
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | bool | Is timeout active |
@@ -21,6 +22,7 @@ print(is_freezed)
 ## m_bIsValveDS
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | bool | Is player on a valve server |
@@ -33,6 +35,7 @@ print(valve_ds)
 ## m_fRoundStartTime
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | float | Round start time |
@@ -45,6 +48,7 @@ print(round_start_time)
 ## m_gamePhase
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | int | Game phase |
@@ -57,6 +61,7 @@ print(game_phase)
 ## m_iNumConsecutiveCTLoses
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | int | Number of consecutive CT loses |
@@ -69,6 +74,7 @@ print(ct_loses)
 ## m_iNumConsecutiveTerroristLoses
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | int | Number of consecutive T loses |
@@ -81,6 +87,7 @@ print(t_loses)
 ## m_iRoundTime
 
 ### Return value:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | value | int | Round time |

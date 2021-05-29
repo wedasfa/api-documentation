@@ -85,7 +85,7 @@ print(max_players)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | INetChannelInfo* | INetChannelInfo pointer |
+| value | INetChannelInfo\* | INetChannelInfo pointer |
 
 ```lua
 local net_chann = EngineClient.GetNetChannelInfo()

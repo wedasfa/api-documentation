@@ -8,8 +8,8 @@
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| module\_name | string | Module name |
-| interface\_name | string | Interface name |
+| module_name | string | Module name |
+| interface_name | string | Interface name |
 
 ### Return value:
 
@@ -27,7 +27,7 @@ local game_movement = Utils.CreateInterface("client.dll", "GameMovement001")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| module\_name | string | Module name |
+| module_name | string | Module name |
 | pattern | string | IDA-like pattern |
 
 ### Return value:
@@ -110,7 +110,7 @@ Utils.RandomSeed(cmd.random_seed)
 
 ```lua
 local cvar = Utils.RegisterConVar('meme_var', '1', 8, 'Testing stuff', function(cvar, old, new)
-	print('meme_var value was changed from ' .. old .. ' to ' .. new)
+    print('meme_var value was changed from ' .. old .. ' to ' .. new)
 end)
 print(cvar:GetString())
 ```
@@ -134,7 +134,7 @@ print(cvar:GetString())
 
 ```lua
 local cmd = Utils.RegisterConCommand('meme_cmd', 8, 'Testing stuff', function(cvar)
-	print("it's wednesday, my dudes")
+    print("it's wednesday, my dudes")
 end)
 ```
 

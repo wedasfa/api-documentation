@@ -61,9 +61,9 @@ print("Local player health: ", health)
 | array index | int | Index in array |
 
 ```lua
-Cheat.RegisterCallback("draw", function() 
+Cheat.RegisterCallback("draw", function()
     local player = EntityList.GetLocalPlayer()
-    player:SetProp("m_iHealth", 1) 
+    player:SetProp("m_iHealth", 1)
 end)
 ```
 
@@ -87,7 +87,7 @@ print(isPlayer)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | C_BasePlayer* | Pointer to player |
+| value | C_BasePlayer\* | Pointer to player |
 
 ```lua
 local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
@@ -115,7 +115,7 @@ print(isWeapon)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| value | C_BaseWeapon* | Pointer to weapon |
+| value | C_BaseWeapon\* | Pointer to weapon |
 
 ```lua
 local weapon = entity:GetWeapon()
@@ -152,7 +152,7 @@ Cheat.RegisterCallback("draw", function()
         Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(min.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
         Render.CircleFilled(Render.ScreenPosition(origin + Vector.new(max.x, max.y, min.z)), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
         Render.CircleFilled(Render.ScreenPosition(origin + min), 10.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-      
+
     end
 end)
 ```

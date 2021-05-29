@@ -39,6 +39,7 @@ local e_cvar_flags = {
 ```
 
 ## Frame stages
+
 ```lua
 local e_frame_stages = {
     undefined = -1,

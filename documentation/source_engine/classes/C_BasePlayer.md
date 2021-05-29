@@ -33,9 +33,9 @@ print("Local player health: ", health)
 | array index | int | Index in array |
 
 ```lua
-Cheat.RegisterCallback("draw", function() 
+Cheat.RegisterCallback("draw", function()
     local player = EntityList.GetLocalPlayer()
-    player:SetProp("m_iHealth", 1) 
+    player:SetProp("m_iHealth", 1)
 end)
 ```
 
@@ -123,7 +123,7 @@ print(eye_pos.x, eye_pos.y, eye_pos.z)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| weapon | C_BaseCombatWeapon* | Pointer to active weapon |
+| weapon | C_BaseCombatWeapon\* | Pointer to active weapon |
 
 ```lua
 local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
@@ -221,8 +221,8 @@ print(is_teammate)
 
 ```lua
 Cheat.RegisterCallback("draw", function()
-	local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
-	local player = entity:GetPlayer()
+    local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
+    local player = entity:GetPlayer()
     player:DrawHitbox(3, Color.new(1, 1, 1, 1), g_GlobalVars.tickcount-1)
 end)
 ```

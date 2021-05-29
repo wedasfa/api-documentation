@@ -1,7 +1,7 @@
 # AntiAim
 
 {% hint style="info" %}
-Override* functions can be called only from pre-createmove [callbacks](../other/callbacks.md) (`pre_prediction`, `prediction`).
+Override\* functions can be called only from pre-createmove [callbacks](../other/callbacks.md) (`pre_prediction`, `prediction`).
 {% endhint %}
 
 ## Functions
@@ -123,7 +123,7 @@ local desync_rotation = AntiAim.GetFakeRotation()
 | int | 0 - disable override, 1 - left, 2 - right, 3 - overlap on shot with fake, 4 - opposite to fake |
 
 ```lua
-AntiAim.OverrideDesyncOnShot(4) 
+AntiAim.OverrideDesyncOnShot(4)
 ```
 
 ## GetCurrentRealRotation

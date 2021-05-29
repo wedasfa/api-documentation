@@ -13,6 +13,7 @@
 | clr | Color | Linecolor |
 
 ### Usage:
+
 ```lua
 Render.Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
@@ -27,6 +28,7 @@ Render.Line(Vector2.new(0.0, 0.0), Vector2.new(5.0, 6.0), Color.new(1.0, 1.0, 1.
 | vec | Vector | Variadic vector (there can be an infinite number of vectors) |
 
 ### Usage:
+
 ```lua
 Render.PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
@@ -41,6 +43,7 @@ Render.PolyLine(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.ne
 | vec | Vector | Variadic vector (there can be an infinite number of vectors) |
 
 ### Usage:
+
 ```lua
 Render.PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.new(100, 500), Vector2.new(500, 100))
 ```
@@ -56,6 +59,7 @@ Render.PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.
 | clr | Color | Boxcolor |
 
 ### Usage:
+
 ```lua
 Render.Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
@@ -71,6 +75,7 @@ Render.Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0
 | clr | Color | Boxcolor |
 
 ### Usage:
+
 ```lua
 Render.BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
@@ -89,6 +94,7 @@ Render.BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.
 | b_r | Color | Color bottom right |
 
 ### Usage:
+
 ```lua
 Render.GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new(0, 0, 0, 1), Color.new(0, 0, 0, 1), Color.new(1, 1, 1, 1), Color.new(1, 1, 1, 1))
 ```
@@ -106,6 +112,7 @@ Render.GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new
 | th  | float | Circle thickness | - |
 
 ### Usage:
+
 ```lua
 Render.Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
@@ -122,6 +129,7 @@ Render.Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 | clr | Color | Circlecolor |
 
 ### Usage:
+
 ```lua
 Render.CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
@@ -141,6 +149,7 @@ Render.CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0
 | th | float | Thickness | - |
 
 ### Usage:
+
 ```lua
 Render.CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 1.0), math.rad(0), math.rad(280), 5.0)
 ```
@@ -157,6 +166,7 @@ Render.CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 
 | clr | Color | Circle color |
 
 ### Usage:
+
 ```lua
 Render.Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
@@ -173,6 +183,7 @@ Render.Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 | clr | Color | Circle color |
 
 ### Usage:
+
 ```lua
 Render.Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 ```
@@ -187,10 +198,11 @@ Render.Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 | pos | Vector2 | Text position | + |
 | clr | Color | Textcolor | + |
 | size | int | Textsize | + |
-| font | Font* | Text font | - |
+| font | Font\* | Text font | - |
 | out | bool | Text outline | - |
 
 ### Usage:
+
 ```lua
 Render.Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.0, 1.0), 20)
 ```
@@ -208,6 +220,7 @@ Render.Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.0,
 | out | bool | Icon outline | - |
 
 ### Usage:
+
 ```lua
 Render.WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 ```
@@ -220,8 +233,7 @@ Render.WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 | :--- | :--- | :--- | :--- |
 | text | string | Text | + |
 | size | int | Textsize | + |
-| font | Font* | Text font | - |
-
+| font | Font\* | Text font | - |
 
 ### Return value:
 
@@ -230,6 +242,7 @@ Render.WeaponIcon(7, Vector2.new(100, 100), Color.new(1.0, 1.0, 1.0), 16)
 | size | Vector2 | Textsize |
 
 ### Usage:
+
 ```lua
 local text_size = Render.CalcTextSize("Hello world, it's me", 16)
 print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
@@ -255,6 +268,7 @@ print("X size: "..tostring(text_size.x).." | Y size: "..tostring(text_size.y))
 | size | Vector2 | Iconsize |
 
 ### Usage:
+
 ```lua
 local icon_size = Render.CalcWeaponIconSize(7, 16)
 print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
@@ -274,9 +288,10 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| font | Font* | Created Font |
+| font | Font\* | Created Font |
 
 ### Usage:
+
 ```lua
 local flags = FontFlags.new()
 flags.antialiasing = false
@@ -305,6 +320,7 @@ end)
 | vec | Vector2 | 2-dimensional screen position |
 
 ### Usage:
+
 ```lua
 local screen_pos = Render.ScreenPosition(Vector.new(0, 0, 0))
 ```
@@ -319,11 +335,13 @@ local screen_pos = Render.ScreenPosition(Vector.new(0, 0, 0))
 | Size | Vector2 | Size |
 
 ### Return:
+
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Image | image* | - |
+| Image | image\* | - |
 
 ### Usage:
+
 ```lua
 local image_size = Vector2.new(746 / 5, 1070 / 5)
 local url = "https://anime.is-inside.me/EsXF20B5.png"
@@ -341,6 +359,7 @@ local image_loaded = Render.LoadImage(bytes, image_size)
 | size | Vector2 | Image Size |
 
 ### Usage:
+
 ```lua
 local size = Vector2.new(100, 100)
 local pos = Vector2.new(50, 50)
@@ -363,6 +382,7 @@ end)
 | Color | Color | Image Color modulation | - |
 
 ### Usage:
+
 ```lua
 local image_size = Vector2.new(220, 257)
 local url = "https://upload.wikimedia.org/wikipedia/en/7/71/Franxx_Zero_Two.jpg"
@@ -382,6 +402,7 @@ end)
 | vec | Vector2 | Menu position |
 
 ### Usage:
+
 ```lua
 local menu_pos = Render.GetMenuPos()
 print(menu_pos.x, menu_pos.y)
@@ -396,6 +417,7 @@ print(menu_pos.x, menu_pos.y)
 | vec | Vector2 | Menu size |
 
 ### Usage:
+
 ```lua
 local menu_sz = Render.GetMenuSize()
 print(menu_sz.x, menu_sz.y)

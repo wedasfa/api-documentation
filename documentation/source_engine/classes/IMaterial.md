@@ -54,7 +54,7 @@ local mat_name = material:GetName()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| is\_broken | bool | Is this material is error material |
+| is_broken | bool | Is this material is error material |
 
 ```lua
 local is_error = material:IsErrorMaterial()
