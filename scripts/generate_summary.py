@@ -41,7 +41,7 @@ result = summary_header
 def _iterdir(dir: Path, parents: List[Path] = list()) -> None:
 	global result
 
-	for item in dir.iterdir():
+	for item in sorted(dir.iterdir(), key=lambda x: x.is_dir(), reverse=True):
 		if item.name in ignore:
 			continue
 
