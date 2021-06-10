@@ -170,10 +170,13 @@ print(pl_name)
 | value | bool | Is player dormant |
 
 ```lua
-local entity = g_EntityList:GetClientEntity(g_EngineClient:GetLocalPlayer())
-local player = entity:GetPlayer()
-local is_dormant = player:IsDormant()
-print(is_dormant)
+local players = g_EntityList:GetPlayers()
+
+for _, ply in ipairs(players) do
+    if not ply:IsTeamMate() and ply:IsDormant() then
+        print("dormant")
+    end
+end
 ```
 
 ## IsTeamMate
