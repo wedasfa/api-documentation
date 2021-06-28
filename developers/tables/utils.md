@@ -109,8 +109,10 @@ utils.RandomSeed(cmd.random_seed)
 | value | ConVar | Registered console var instance |
 
 ```lua
-local cvar = utils.RegisterConVar('meme_var', '1', 8, 'Testing stuff', function(cvar, old, new)
-	print('meme_var value was changed from ' .. old .. ' to ' .. new)
+local cvar = utils.RegisterConVar('meme_var', '1', 8, 'Testing stuff', function(cvar, old_val, old_val_fl)
+	print('cvar', cvar)
+	print('old_val', old_val)
+	print('old_val_fl', old_val_fl)
 end)
 print(cvar:GetString())
 ```
